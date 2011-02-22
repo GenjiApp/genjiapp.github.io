@@ -1,5 +1,6 @@
 header {
     height: 250px;
+    width: 100%;
     background-image: url(img/scroll_left.png), url(img/scroll_right.png), url(img/scroll_middle.png);
     background-repeat: no-repeat, no-repeat, repeat-x;
     background-position: left top, right top, 95px top;
