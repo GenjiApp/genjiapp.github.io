@@ -1,0 +1,97 @@
+header {
+    height: 250px;
+    background-image: url(img/scroll_left.png), url(img/scroll_right.png), url(img/scroll_middle.png);
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left top, right top, 95px top;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+}
+
+header h1, header h2 {
+    text-align: center;
+    font-family: serif;
+}
+
+header h1 {
+    font-size: 600%;
+    font-style: italic;
+}
+
+header h2 {
+    margin-top: -1.5em;
+}
+
+section {
+/*     background-color: rgba(0, 255, 0, 0.2); */
+/*     border: 1px solid green; */
+    margin: 20px 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+pre {
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #EEE;
+    font-family: fixed;
+    margin: 10px 30px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+pre code {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+code {
+    border: 1px solid gray;
+    background-color: #EEE;
+    padding: 3px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+dl {
+    margin: 1em 1em;
+}
+
+dl dd {
+    margin-left: 1em;
+}
