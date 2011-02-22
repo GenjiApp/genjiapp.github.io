@@ -61,7 +61,6 @@ pre {
     border: 1px solid gray;
     padding: 10px;
     background-color: #EEE;
-    font-family: fixed;
     margin: 10px 30px;
 
     -webkit-border-radius: 5px;
@@ -73,14 +72,16 @@ pre {
 
 pre code {
     border: none;
-    background-color: transparent;
     padding: 0;
+    background-color: transparent;
 }
 
 code {
+    font-family: monospace;
     border: 1px solid gray;
-    background-color: #EEE;
     padding: 3px;
+    background-color: #EEE;
+    white-space: pre;
 
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
