@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="" />
+		<title>Murasaki</title>
+    <style>
+      figcaption { display: block; text-align: center; }
+    </style>
+	</head>
+	<body>
+
+    <header>
+      <h1>Murasaki</h1>
+    </header>
+
+    <section>
+      <h1>概要</h1>
+      <p>Murasaki はシンプルな EPUB 閲覧アプリケーションです。</p>
+      <dl>
+        <dt>動作環境</dt>
+        <dd>Mac OS X 10.6.6 以降</dd>
+      </dl>
+      <figure>
+        <img src="Murasaki01.png" />
+        <figcaption>EPUB 表示例</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h1>ダウンロード</h1>
+      <ul>
+        <li><a href="./Murasaki_v1.0.zip">ver. 1.0</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>縦組みについて</h1>
+      <p>標準的な環境では EPUB は横組みで表示されます。しかし、<code>-webkit-writing-mode</code> が有効になっている WebKit Nightly を自分でビルドすることで、Murasaki で縦組み表示を試してみることができます。Murasaki で縦組み表示を行うには、ターミナルで以下のようなコマンドを実行し、<code>-webkit-writing-mode: vertical-rl;</code> 等を指定した EPUB を開いてください。</p>
+
+      <pre><code>env DYLD_FRAMEWORK_PATH=/path/to/WebKit/WebKitBuild/Debug \
+env WEBKIT_UNSET_DYLD_FRAMEWORK_PATH=YES \
+open -a /Applications/Murasaki.app</code></pre>
+
+      <p><code>/path/to/WebKit/</code> は WebKit Nightly をビルドしたディレクトリィを指定してください。</p>
+      <p>Webkit Nightly の詳細は <a href="http://www.webkit.org/">http://www.webkit.org/</a>。</p>
+
+      <figure>
+        <img src="Murasaki02.png" />
+        <figcaption>縦組み表示例 (EPUB は <a href="http://www.meadowy.org/~kawabata/branch/">http://www.meadowy.org/~kawabata/branch/</a> からダウンロードしたものを使用)</figcaption>
+      </figure>
+    </section>
+
+	</body>
+</html>
