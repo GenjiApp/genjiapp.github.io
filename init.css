@@ -1,0 +1,26 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, address, code, del, ins, em,
+img, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+header, footer, hgroup, menu, nav, section, summary,
+time, mark {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    Background: transparent;
+}
+
+article, aside, details, figure, figcaption,
+header, hgroup, footer, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
