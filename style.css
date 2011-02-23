@@ -47,6 +47,10 @@ footer {
     padding: 10px;
 }
 
+p {
+    text-indent: 1em;
+}
+
 figure img {
     display: block;
     margin-left: auto;
@@ -55,6 +59,7 @@ figure img {
 
 figcaption {
     text-align: center;
+    font-size: 80%;
 }
 
 pre {
