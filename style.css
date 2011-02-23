@@ -51,10 +51,22 @@ p {
     text-indent: 1em;
 }
 
+figure {
+    margin: 10px auto;
+}
+
 figure img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+figure img.pieceOfImage {
+    border: 1px solid silver;
+}
+
+figure img.pieceOfImage + figcaption {
+    margin-top: 5px;
 }
 
 figcaption {
