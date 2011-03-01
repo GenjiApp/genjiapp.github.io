@@ -45,12 +45,28 @@ section h1 {
 }
 
 footer {
+    font-size: 80%;
     text-align: center;
     padding: 10px;
+    border-top: 1px solid #DDD;
+}
+
+footer address {
+    font-style: normal;
 }
 
 p {
     text-indent: 1em;
+    color: #333;
+}
+
+a {
+    color: #08C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 figure {
@@ -125,3 +141,4 @@ dl dt:first-child {
 dl dd {
     margin-left: 1em;
 }
+
