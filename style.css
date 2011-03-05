@@ -41,6 +41,17 @@ header h2 {
     margin-top: -1.5em;
 }
 
+nav ul {
+    position: absolute;
+    right: 10px;
+}
+
+nav ul li {
+    font-size: 90%;
+    display: inline;
+    margin-left: 1em;
+}
+
 section {
     margin: 20px 50px;
 }

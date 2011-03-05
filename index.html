@@ -13,7 +13,16 @@
       <h2>Simple EPUB Previewer</h2>
     </header>
 
-    <section>
+    <nav>
+      <ul>
+        <li><a href="#description">概要</a></li>
+        <li><a href="#download">ダウンロード</a></li>
+        <li><a href="#integration">OS 標準機能との連携</a></li>
+        <li><a href="#vertical">縦組みについて</a></li>
+      </ul>
+    </nav>
+
+    <section id="description">
       <h1>概要</h1>
       <p>Murasaki はシンプルな EPUB 閲覧アプリケーションです。</p>
       <p>EPUB ファイルの閲覧、ナヴィゲーション構造の解析、メタデータの表示、簡易的な検索を行うことができます。</p>
@@ -27,7 +36,7 @@
       </figure>
     </section>
 
-    <section>
+    <section id="download">
       <h1>ダウンロード</h1>
       <dl>
         <dt>2011年3月1日：<a href="./releases/Murasaki_v1.0.2.zip">ver. 1.0.2</a></dt>
@@ -41,7 +50,7 @@
       </dl>
     </section>
 
-    <article>
+    <article id="integration">
       <section>
         <h1>OS 標準機能との連携</h1>
         <p>Murasaki は Mac OS X 標準の Cocoa フレームワークを用いて作成されています。Cocoa アプリケーションだからこそ、OS 標準の様々な便利な機能と連携することが可能になります。</p>
@@ -72,7 +81,7 @@
       </section>
     </article>
 
-    <section>
+    <section id="vertical">
       <h1>縦組みについて</h1>
       <p>標準的な環境では EPUB は横組みで表示されます。しかし、<code>-webkit-writing-mode</code> が有効になっている WebKit Nightly を自分でビルドするか、ビルド済みの Nightly Build (以下 WebKit.app) をインストールすることで、Murasaki で EPUB の縦組み表示を試してみることができます。Murasaki で縦組み表示を行うには、ターミナルで以下のようなコマンドを実行し、<code>-webkit-writing-mode: vertical-rl;</code> 等を指定した EPUB を開いてください。</p>
 
