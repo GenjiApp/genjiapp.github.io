@@ -35,7 +35,6 @@ header h1, header h2 {
 
 header h1 {
     font-size: 600%;
-    font-style: italic;
 }
 
 header h2 {
@@ -62,7 +61,12 @@ nav ul {
 nav ul li {
     font-size: 90%;
     display: inline;
-    margin-left: 1em;
+    padding: 0 10px;
+    border-left: 1px solid silver;
+}
+
+nav ul li:first-child {
+    border-left: none;
 }
 
 section {
