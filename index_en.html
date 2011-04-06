@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="init.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Murasaki - Simple EPUB Previewer</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Murasaki</h1>
+      <h2>Simple EPUB Previewer</h2>
+    </header>
+
+    <ul id="languageSwicther">
+      <li><a href="./index.html">日本語</a></li>
+      <li>English</li>
+    </ul>
+
+    <nav>
+      <ul>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#integration">Integration with Mac OS X</a></li>
+        <li><a href="#vertical">Vertical writing mode</a></li>
+      </ul>
+    </nav>
+
+    <section id="description">
+      <h1>Description</h1>
+      <p>Murasaki is a simple EPUB previewer.</p>
+      <p>By using this application, you can read EPUB document, view its navigation structure and metadata, and search strings.</p>
+      <dl>
+        <dt>Requirement</dt>
+        <dd>Mac OS X 10.6.6 or later</dd>
+      </dl>
+      <figure>
+        <img src="img/Murasaki_main_en.png" />
+        <figcaption>EPUB display sample</figcaption>
+      </figure>
+    </section>
+
+    <section id="download">
+      <h1>Download</h1>
+      <dl>
+        <dt>2011-4-3：<a href="./releases/Murasaki_v1.1.zip">ver. 1.1</a></dt>
+        <dd>Improve a search feature(Impliment &quot;Find Next&quot;、&quot;Find Previous&quot;、&quot;Use Selection for Find&quot;)</dd>
+        <dd>Change a title of sidebar navigation from title tag text of HTML to navLabel text of NCX</dd>
+        <dd>Fix a bug that cannot open an HTML file that does not have a certain extension</dd>
+
+        <dt>2011-3-1：<a href="./releases/Murasaki_v1.0.2.zip">ver. 1.0.2</a></dt>
+        <dd>Fix a rendering bug of status area</dd>
+
+        <dt>2011-2-28：<a href="./releases/Murasaki_v1.0.1.zip">ver. 1.0.1</a></dt>
+        <dd>Fix a Japanese localized string file</dd>
+        <dd>Enable to open EPUBs concurrently</dd>
+        <dd>Remove status bar</dd>
+
+        <dt>2011-2-21：<a href="./releases/Murasaki_v1.0.zip">ver. 1.0</a></dt>
+        <dd>Initial version</dd>
+      </dl>
+    </section>
+
+    <article id="integration">
+      <section>
+        <h1>Integration with Mac OS X</h1>
+        <p>Murasaki is developed for Mac OS X, by using Cocoa framework. Because Murasaki is a Cocoa application, Murasaki integrates with various useful features of Mac OS X.</p>
+      </section>
+
+      <section>
+        <h2>Trackpad Gesture</h2>
+        <p>Trackpad gestures are available on Murasaki. You can swipe to back/forward history, pinch to zoom in/out.</p>
+      </section>
+
+      <section>
+        <h2>Popup Dictionary</h2>
+        <p>Popup dictionary is appeared by pressing &quot;Command + Control + D&quot; keyboard shortcut when a mouse cursor is on a word.</p>
+
+        <figure>
+          <img class="pieceOfImage" src="img/Murasaki_dictionary_en.png" />
+          <figcaption>Popup dictionary</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Text to Speech</h2>
+        <p>You can use &quot;Text to Speech&quot; that is buil-in feature in Mac OS X on Murasaki.</p>
+
+        <figure>
+          <img src="img/Murasaki_speech_en.png" />
+          <figcaption>Text to Speech</figcaption>
+        </figure>
+      </section>
+    </article>
+
+    <section id="vertical">
+      <h1>Vertical writing mode</h1>
+      <p>Normally, sentences are displayed horizontally. You can change text direction from horizontal to vertical, by installing or building Webkit Nightly which <code>-webkit-writing-mode</code> property is available. To display sentences vertically, launch Murasaki by typing command as follows and open a EPUB document that <code>-webkit-writing-mode</code> property is specified like <code>vertical-rl</code>.</p>
+
+      <pre><code>env DYLD_FRAMEWORK_PATH=/path/to/WebKitNightlyFrameworks \
+open /Applications/Murasaki.app</code></pre>
+
+      <p><code>/path/to/WebkitNightlyFrameworks</code> is path to framework directory of Webkit Nightly. If you have built Webkit Nightly, specify <code>/path/to/Webkit/WebkitBuilt/Debug</code>, otherwise <code>/Applications/Webkit.app/Contents/Frameworks/10.6</code>.</p>
+
+      <figure>
+        <img src="img/Murasaki_vertical_en.png" />
+        <figcaption>Vertical writing mode sample (this EPUB document is downloaded from <a href="http://www.meadowy.org/~kawabata/branch/">http://www.meadowy.org/~kawabata/branch/</a>)</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <address>
+        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
+      </address>
+    </footer>
+
+  </body>
+</html>

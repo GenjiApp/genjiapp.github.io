@@ -4,6 +4,7 @@ body {
 }
 
 header {
+    margin-top: 1em;
     height: 250px;
     width: 100%;
     background-image: url(img/scroll_left.png), url(img/scroll_right.png), url(img/scroll_middle.png);
@@ -39,6 +40,18 @@ header h1 {
 
 header h2 {
     margin-top: -1.5em;
+}
+
+#languageSwicther {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#languageSwicther li {
+    font-size: 90%;
+    display: inline;
+    margin-left: 1em;
 }
 
 nav ul {
