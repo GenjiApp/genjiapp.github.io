@@ -1,36 +1,18 @@
 body {
     font-family: serif;
     line-height: 1.8;
+    background-image: url(img/Murasaki_kanji.png), url(img/texture.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    text-shadow: 1px 1px 0 white;
 }
 
 header {
-    margin-top: 1em;
-    height: 250px;
-    width: 100%;
-    background-image: url(img/scroll_left.png), url(img/scroll_right.png), url(img/scroll_middle.png);
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    background-position: left top, right top, 95px top;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
 }
 
 header h1, header h2 {
     text-align: center;
-    font-family: serif;
 }
 
 header h1 {
@@ -38,7 +20,8 @@ header h1 {
 }
 
 header h2 {
-    margin-top: -1.5em;
+    margin-top: -3em;
+    margin-bottom: 10px;
 }
 
 #languageSwicther {
@@ -53,9 +36,12 @@ header h2 {
     margin-left: 1em;
 }
 
+nav {
+    text-align: right;
+}
+
 nav ul {
-    position: absolute;
-    right: 10px;
+    display: inline;
 }
 
 nav ul li {
@@ -81,7 +67,6 @@ footer {
     font-size: 80%;
     text-align: center;
     padding: 10px;
-    border-top: 1px solid #DDD;
 }
 
 footer address {
@@ -115,6 +100,7 @@ figure img {
 
 figure img.pieceOfImage {
     border: 1px solid silver;
+    background-color: white;
 }
 
 figure img.pieceOfImage + figcaption {
