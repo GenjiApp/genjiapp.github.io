@@ -114,14 +114,7 @@
 
     <section id="vertical">
       <h1>縦組みについて</h1>
-      <p>標準的な環境では EPUB は横組みで表示されます。しかし、<code>-webkit-writing-mode</code> が有効になっている WebKit Nightly を自分でビルドするか、ビルド済みの Nightly Build (以下 WebKit.app) をインストールすることで、Murasaki で EPUB の縦組み表示を試してみることができます。Murasaki で縦組み表示を行うには、ターミナルで以下のようなコマンドを実行し、<code>-webkit-writing-mode: vertical-rl;</code> 等を指定した EPUB を開いてください。</p>
-
-      <pre><code>env DYLD_FRAMEWORK_PATH=/path/to/WebKitNightlyFrameworks \
-open /Applications/Murasaki.app</code></pre>
-
-      <p><code>/path/to/WebKitNightlyFrameworks</code> は WebKit Nightly のフレームワークのディレクトリィを指定してください。自分で WebKit Nightly をビルドした場合は <code>/path/to/WebKit/WebKitBuild/Debug</code>、WebKit.app をインストールした場合は <code>/Applications/WebKit.app/Contents/Frameworks/10.6</code> のようになります。</p>
-      <p><a href="http://twitter.com/wastemobile">@wastemobile</a> 氏による、WebKit.app を用いて縦組み用に Murasaki を起動する <a href="http://twitter.com/wastemobile/status/42640783324614657">Automator Workflow</a>（thanks @wastemobile!）。</p>
-      <p>Webkit Nightly の詳細は <a href="http://www.webkit.org/">http://www.webkit.org/</a> を参照してください。</p>
+      <p>Safari 5.1 以上がインストールされた環境では <code>-epub-writing-mode</code>（<code>-webkit-writing-mode</code>）プロパティが有効になり、縦組み表示が可能になります。</p>
 
       <figure>
         <img src="img/Murasaki_vertical.png" />
