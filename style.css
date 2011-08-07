@@ -145,6 +145,15 @@ code {
     border-radius: 2px;
 }
 
+#download ul {
+    font-size: 95%;
+    margin: 0.5em 1em;
+}
+
+#download ul li {
+    margin-left: 1em;
+}
+
 dl {
     font-size: 95%;
     margin: 0.5em 1em;
