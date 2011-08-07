@@ -145,6 +145,21 @@ code {
     border-radius: 2px;
 }
 
+#description dl {
+    margin-left: 1em;
+    font-size: 95%;
+}
+
+#description dl dt,
+#description dl dd {
+    display: inline;
+}
+
+
+#description dl dt:after {
+    content: ":";
+}
+
 #download ul {
     font-size: 95%;
     margin: 0.5em 1em;
@@ -154,21 +169,20 @@ code {
     margin-left: 1em;
 }
 
-dl {
+#history dl {
     font-size: 95%;
     margin: 0.5em 1em;
 }
 
-dl dt {
+#history dl dt {
     margin-top: 0.5em;
     font-weight: bold;
 }
 
-dl dt:first-child {
+#history dl dt:first-child {
     margin-top: 0;
 }
 
-dl dd {
+#history dl dd {
     margin-left: 1em;
 }
-
