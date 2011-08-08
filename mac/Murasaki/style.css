@@ -24,6 +24,20 @@ header h2 {
     margin-bottom: 10px;
 }
 
+#globalNavigation {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#globalNavigation ul {
+    margin: 0;
+}
+
+#globalNavigation ul li {
+    display: inline;
+}
+
 #languageSwicther {
     position: absolute;
     top: 5px;
@@ -37,16 +51,16 @@ header h2 {
     margin: 0 0 0 1em;;
 }
 
-nav {
+#inPageNavigation {
     text-align: right;
 }
 
-nav ul {
+#inPageNavigation ul {
     display: inline;
     margin: 0;
 }
 
-nav ul li {
+#inPageNavigation ul li {
     font-size: 90%;
     display: inline;
     margin: 0;
@@ -54,7 +68,7 @@ nav ul li {
     border-left: 1px solid silver;
 }
 
-nav ul li:first-child {
+#inPageNavigation ul li:first-child {
     border-left: none;
 }
 
