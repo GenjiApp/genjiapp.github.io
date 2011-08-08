@@ -28,12 +28,13 @@ header h2 {
     position: absolute;
     top: 5px;
     right: 10px;
+    margin: 0;
 }
 
 #languageSwicther li {
     font-size: 90%;
     display: inline;
-    margin-left: 1em;
+    margin: 0 0 0 1em;;
 }
 
 nav {
@@ -42,11 +43,13 @@ nav {
 
 nav ul {
     display: inline;
+    margin: 0;
 }
 
 nav ul li {
     font-size: 90%;
     display: inline;
+    margin: 0;
     padding: 0 10px;
     border-left: 1px solid silver;
 }
@@ -146,12 +149,14 @@ code {
 }
 
 #description dl {
-    margin-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 95%;
 }
 
 #description dl dt,
 #description dl dd {
+    margin: 0;
     display: inline;
 }
 
@@ -162,25 +167,15 @@ code {
 
 #download ul {
     font-size: 95%;
-    margin: 0.5em 1em;
-}
-
-#download ul li {
-    margin-left: 1em;
 }
 
 #history dl {
     font-size: 95%;
-    margin: 0.5em 1em;
 }
 
 #history dl dt {
-    margin-top: 0.5em;
     font-weight: bold;
-}
-
-#history dl dt:first-child {
-    margin-top: 0;
+    margin-left: 0;
 }
 
 #history dl dd {
