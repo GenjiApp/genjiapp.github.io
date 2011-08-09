@@ -8,9 +8,6 @@ body {
     text-shadow: 1px 1px 0 white;
 }
 
-header {
-}
-
 header h1, header h2 {
     text-align: center;
 }
@@ -35,6 +32,7 @@ header h2 {
 }
 
 #globalNavigation ul li {
+    margin: 0;
     display: inline;
 }
 
