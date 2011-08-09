@@ -1,11 +1,14 @@
 body {
     font-family: serif;
-    line-height: 1.8;
     background-image: url(img/Murasaki_kanji.png), url(img/texture.png);
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
     text-shadow: 1px 1px 0 white;
+}
+
+header {
+    margin-top: 30px;
 }
 
 header h1, header h2 {
@@ -17,8 +20,8 @@ header h1 {
 }
 
 header h2 {
-    margin-top: -3em;
-    margin-bottom: 10px;
+    margin-top: -0.8em;
+    margin-bottom: 20px;
 }
 
 #globalNavigation {
@@ -89,6 +92,7 @@ footer address {
 }
 
 p {
+    line-height: 1.8;
     font-size: 95%;
     text-indent: 1em;
     color: #333;
