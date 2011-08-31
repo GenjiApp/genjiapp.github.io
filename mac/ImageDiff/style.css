@@ -1,0 +1,73 @@
+body {
+    background-color: #EEE;
+}
+
+nav {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+#languageSwicther {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin: 0;
+}
+
+#languageSwicther li {
+    font-size: 90%;
+    display: inline;
+    margin: 0 0 0 1em;;
+}
+
+h1 {
+    font-size: 600%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 125%;
+    margin-top: 2em;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+p {
+    text-indent: 1em;
+    line-height: 1.8;
+}
+
+a {
+    color: #08C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 80%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer address {
+    font-style: normal;
+}
