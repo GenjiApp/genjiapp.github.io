@@ -2,37 +2,20 @@ body {
     background-color: #EEE;
 }
 
-nav {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-}
-
-nav ul {
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1em 0 0;
-}
-
-#languageSwicther {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    margin: 0;
-}
-
-#languageSwicther li {
-    font-size: 90%;
-    display: inline;
-    margin: 0 0 0 1em;;
-}
-
-h1 {
-    font-size: 600%;
-    margin-top: 20px;
+header nav {
+    color: white;
+    border-bottom: 1px solid black;
+    background-color: black;
+    background: -webkit-linear-gradient(top, #333, #666);
+    background: -moz-linear-gradient(top, #333, #666);
+    background: -o-linear-gradient(top, #333, #666);
+    background: -ms-linear-gradient(top, #333, #666);
+    background: linear-gradient(top, #333, #666);
+    -webkit-box-shadow: 0 0px 15px gray;
+    -moz-box-shadow: 0 0px 15px gray;
+    -o-box-shadow: 0 0px 15px gray;
+    -ms-box-shadow: 0 0px 15px gray;
+    box-shadow: 0 0px 15px gray;
 }
 
 h2 {
@@ -44,30 +27,6 @@ h3 {
     margin-top: 2em;
 }
 
-p {
-    text-indent: 1em;
-    line-height: 1.8;
-}
-
-a {
-    color: #08C;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 dl dt {
     font-weight: bold;
-}
-
-footer {
-    font-size: 80%;
-    text-align: center;
-    padding: 10px;
-}
-
-footer address {
-    font-style: normal;
 }

@@ -1,0 +1,64 @@
+header {
+    margin-bottom: 1em;
+}
+
+header h1 {
+    font-size: 600%;
+}
+
+header h2 {
+    margin-top: -0.8em;
+    margin-bottom: 20px;
+}
+
+header nav {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+header nav ul {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+}
+
+header nav ul:first-child {
+    left: 3px;
+}
+
+header nav ul:last-child {
+    right: 3px;
+}
+
+header nav ul li {
+    margin: 0 0.5em;
+    display: inline;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+footer {
+    font-size: 80%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+p {
+    text-indent: 1em;
+    line-height: 1.8;
+}
+
+a {
+    color: #08C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

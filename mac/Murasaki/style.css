@@ -7,49 +7,23 @@ body {
     text-shadow: 1px 1px 0 white;
 }
 
-header {
-    margin-top: 30px;
+header nav {
+    border-bottom: 1px solid white;
+    background-color: white;
+    background: -webkit-linear-gradient(top, #fff, #eee);
+    background: -moz-linear-gradient(top, #fff, #eee);
+    background: -o-linear-gradient(top, #fff, #eee);
+    background: -ms-linear-gradient(top, #fff, #eee);
+    background: linear-gradient(top, #fff, #eee);
+    -webkit-box-shadow: 0 0px 15px gray;
+    -moz-box-shadow: 0 0px 15px gray;
+    -o-box-shadow: 0 0px 15px gray;
+    -ms-box-shadow: 0 0px 15px gray;
+    box-shadow: 0 0px 15px gray;
 }
 
 header h1, header h2 {
     text-align: center;
-}
-
-header h1 {
-    font-size: 600%;
-}
-
-header h2 {
-    margin-top: -0.8em;
-    margin-bottom: 20px;
-}
-
-#globalNavigation {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-}
-
-#globalNavigation ul {
-    margin: 0;
-}
-
-#globalNavigation ul li {
-    margin: 0 1em 0 0;
-    display: inline;
-}
-
-#languageSwicther {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    margin: 0;
-}
-
-#languageSwicther li {
-    font-size: 90%;
-    display: inline;
-    margin: 0 0 0 1em;;
 }
 
 #inPageNavigation {
@@ -79,32 +53,6 @@ section {
 
 section h1 {
     font-size: 125%;
-}
-
-footer {
-    font-size: 80%;
-    text-align: center;
-    padding: 10px;
-}
-
-footer address {
-    font-style: normal;
-}
-
-p {
-    line-height: 1.8;
-    font-size: 95%;
-    text-indent: 1em;
-    color: #333;
-}
-
-a {
-    color: #08C;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 figure {
