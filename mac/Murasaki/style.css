@@ -55,6 +55,11 @@ section h1 {
     font-size: 125%;
 }
 
+section h2 {
+    font-size: 100%;
+    margin: 0;
+}
+
 figure {
     margin: 10px auto;
 }

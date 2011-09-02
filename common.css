@@ -49,6 +49,11 @@ footer address {
     font-style: normal;
 }
 
+h2 {
+    font-size: 125%;
+    margin-top: 2em;
+}
+
 p {
     text-indent: 1em;
     line-height: 1.8;
