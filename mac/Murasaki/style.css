@@ -1,6 +1,6 @@
 body {
     font-family: serif;
-    background-image: url(img/Murasaki_kanji.png), url(img/texture.png);
+    background-image: url(img/kanji_logo.png), url(img/texture.png);
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
