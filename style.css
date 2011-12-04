@@ -1,19 +1,9 @@
 body {
     font-family: serif;
     color: #444;
-    background: -webkit-linear-gradient(top, #fff, #ccc);
-    background: -moz-linear-gradient(top, #fff, #ccc);
-    background: -o-linear-gradient(top, #fff, #ccc);
-    background: -ms-linear-gradient(top, #fff, #ccc);
-    background: linear-gradient(top, #fff, #ccc);
+    background-image: url(img/noise.png);
 }
 
 body > h1 {
-    margin-top: 20px;
-    font-size: 1500%;
-    text-align: right;
-    line-height: 0.8;
-    color: #444;
-    text-shadow: 1px 1px 0 #fff, -1px -1px 0 black;
-
+    font-size: 750%;
 }
