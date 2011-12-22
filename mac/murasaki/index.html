@@ -46,8 +46,7 @@
       <ul>
         <li><a href="#description">概要</a></li>
         <li><a href="#download">ダウンロード</a></li>
-        <li><a href="#integration">OS 標準機能との連携</a></li>
-        <li><a href="#vertical">縦組みについて</a></li>
+        <li><a href="#features">機能</a></li>
         <li><a href="#history">ヴァージョン履歴</a></li>
       </ul>
     </nav>
@@ -73,15 +72,33 @@
     <section id="download">
       <h1>ダウンロード</h1>
       <ul>
-        <li><a href="http://itunes.apple.com/jp/app/murasaki/id430300762?mt=12">ver. 1.5 (Mac App Store)</a></li>
+        <li><a href="http://itunes.apple.com/jp/app/murasaki/id430300762?mt=12">ver. 1.6 (Mac App Store)</a></li>
         <li><a href="./downloads/murasaki_v1.0.2.zip">ver. 1.0.2</a></li>
       </ul>
     </section>
 
-    <article id="integration">
+    <article id="features">
       <section>
-        <h1>OS 標準機能との連携</h1>
-        <p>Murasaki は Mac OS X 標準の Cocoa フレームワークを用いて作成されています。Cocoa アプリケーションだからこそ、OS 標準の様々な便利な機能と連携することが可能になります。</p>
+        <h1>機能</h1>
+        <p>Murasaki には、他の EPUB 閲覧アプリケーションにはない独自の機能が搭載されています。</p>
+        <p>また、Murasaki は Mac OS X 標準の Cocoa フレームワークを用いて作成されています。Cocoa アプリケーションだからこそ、OS 標準の様々な便利な機能と連携することが可能になります。</p>
+      </section>
+
+      <section>
+        <h2>サブウィンドウ</h2>
+        <p>これまでの EPUB 閲覧アプリケーションは、ひとつの EPUB ファイルに対してひとつのウィンドウのみを持つ形態がスタンダードでした。Murasaki ver. 1.6 以降では、ウィンドウメニューもしくはコンテキストメニューの項目を選択することで、現在表示しているページやリンク先のページをサブウィンドウで開くことができるようになりました。ひとつの EPUB の複数のページを参照しながら閲覧を進めることができます。</p>
+      </section>
+
+      <section>
+        <h2>Popover</h2>
+        <p>Murasaki ver. 1.6 と Mac OS X 10.7 Lion 以降の環境では、リンク要素上で Option + クリックかコンテキストメニューの項目を選択することで、リンク先のページを Popover に表示することができます。閲覧中の話題に関連しているページや脚注へのリンク等を、ページ遷移をすることなく、素早くチェックすることができます。</p>
+
+        <figure>
+          <img src="img/popover.png" />
+          <figcaption>Popover 機能</figcaption>
+        </figure>
+
+        <p>Popover は、その縁をドラッグすることでサブウィンドウとして切り離すことができます。</p>
       </section>
 
       <section>
@@ -125,21 +142,37 @@
         <p>Spotlight プラグインによって、タイトルや著者等のメタデータ、本文の文章を元に Spotlight で EPUB を検索することができるようになります。</p>
         <p>また、Quick Look プラグインによって、EPUB 閲覧アプリケーションを起動することなく素早く内容をプレヴューできるようになります（10 ページ分の HTML までで、1 HTML につき画像は 10 個まで。外部 CSS ファイルの読み込みは不可）。</p>
       </section>
+
+      <section>
+        <h2>縦組みについて</h2>
+        <p>Safari 5.1 以上がインストールされた環境では <code>-epub-writing-mode</code>（<code>-webkit-writing-mode</code>）プロパティが有効になり、縦組み表示が可能になります。</p>
+
+        <figure>
+          <img src="img/vertical.png" />
+          <figcaption>縦組み表示例 (EPUB は <a href="http://www.meadowy.org/~kawabata/branch/">http://www.meadowy.org/~kawabata/branch/</a> からダウンロードしたものを使用)</figcaption>
+        </figure>
+      </section>
+
     </article>
-
-    <section id="vertical">
-      <h1>縦組みについて</h1>
-      <p>Safari 5.1 以上がインストールされた環境では <code>-epub-writing-mode</code>（<code>-webkit-writing-mode</code>）プロパティが有効になり、縦組み表示が可能になります。</p>
-
-      <figure>
-        <img src="img/vertical.png" />
-        <figcaption>縦組み表示例 (EPUB は <a href="http://www.meadowy.org/~kawabata/branch/">http://www.meadowy.org/~kawabata/branch/</a> からダウンロードしたものを使用)</figcaption>
-      </figure>
-    </section>
 
     <section id="history">
       <h1>ヴァージョン履歴</h1>
       <dl>
+        <dt>2011年12月22日：ver. 1.6</dt>
+        <dd>&quot;サブウィンドウで開く&quot;機能の実装
+          <ul>
+            <li>ウィンドウメニューもしくはコンテキストメニューの項目を選択することで、現在のページをサブウィンドウに開くことができます</li>
+            <li>リンク要素上で Coomand + クリックかコンテキストメニューの項目を選択することで、リンクをサブウィンドウに開くことができます</li>
+          </ul>
+        </dd>
+        <dd>Popover 機能の実装（OS X Lion のみ）
+          <ul>
+            <li>リンク要素上で Option + クリックかコンテキストメニューの項目を選択することで、リンクを Popover に表示することができます</li>
+            <li>Popover は縁をドラッグすることで、サブウィンドウとして切り離すことができます</li>
+          </ul>
+        </dd>
+        <dd>いくつかの環境設定項目を追加</dd>
+
         <dt>2011年12月2日：ver. 1.5</dt>
         <dd>EPUB3 の "page-progression-direction" 属性に対応</dd>
         <dd>EPUB3 の Navigation Document に対応</dd>

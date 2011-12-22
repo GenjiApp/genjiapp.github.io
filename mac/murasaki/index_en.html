@@ -46,8 +46,7 @@
       <ul>
         <li><a href="#description">Description</a></li>
         <li><a href="#download">Download</a></li>
-        <li><a href="#integration">Integration with Mac OS X</a></li>
-        <li><a href="#vertical">Vertical writing mode</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="#history">Version history</a></li>
       </ul>
     </nav>
@@ -73,15 +72,33 @@
     <section id="download">
       <h1>Download</h1>
       <ul>
-        <li><a href="http://itunes.apple.com/app/murasaki/id430300762?mt=12">ver. 1.5 (Mac App Store)</a></li>
+        <li><a href="http://itunes.apple.com/app/murasaki/id430300762?mt=12">ver. 1.6 (Mac App Store)</a></li>
         <li><a href="./downloads/murasaki_v1.0.2.zip">ver. 1.0.2</a></li>
       </ul>
     </section>
 
-    <article id="integration">
+    <article id="features">
       <section>
-        <h1>Integration with Mac OS X</h1>
+        <h1>Features</h1>
+        <p>Murasaki has various unique features.</p>
         <p>Murasaki is developed for Mac OS X, by using Cocoa framework. Because Murasaki is a Cocoa application, Murasaki integrates with various useful features of Mac OS X.</p>
+      </section>
+
+      <section>
+        <h2>Subwindow</h2>
+        <p>In Murasaki ver. 1.6 or later, You can open a current page or a link in a subwindow by choosing menu item from Window or context menu.</p>
+      </section>
+
+      <section>
+        <h2>Popover</h2>
+        <p>In Murasaki ver. 1.6 or later and Mac OS X 10.7 Lion, You can open a link in a popover by Option-clicking a link element or choosing menu item from context menu.</p>
+
+        <figure>
+          <img src="img/popover_en.png" />
+          <figcaption>Popover</figcaption>
+        </figure>
+
+        <p>Popover can be detached as a subwindow by dragging its frame.</p>
       </section>
 
       <section>
@@ -120,21 +137,37 @@
 
         <p>By installing Murasaki, you can Spotlight search EPUBs by their metadata (title, author and so on) and text contents, and can Quick Look preview EPUB's contents (only 10 HTML files per EPUB, 10 images per 1 HTML, cannot read external css files).</p>
       </section>
+
+      <section>
+        <h2>Vertical writing mode</h2>
+        <p>If Safari 5.1 is installed, <code>-epub-writing-mode</code> (<code>-webkit-writing-mode</code>) property is available, then Murasaki can display vertical text.</p>
+
+        <figure>
+          <img src="img/vertical_en.png" />
+          <figcaption>Vertical writing mode sample (this EPUB document is downloaded from <a href="http://www.meadowy.org/~kawabata/branch/">http://www.meadowy.org/~kawabata/branch/</a>)</figcaption>
+        </figure>
+      </section>
+
     </article>
-
-    <section id="vertical">
-      <h1>Vertical writing mode</h1>
-      <p>If Safari 5.1 is installed, <code>-epub-writing-mode</code> (<code>-webkit-writing-mode</code>) property is available, then Murasaki can display vertical text.</p>
-
-      <figure>
-        <img src="img/vertical_en.png" />
-        <figcaption>Vertical writing mode sample (this EPUB document is downloaded from <a href="http://www.meadowy.org/~kawabata/branch/">http://www.meadowy.org/~kawabata/branch/</a>)</figcaption>
-      </figure>
-    </section>
 
     <section id="history">
       <h1>Version history</h1>
       <dl>
+        <dt>2011-12-22: ver. 1.6</dt>
+        <dd>Implemented &quot;Open in Subwindow&quot; feature
+          <ul>
+            <li>You can open a current page in subwindow by choosing menu item from Window or context menu</li>
+            <li>You can open a link in subwindow by Command-clicking a link element or choosing menu item from context menu</li>
+          </ul>
+        </dd>
+        <dd>Implemented Popover feature (OS X Lion only)
+          <ul>
+            <li>You can open a link in Popover by Option-clicking a link element or choosing menu item from context menu</li>
+            <li>Popover can be detached as a subwindow by dragging its frame</li>
+          </ul>
+        </dd>
+        <dd>Added some preferences</dd>
+
         <dt>2011-12-2: ver. 1.5</dt>
         <dd>Added a support for "page-progression-direction" attribute of EPUB3</dd>
         <dd>Added a support for Navigation Document of EPUB3</dd>
