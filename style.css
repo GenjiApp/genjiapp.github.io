@@ -1,23 +1,52 @@
 body {
     font-family: serif;
     color: #444;
+}
+
+body > header {
     background-image: url(img/noise.png);
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 300px;
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+
+    -webkit-box-shadow: 0 1px 5px gray;
+    -moz-box-shadow: 0 1px 5px gray;
+    -o-box-shadow: 0 1px 5px gray;
+    -ms-box-shadow: 0 1px 5px gray;
+    box-shadow: 0 1px 5px gray;
 }
 
-body > div > h1 {
-    font-size: 750%;
-    text-align: center;
+body > header > h1 {
+    font-size: 800%;
+    text-shadow: -1px -1px 0 black;
 }
 
-body > div {
-    background-color: white;
-    margin: 40px auto;
-    width: 800px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -o-border-radius: 7px;
-    -ms-border-radius: 7px;
-    border-radius: 7px;
+body > article {
+    padding-left: 50px;
+    padding-right: 50px;
 }
