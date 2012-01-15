@@ -11,18 +11,18 @@ body {
 
 header nav {
     color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #111;
     background-color: black;
-    background: -webkit-linear-gradient(top, #444, #000);
-    background: -moz-linear-gradient(top, #444, #000);
-    background: -o-linear-gradient(top, #444, #000);
-    background: -ms-linear-gradient(top, #444, #000);
-    background: linear-gradient(top, #444, #000);
-    -webkit-box-shadow: 0 0px 15px black;
-    -moz-box-shadow: 0 0px 15px black;
-    -o-box-shadow: 0 0px 15px black;
-    -ms-box-shadow: 0 0px 15px black;
-    box-shadow: 0 0px 15px black;
+    background: -webkit-linear-gradient(top, #444, #222);
+    background: -moz-linear-gradient(top, #444, #222);
+    background: -o-linear-gradient(top, #444, #222);
+    background: -ms-linear-gradient(top, #444, #222);
+    background: linear-gradient(top, #444, #222);
+    -webkit-box-shadow: 0 1px 5px black;
+    -moz-box-shadow: 0 1px 5px black;
+    -o-box-shadow: 0 1px 5px black;
+    -ms-box-shadow: 0 1px 5px black;
+    box-shadow: 0 1px 5px black;
 }
 
 figure {

@@ -7,21 +7,6 @@ body {
     text-shadow: 1px 1px 0 white;
 }
 
-header nav {
-    border-bottom: 1px solid white;
-    background-color: white;
-    background: -webkit-linear-gradient(top, #fff, #eee);
-    background: -moz-linear-gradient(top, #fff, #eee);
-    background: -o-linear-gradient(top, #fff, #eee);
-    background: -ms-linear-gradient(top, #fff, #eee);
-    background: linear-gradient(top, #fff, #eee);
-    -webkit-box-shadow: 0 0px 15px gray;
-    -moz-box-shadow: 0 0px 15px gray;
-    -o-box-shadow: 0 0px 15px gray;
-    -ms-box-shadow: 0 0px 15px gray;
-    box-shadow: 0 0px 15px gray;
-}
-
 header h1, header h2 {
     text-align: center;
 }

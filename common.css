@@ -16,6 +16,13 @@ header nav {
     font-weight: bold;
     margin-bottom: 15px;
     height: 40px;
+    background-image: url(img/noise.png);
+
+    -webkit-box-shadow: 0 1px 5px gray;
+    -moz-box-shadow: 0 1px 5px gray;
+    -o-box-shadow: 0 1px 5px gray;
+    -ms-box-shadow: 0 1px 5px gray;
+    box-shadow: 0 1px 5px gray;
 }
 
 header nav ul {
