@@ -11,18 +11,27 @@ body {
 
 header nav {
     color: white;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #666;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+
+header > hgroup {
+    text-shadow: none;
+    color: white;
     background-color: black;
-    background: -webkit-linear-gradient(top, #444, #222);
-    background: -moz-linear-gradient(top, #444, #222);
-    background: -o-linear-gradient(top, #444, #222);
-    background: -ms-linear-gradient(top, #444, #222);
-    background: linear-gradient(top, #444, #222);
-    -webkit-box-shadow: 0 1px 5px black;
-    -moz-box-shadow: 0 1px 5px black;
-    -o-box-shadow: 0 1px 5px black;
-    -ms-box-shadow: 0 1px 5px black;
-    box-shadow: 0 1px 5px black;
+    background-image: url(img/icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-bottom: 1px solid #666;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
 }
 
 figure {
@@ -32,8 +41,4 @@ figure {
 
 figure img {
     max-width: 30%;
-}
-
-dl dt {
-    font-weight: bold;
 }

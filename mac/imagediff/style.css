@@ -1,7 +1,5 @@
-h3 {
-    margin-top: 2em;
-}
-
-dl dt {
-    font-weight: bold;
+header > hgroup {
+    background-image: url(img/icon.png), url(../../img/noise.png);
+    background-repeat: no-repeat, repeat;
+    background-position: left center, left top;
 }

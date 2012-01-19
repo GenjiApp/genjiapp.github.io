@@ -9,36 +9,31 @@ body > header {
     padding-right: 50px;
     height: 300px;
     width: 100%;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-
     display: -webkit-box;
     display: -moz-box;
     display: -o-box;
     display: -ms-box;
     display: box;
-
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -o-box-orient: vertical;
     -ms-box-orient: vertical;
     box-orient: vertical;
-
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -o-box-pack: center;
     -ms-box-pack: center;
     box-pack: center;
-
-    -webkit-box-shadow: 0 1px 5px gray;
-    -moz-box-shadow: 0 1px 5px gray;
-    -o-box-shadow: 0 1px 5px gray;
-    -ms-box-shadow: 0 1px 5px gray;
-    box-shadow: 0 1px 5px gray;
+    -webkit-box-shadow: inset 0 -6px 5px -5px gray;
+    -moz-box-shadow: inset 0 -6px 5px -5px gray;
+    -o-box-shadow: inset 0 -6px 5px -5px gray;
+    -ms-box-shadow: inset 0 -6px 5px -5px gray;
+    box-shadow: inset 0 -6px 5px -5px gray;
 }
 
 body > header > h1 {

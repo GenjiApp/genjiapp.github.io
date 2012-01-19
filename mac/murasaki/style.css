@@ -7,12 +7,14 @@ body {
     text-shadow: 1px 1px 0 white;
 }
 
-header h1, header h2 {
-    text-align: center;
+header > hgroup {
+    background-image: url(img/icon.png), url(../../img/noise.png);
+    background-repeat: no-repeat, repeat;
+    background-position: left center, left top;
 }
 
 #inPageNavigation {
-    text-align: right;
+    text-align: center;
 }
 
 #inPageNavigation ul {
@@ -32,19 +34,6 @@ header h1, header h2 {
     border-left: none;
 }
 
-section {
-    margin: 20px 50px;
-}
-
-section h1 {
-    font-size: 125%;
-}
-
-section h2 {
-    font-size: 100%;
-    margin: 0;
-}
-
 figure {
     margin: 10px auto;
 }
@@ -54,15 +43,6 @@ figure img {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-}
-
-figure img.pieceOfImage {
-    border: 1px solid silver;
-    background-color: white;
-}
-
-figure img.pieceOfImage + figcaption {
-    margin-top: 5px;
 }
 
 figcaption {
@@ -115,24 +95,6 @@ code {
     display: inline;
 }
 
-
 #description dl dt:after {
     content: ":";
-}
-
-#download ul {
-    font-size: 95%;
-}
-
-#history dl {
-    font-size: 95%;
-}
-
-#history dl dt {
-    font-weight: bold;
-    margin-left: 0;
-}
-
-#history dl dd {
-    margin-left: 1em;
 }
