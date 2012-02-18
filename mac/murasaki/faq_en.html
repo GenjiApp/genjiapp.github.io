@@ -35,24 +35,77 @@
           <li>English</li>
         </ul>
       </nav>
-      <h1>Murasaki FAQ</h1>
+
+      <hgroup>
+        <h1>Murasaki</h1>
+        <h2>FAQ of Murasaki</h2>
+      </hgroup>
     </header>
-    <h2>Cannot open sidebar</h2>
-    <p>If you cannot open sidebar by clicking &quot;Show Sidebar&quot; in &quot;View&quot; on menubar or clicking &quot;Sidebar&quot; button on toolbar, try to remove <code>~/Library/Preferences/jp.genji.Murasaki.plist</code> and relaunch Murasaki.</p>
-    <ol>
-      <li>
-        Select &quot;Go to Folder...&quot; in &quot;Go&quot; on menubar of Finder<br />
-        <img src="img/remove_plist01_en.png" />
-      </li>
-      <li>
-        &quot;Go to the folder&quot; dialog appears. Type <code>~/Library/Preferences</code> in text field and click &quot;Go&quot; button<br />
-        <img src="img/remove_plist02_en.png" />
-      </li>
-      <li>
-        Remove <code>jp.genji.Murasaki.plist</code> in that folder<br />
-        <img src="img/remove_plist03_en.png" />
-      </li>
-      <li>Relaunch Murasaki</li>
-    </ol>
+
+    <ul>
+      <li><a href="#applying_user_style">Applying user style</a></li>
+      <li><a href="#cannot_open_sidebar">Cannot open sidebar</a></li>
+    </ul>
+
+    <section id="applying_user_style">
+      <h1>Applying user style</h1>
+      <p>Murasaki has two user style feature as follows.</p>
+
+      <ul>
+        <li>Default user style</li>
+        <li>Adhoc user style</li>
+      </ul>
+
+      <h2>Default user style</h2>
+      <p>Default user style is set from Preferences window.</p>
+
+      <ol>
+        <li>Choose &quot;Preferences...&quot; from Application menu</li>
+        <li>Click &quot;Advanced&quot; tool bar button on Preferences window to open Advanced pane</li>
+        <li>Check &quot;Enable Default user style sheet&quot; checkbox</li>
+        <li>Click &quot;Select...&quot; button to select CSS file you want to apply</li>
+      </ol>
+
+      <p>Default user style is applied automatically whenever you open EPUBs.</p>
+
+      <h2>Adhoc user style</h2>
+      <p>Adhoc user style is set from &quot;View&quot; menu.</p>
+
+      <ol>
+        <li>Choose &quot;Open Style Sheet Folder&quot; from &quot;User Style Sheet&quot; from &quot;View&quot; menu</li>
+        <li>Locate CSS file to the folder</li>
+        <li>CSS file appears in &quot;User Style Sheet&quot; menu, then choose CSS file you want to apply</li>
+      </ol>
+
+      <p>Adhoc user style is not applied automatically when you open EPUBs. You must choose CSS file menu from &quot;View&quot; -&gt; &quot;User Style Sheet&quot;, manually.</p>
+
+      <h2>Note about User style</h2>
+      <p>User style may be overridden by the styles of EPUBs. Use <code>!important</code> declaration to not be overridden.</p>
+
+      <pre><code>body { background-color: lightyellow <strong>!important</strong>; }
+p { font-family: serif <strong>!important</strong>; font-size: 110% <strong>!important</strong>; }
+img { width: 100% <strong>!important</strong>; }</code></pre>
+
+    </section>
+
+    <section id="cannot_open_sidebar">
+      <h1>Cannot open sidebar</h1>
+      <p>If you cannot open sidebar by clicking &quot;Show Sidebar&quot; in &quot;View&quot; on menubar or clicking &quot;Sidebar&quot; button on toolbar, try to remove <code>~/Library/Preferences/jp.genji.Murasaki.plist</code> and relaunch Murasaki.</p>
+      <ol>
+        <li>
+          Select &quot;Go to Folder...&quot; in &quot;Go&quot; on menubar of Finder<br />
+          <img src="img/remove_plist01_en.png" />
+        </li>
+        <li>
+          &quot;Go to the folder&quot; dialog appears. Type <code>~/Library/Preferences</code> in text field and click &quot;Go&quot; button<br />
+          <img src="img/remove_plist02_en.png" />
+        </li>
+        <li>
+          Remove <code>jp.genji.Murasaki.plist</code> in that folder<br />
+          <img src="img/remove_plist03_en.png" />
+        </li>
+        <li>Relaunch Murasaki</li>
+      </ol>
+    </section>
   </body>
 </html>
