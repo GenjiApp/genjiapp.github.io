@@ -135,3 +135,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+kbd {
+    border: 1px solid gray;
+    padding: 2px;
+    background-color: #eee;
+    -webkit-border-radius: 3px;
+}

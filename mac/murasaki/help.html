@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../init.css" />
+    <link rel="stylesheet" href="../../common.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Murasaki Help</title>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-767076-9']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Genji App</a></li>
+          <li><a href="./index.html">Murasaki</a></li>
+          <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
+        </ul>
+
+        <ul>
+          <li>日本語</li>
+          <li><a href="./help_en.html">English</a></li>
+        </ul>
+      </nav>
+
+      <hgroup>
+        <h1>Murasaki</h1>
+        <h2>Murasaki Help</h2>
+      </hgroup>
+    </header>
+
+    <nav id="helpNavi">
+      <ul>
+        <li><a href="#basic_usage">基本的な操作方法</a>
+          <ul>
+            <li><a href="#opening_epub">EPUB を開く</a></li>
+            <li><a href="#moving_page">ページを移動する</a></li>
+            <li><a href="#changing_text_size">文字を拡大・縮小する</a></li>
+            <li><a href="#bookmarking_page">ページをブックマークする</a></li>
+            <li><a href="#searching">検索する</a></li>
+            <li><a href="#sidebar">サイドバー</a></li>
+            <li><a href="#opening_in_subwindow">ページをサブウィンドウで開く</a></li>
+            <li><a href="#opening_in_popover">リンク先のページを Popover で開く</a></li>
+          </ul>
+        </li>
+        <li><a href="#applying_user_style">ユーザスタイルの適用</a></li>
+        <li><a href="#cannot_open_sidebar">サイドバーが表示できない場合の対処法</a></li>
+      </ul>
+    </nav>
+
+    <section id="basic_usage">
+      <h1>基本的な操作方法</h1>
+      <h2 id="opening_epub">EPUB を開く</h2>
+      <ol>
+        <li>Murasaki を起動してください</li>
+        <li>メニューバーから「ファイル」→「開く...」を選択する、もしくは <kbd>Command</kbd> + <kbd>O</kbd> のキィボードショートカットを押してください</li>
+        <li>「開く」ダイアログから目的の EPUB を選択してください</li>
+      </ol>
+      <p>EPUB を開くアプリケーションとして Murasaki が設定されている場合は、Finder から EPUB をダブルクリックすることで開くことができます。</p>
+
+      <h2 id="moving_page">ページを移動する</h2>
+      <h3>ページの読み順に移動する</h3>
+      <p>EPUB には各 HTML ページに読み順が設定されています。その読み順にページを移動するには、</p>
+      <ul>
+        <li>メニューバーの「移動」から「前へ」「次へ」を選択してください</li>
+        <li>ツールバーの「前へ／次へ」ボタンをクリックしてください</li>
+        <li>キィボードショートカット <kbd>←</kbd>、<kbd>→</kbd> （カーソルキー左右）を押してください</li>
+      </ul>
+
+      <h3>ページ履歴を移動する</h3>
+      <p>ふつうのウェブブラウザの「戻る」「進む」と同様に、ひとつ前に表示していたページヘ戻ったり、戻った先から進んだりするには、</p>
+      <ul>
+        <li>メニューバーの「移動」から「戻る」「進む」を選択してください</li>
+        <li>ツールバーの「戻る／進む」ボタンをクリックしてください</li>
+        <li>キィボードショートカット <kbd>Command</kbd> + <kbd>[</kbd>、<kbd>Command</kbd> + <kbd>]</kbd> を押してください</li>
+      </ul>
+
+      <h2 id="changing_text_size">文字を拡大・縮小する</h2>
+      <p>文字を拡大・縮小するには、</p>
+      <ul>
+        <li>メニューバーの「表示」から「拡大」「縮小」を選択してください</li>
+        <li>ツールバーの「縮小／拡大」ボタンをクリックしてください</li>
+        <li>キィボードショートカット <kbd>Command</kbd> + <kbd>+</kbd>、<kbd>Command</kbd> + <kbd>-</kbd> を押してください</li>
+      </ul>
+      <p>元のサイズに戻すには、</p>
+      <ul>
+        <li>メニューバーの「表示」から「実際のサイズ」を選択してください</li>
+        <li>キィボードショートカット <kbd>Command</kbd> + <kbd>0</kbd> を押してください</li>
+      </ul>
+
+      <h2 id="bookmarking_page">ページをブックマークする</h2>
+      <p>EPUB を構成する HTML ページ単位でブックマークを行うことできます。</p>
+      <h3>ページをブックマークする</h3>
+      <p>ブックマークしたいページを表示してから、</p>
+      <ul>
+        <li>メニューバーの「ブックマーク」から「ブックマークを追加」を選択してください</li>
+        <li>ツールバーの「ブックマークを追加」をクリックしてください</li>
+        <li>キィボードショートカット <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>D</kbd> を押してください</li>
+      </ul>
+
+      <h3>ブックマークしたページを見る</h3>
+      <ul>
+        <li>メニューバーの「ブックマーク」から目的のページを選択してください</li>
+        <li>サイドバーの「ブックマーク」から目的のページを選択してください</li>
+      </ul>
+
+      <h3>ページからブックマークを削除する</h3>
+      <p>ブックマークを削除したいページを表示してから、</p>
+      <ul>
+        <li>メニューバーの「ブックマーク」から「ブックマークを削除」を選択してください</li>
+        <li>ツールバーの「ブックマークを削除」をクリックしてください</li>
+        <li>キィボードショートカット <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>D</kbd> を押してください</li>
+      </ul>
+
+      <h2 id="searching">検索する</h2>
+      <p>EPUB に含まれる文字列を検索するには、</p>
+      <ul>
+        <li>メニューバーの「編集」から「検索」→「検索...」を選択してください</li>
+        <li>キィボードショートカット <kbd>Command</kbd> + <kbd>F</kbd> を押してください</li>
+      </ul>
+      <p>ツールバーの下に検索バーが表示されるので、検索フィールドに検索したい文字列を入力し <kbd>Enter</kbd> を押してください。検索語句が含まれるページの一覧がサイドバーに表示されます。</p>
+
+      <h2 id="sidebar">サイドバー</h2>
+      <p>サイドバーには 4 つのペインがあり、それぞれ用途の異なるページの一覧を表示します。一覧の項目をクリックすることで、そのページを表示することができます。</p>
+      <dl>
+        <dt>ナビゲーション</dt>
+        <dd>EPUB のナビゲーション構造を表示します。ナビゲーション構造は階層を含むことがあります。</dd>
+        <dt>ページリスト</dt>
+        <dd>EPUB のページを読み順で表示します。ページリストは階層を含みません。</dd>
+        <dt>ブックマーク</dt>
+        <dd>ブックマークしたページの一覧を表示します。ブックマークしたページがない場合は何も表示しません。</dd>
+        <dt>検索結果</dt>
+        <dd>検索結果の一覧を表示します。検索中にのみアクティヴになります。検索結果がない場合は何も表示しません。</dd>
+      </dl>
+
+      <h2 id="opening_in_subwindow">ページをサブウィンドウで開く</h2>
+      <p>現在表示しているページやリンク先のページをサブウィンドウで開くことができます。現在表示しているページをサブウィンドウで開くには、</p>
+      <ul>
+        <li>メニューバーの「ファイル」から「このページを新規サブウィンドウで開く」を選択してください</li>
+        <li>ページの何もない場所を右クリック（<kbd>Control</kbd> + クリック）してコンテキストメニューから「このページを新規サブウィンドウで開く」を選択してください</li>
+      </ul>
+      <p>リンク先をサブウィンドウで開くには、</p>
+      <ul>
+        <li>リンク要素の上で右クリック（<kbd>Control</kbd> + クリック）してコンテキストメニューから「このページを新規サブウィンドウで開く」を選択してください</li>
+        <li>リンク要素を <kbd>Command</kbd> + クリックしてください</li>
+      </ul>
+      <p>ページをサブウィンドウで開くことで、異なったページを一度に表示しておくことができます。</p>
+
+      <h2 id="opening_in_popover">リンク先のページを Popover で開く</h2>
+      <p>リンク先のページを Popover で開くことができます。リンク先のページを Popover で開くには、</p>
+      <ul>
+        <li>リンク要素の上で右クリック（<kbd>Control</kbd> + クリック）してコンテキストメニューから「リンクを Popover で開く」を選択してください</li>
+        <li>リンク要素を <kbd>Option</kbd> + クリックしてください</li>
+      </ul>
+      <p>ページを Popover で開くことで、リンク先のページに何があるのかを素早く確認することができます。</p>
+    </section>
+
+    <section id="applying_user_style">
+      <h1>ユーザスタイルの適用</h1>
+      <p>Murasaki のユーザスタイル機能には以下のふたつがあります。</p>
+
+      <ul>
+        <li>デフォルトユーザスタイル</li>
+        <li>アドホックユーザスタイル</li>
+      </ul>
+
+      <p><a href="./downloads/userstyle.css">ユーザスタイルシートのサンプルをダウンロード</a>して、以下の手順を行なってください。</p>
+
+      <h2>デフォルトユーザスタイル</h2>
+      <p>デフォルトユーザスタイルの適用は環境設定から行います。</p>
+
+      <ol>
+        <li>メニューバーの「Murasaki」から「環境設定...」を選択して環境設定ウィンドウを開いてください</li>
+        <li>環境設定ウィンドウのツールバーから「詳細」をクリックして詳細ペインを開いてください</li>
+        <li>「デフォルトユーザスタイルシートを有効にする」チェックボタンにチェックを入れてください</li>
+        <li>「選択」ボタンを押して適用したい CSS ファイルを選択して下さい</li>
+      </ol>
+
+      <p>デフォルトユーザスタイルを設定すると、EPUB を開くたびに自動的にスタイルが適用されます。</p>
+
+      <h2>アドホックユーザスタイル</h2>
+      <p>アドホックユーザスタイルの適用は「表示」メニューから行います。</p>
+
+      <ol>
+        <li>メニューバーの「表示」メニューから「ユーザスタイルシート」の「スタイルシートフォルダを開く」を選択してください</li>
+        <li>Finder にフォルダが開かれるので、そこに CSS ファイルを配置してください</li>
+        <li>メニューバーの「表示」メニューの「ユーザスタイルシート」にフォルダに配置した CSS が現れるので、適用したいスタイルを選択してください</li>
+      </ol>
+
+      <p>アドホックユーザスタイルは EPUB を開くたびに手順 3 でスタイルを選択し直す必要があります。</p>
+
+      <h2>ユーザスタイルシート適用における注意</h2>
+      <p>ユーザスタイルシートで設定するセレクタへのスタイルがすでに EPUB の CSS で設定されている場合、ユーザスタイルが上書きされてしまうことがあります。ユーザスタイルを確実に適用させるためには、以下のように <code>!important</code> 宣言を用いてください。</p>
+
+      <pre><code>body { background-color: lightyellow <strong>!important</strong>; }
+p { font-family: serif <strong>!important</strong>; font-size: 110% <strong>!important</strong>; }
+img { width: 100% <strong>!important</strong>; }</code></pre>
+
+    </section>
+
+    <section id="cannot_open_sidebar">
+      <h1>サイドバーが表示できない場合の対処法</h1>
+      <p>メニューバーの「表示」→「サイドバーを表示」やツールバーの「サイドバー」をクリックしてもサイドバーが表示できない不具合が発生する場合があります。</p>
+      <p>その場合は <code>~/Library/Preferences/jp.genji.Murasaki.plist</code> を削除して Murasaki を再起動してみてください。</p>
+      <ol>
+        <li>
+          Finder のメニューバーから「移動」→「フォルダへ移動...」を選択<br />
+          <img src="img/remove_plist01.png" />
+        </li>
+        <li>
+          「フォルダの場所を入力」というダイアログが表示されるので <code>~/Library/Preferences</code> を入力して「移動」ボタンをクリック<br />
+          <img src="img/remove_plist02.png" />
+        </li>
+        <li>
+          移動先のフォルダから <code>jp.genji.Murasaki.plist</code> を探して削除<br />
+          <img src="img/remove_plist03.png" />
+        </li>
+        <li>Murasaki を起動</li>
+      </ol>
+    </section>
+
+    <footer>
+      <address>
+        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
+      </address>
+    </footer>
+
+  </body>
+</html>

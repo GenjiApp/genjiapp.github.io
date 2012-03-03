@@ -98,3 +98,8 @@ code {
 #description dl dt:after {
     content: ":";
 }
+
+
+#helpNavi {
+    margin-left: 40px;
+}
