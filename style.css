@@ -5,10 +5,9 @@ body {
 
 body > header {
     background-image: url(img/noise.png);
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 300px;
     width: 100%;
+    height: 300px;
+    border-bottom: 1px solid white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -29,19 +28,22 @@ body > header {
     -o-box-pack: center;
     -ms-box-pack: center;
     box-pack: center;
-    -webkit-box-shadow: inset 0 -6px 5px -5px gray;
-    -moz-box-shadow: inset 0 -6px 5px -5px gray;
-    -o-box-shadow: inset 0 -6px 5px -5px gray;
-    -ms-box-shadow: inset 0 -6px 5px -5px gray;
-    box-shadow: inset 0 -6px 5px -5px gray;
+    -webkit-box-shadow: 0 3px 5px -3px gray;
+    -moz-box-shadow: 0 3px 5px -3px gray;
+    -o-box-shadow: 0 3px 5px -3px gray;
+    -ms-box-shadow: 0 3px 5px -3px gray;
+    box-shadow: 0 3px 10px -3px gray;
 }
 
 body > header > h1 {
     font-size: 800%;
+    width: 850px;
+    margin: 0 auto;
+    text-align: center;
     text-shadow: -1px -1px 0 black;
 }
 
 body > article {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 850px;
+    margin: 2em auto 0 auto;
 }
