@@ -1,56 +1,291 @@
+.badge a {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 120%;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #222;
+    margin: 5px;
+    padding: 6px 20px;
+    border: 1px solid white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 1px gray;
+    -moz-box-shadow: 0 0 1px gray;
+    -o-box-shadow: 0 0 1px gray;
+    -ms-box-shadow: 0 0 1px gray;
+    box-shadow: 0 0 1px gray;
+}
+
+.badge a:hover {
+    text-decoration: none;
+}
+
+.badge a span {
+    display: block;
+    font-size: 75%;
+}
+
+a {
+    color: #08c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: serif;
-    background-image: url(img/kanji_logo.png), url(img/texture.png);
+    background-image: url(img/texture.png);
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+#globalNavi {
+    margin: 0;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-image: url(../../img/noise.png);
+    border-bottom: 1px solid white;
+    -webkit-box-shadow: 0 -3px 15px -12px black inset;
+    -moz-box-shadow: 0 -3px 15px -12px black inset;
+    -o-box-shadow: 0 -3px 15px -12px black inset;
+    -ms-box-shadow: 0 -3px 15px -12px black inset;
+    box-shadow: 0 -3px 15px -12px black inset;
+}
+
+#globalNavi li {
+    display: inline-block;
+    margin: 0;
+}
+
+#globalNavi li a {
+    display: block;
+    padding: 10px;
+}
+
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+    width: 850px;
+    height: 256px;
+    margin: 0 auto;
+    background-image: url(img/icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-shadow: 2px 2px 0 white;
+}
+
+header hgroup {
+    padding-left: 260px;
+    line-height: 1;
+}
+
+header hgroup h1 {
+    font-weight: normal;
+    font-size: 600%;
+}
+
+header hgroup h2 {
+    font-weight: normal;
+    font-size: 120%;
+    font-style: italic;
+    margin-top: -0.5em;
+}
+
+header #leadSentence {
+    font-size: 95%;
+    margin-top: 1em;
+    padding-left: 260px;
+}
+
+#slideShow {
+    background-image: url(img/kanji_logo.png), url(../../img/noise.png);
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
-    background-attachment: fixed;
-    text-shadow: 1px 1px 0 white;
+    padding: 25px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    -webkit-box-shadow: 0 -3px 15px -12px black inset,
+                        0 4px 15px -12px black inset;
+    -moz-box-shadow: 0 -3px 15px -12px black inset,
+                     0 4px 15px -12px black inset;
+    -o-box-shadow: 0 -3px 15px -12px black inset,
+                   0 4px 15px -12px black inset;
+    -ms-box-shadow: 0 -3px 15px -12px black inset,
+                    0 4px 15px -12px black inset;
+    box-shadow: 0 -3px 15px -12px black inset,
+                0 4px 15px -12px black inset;
 }
 
-header > hgroup {
-    background-image: url(img/icon.png), url(../../img/noise.png);
-    background-repeat: no-repeat, repeat;
-    background-position: left center, left top;
+#slideShow ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
 }
 
-#inPageNavigation {
+#slideShow ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#slideShow ol {
+    list-style-type: none;
     text-align: center;
 }
 
-#inPageNavigation ul {
-    display: inline;
-    margin: 0;
+#slideShow ol li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #999;
+    border: 1px solid white;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
 }
 
-#inPageNavigation ul li {
-    font-size: 90%;
-    display: inline;
-    margin: 0;
-    padding: 0 10px;
-    border-left: 1px solid silver;
+#slideShow ol li:hover,
+#slideShow ol li.active {
+    background-color: #555;
 }
 
-#inPageNavigation ul li:first-child {
-    border-left: none;
-}
-
-figure {
-    margin: 10px auto;
-}
-
-figure img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-
-figcaption {
+#downloadList {
     text-align: center;
-    font-size: 90%;
+    margin: 1em 0 2em 0;
+    padding: 0;
 }
 
-pre {
+#downloadList li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#usefulLinks {
+    list-style-type: none;
+    width: 850px;
+    font-size: 90%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+#usefulLinks li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+article {
+    width: 850px;
+    margin: 1em auto;
+}
+
+article h1 {
+    font-size: 150%;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article div.featuresRow {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+}
+
+article div.featuresRow section {
+    font-size: 90%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 422.5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+article div.featuresRow section h2 {
+    margin-bottom: 3px;
+    border-bottom: 1px solid silver;
+    height: 1.5em;
+}
+
+article div.featuresRow section p {
+    padding: 0 0.5em;
+}
+
+footer {
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+
+/* for help page */
+#helpNavi {
+    width: 850px;
+    margin: 1em auto;
+}
+
+#help section {
+    margin: 3em 0;
+}
+
+#help section h2 {
+    font-size: 120%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+#help section section {
+    margin: 1em 2em;
+}
+
+#help section h3 {
+    font-size: 110%;
+    margin-top: 1em;
+}
+
+#help kbd {
+    border: 1px solid gray;
+    padding: 2px;
+    background-color: #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#help pre {
     border: 1px solid gray;
     padding: 10px;
     background-color: #EEE;
@@ -63,13 +298,13 @@ pre {
     border-radius: 5px;
 }
 
-pre code {
+#help pre code {
     border: none;
     padding: 0;
     background-color: transparent;
 }
 
-code {
+#help code {
     font-family: monospace;
     border: 1px solid gray;
     padding: 3px;
@@ -83,23 +318,24 @@ code {
     border-radius: 2px;
 }
 
-#description dl {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 95%;
+
+/* for history page */
+#history {
+    width: 850px;
+    margin: 1em auto;
 }
 
-#description dl dt,
-#description dl dd {
+#history dl {
     margin: 0;
-    display: inline;
 }
 
-#description dl dt:after {
-    content: ":";
+#history dl dt {
+    font-weight: bold;
+    margin-left: 0;
 }
 
-
-#helpNavi {
-    margin-left: 40px;
+#history dl dd {
+    display: list-item;
+    margin-left: 2em;
+    font-size: 90%;
 }

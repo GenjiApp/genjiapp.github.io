@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../init.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Murasaki ヴァージョン履歴</title>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-767076-9']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+
+  <body>
+
+    <ul id="globalNavi">
+      <li><a href="../../index.html">Genji App</a></li>
+      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
+    </ul>
+
+    <article id="history">
+      <ul id="usefulLinks">
+        <li><a href="index.html">←Murasaki ホームへ戻る</a></li>
+        <li><a href="help.html">ユーザマニュアル</a></li>
+      </ul>
+
+      <h1>ヴァージョン履歴</h1>
+      <dl>
+        <dt>2012年6月1日：ver. 2.0</dt>
+        <dd>ユーザインターフェイスの再設計</dd>
+        <dd>フル機能のマルチウィンドウ機能の追加</dd>
+        <dd>&quot;ページへ移動...&quot; メニューの追加</dd>
+        <dd>ブックマークの編集機能を追加</dd>
+        <dd>デフォルトユーザスタイルシート機能で用いる CSS ファイルを同梱</dd>
+
+        <dt>2012年3月17日：ver. 1.6.3</dt>
+        <dd>サイドバーからページを読み込む際の問題を修正</dd>
+
+        <dt>2012年3月14日：ver. 1.6.2</dt>
+        <dd>ページ読み込みに関する問題を修正</dd>
+        <dd>サイドバーの表示切り替えメニューを追加</dd>
+        <dd>画像をサブウィンドウで開く機能を追加</dd>
+        <dd>ヘルプメニューからウェブのヘルプページを開けるようにした</dd>
+
+        <dt>2012年1月31日：ver. 1.6.1</dt>
+        <dd>ページ読み込みに関する問題を修正</dd>
+        <dd>Navigation Document の読み込みに関する問題を修正（Snow Leopard）</dd>
+        <dd>ファイル読み込みに関する問題を修正（Spotlight/Quick Look プラグイン）</dd>
+
+        <dt>2011年12月22日：ver. 1.6</dt>
+        <dd>&quot;サブウィンドウで開く&quot;機能の実装
+          <ul>
+            <li>ウィンドウメニューもしくはコンテキストメニューの項目を選択することで、現在のページをサブウィンドウに開くことができます</li>
+            <li>リンク要素上で <kbd>Command</kbd> + クリックかコンテキストメニューの項目を選択することで、リンクをサブウィンドウに開くことができます</li>
+          </ul>
+        </dd>
+        <dd>Popover 機能の実装（OS X Lion のみ）
+          <ul>
+            <li>リンク要素上で <kbd>Option</kbd> + クリックかコンテキストメニューの項目を選択することで、リンクを Popover に表示することができます</li>
+            <li>Popover は縁をドラッグすることで、サブウィンドウとして切り離すことができます</li>
+          </ul>
+        </dd>
+        <dd>いくつかの環境設定項目を追加</dd>
+
+        <dt>2011年12月2日：ver. 1.5</dt>
+        <dd>EPUB3 の "page-progression-direction" 属性に対応</dd>
+        <dd>EPUB3 の Navigation Document に対応</dd>
+        <dd>EPUB のカバー画像をインスペクタに表示する機能を追加</dd>
+        <dd>環境設定ウィンドウを追加
+          <ul>
+            <li>デフォルトのフォントとサイズを設定可能（この設定は CSS によって上書きされます）</li>
+            <li>JavaScript を有効にするかどうかを設定可能</li>
+            <li>デフォルトで適用するユーザスタイルシートを設定可能</li>
+            <li>フルスクリーン時のサイズを設定可能（Lion のみ）</li>
+          </ul>
+        </dd>
+        <dd>EPUB のカバー画像をサムネイルアイコンとして表示する機能を Quick Look プラグインに追加</dd>
+
+        <dt>2011年10月21日：ver. 1.4.2</dt>
+        <dd>アプリケーションアイコンを修正</dd>
+        <dd>いくつかのバグを修正</dd>
+
+        <dt>2011年8月13日：ver. 1.4.1</dt>
+        <dd>OS X Lion にてウィンドウタイトルが乱れる問題を修正</dd>
+        <dd>ncx ファイル読み込みに関する問題を修正</dd>
+        <dd>文字エンコーディングに関する問題を修正</dd>
+
+        <dt>2011年7月29日：ver. 1.4</dt>
+        <dd>OS X Lion に対応</dd>
+        <dd>フルスクリーンに対応（OS X Lion のみ）</dd>
+        <dd>「最初/最後のページへ移動」を実装</dd>
+        <dd>EPUB 用 Spotlight プラグインを同梱</dd>
+        <dd>EPUB 用 Quick Look プラグインを同梱</dd>
+
+        <dt>2011年6月23日：ver. 1.3</dt>
+        <dd>ユーザスタイルシート機能の追加</dd>
+        <dd>検索インターフェイスの変更</dd>
+        <dd>ユーザインターフェイスに関する細かい問題を修正</dd>
+
+        <dt>2011年5月14日：ver. 1.2</dt>
+        <dd>ブックマーク機能の追加</dd>
+        <dd>キャッシュを利用した EPUB オープン速度の向上</dd>
+        <dd>細かいバグの修正</dd>
+
+        <dt>2011年4月21日：ver. 1.1.1</dt>
+        <dd>印刷(PDF への変換)機能の追加(HTMLファイル単位)</dd>
+        <dd>ツールバー項目のアイコン変更</dd>
+
+        <dt>2011年4月3日：ver. 1.1</dt>
+        <dd>検索機能の強化(&quot;次を検索&quot;、&quot;前を検索&quot;、&quot;選択部分を検索に使用&quot;の実装)</dd>
+        <dd>サイドバー目次が HTML 単位の時のタイトル文字列に、NCX ファイルの navLabel 文字列を使うように変更</dd>
+        <dd>HTML ファイルが特定の拡張子以外のときに開けなかった不具合を解消</dd>
+
+        <dt>2011年3月1日：ver. 1.0.2</dt>
+        <dd>ステータス領域の表示が乱れる問題を改善</dd>
+
+        <dt>2011年2月28日：ver. 1.0.1</dt>
+        <dd>日本語ローカライズ文字列の変換ミスを修正</dd>
+        <dd>バックグラウンドスレッドを用いた EPUB の同時読み込みに対応</dd>
+        <dd>ステータスバー領域を削除し、マウスカーソルがリンク文字列に乗っているときのみステータス領域が表示されるように変更</dd>
+
+        <dt>2011年2月21日：ver. 1.0</dt>
+        <dd>初期ヴァージョン</dd>
+      </dl>
+    </article>
+
+    <footer>
+      <p>Genji (<a href="http://twitter.com/genji_tw">@genji_tw</a>)</p>
+    </footer>
+
+  </body>
+</html>
