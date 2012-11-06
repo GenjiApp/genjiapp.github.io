@@ -53,13 +53,13 @@ body {
     list-style-type: none;
     font-family: sans-serif;
     font-weight: bold;
-    background-image: url(../../img/noise.png);
-    border-bottom: 1px solid white;
-    -webkit-box-shadow: 0 -3px 15px -12px black inset;
-    -moz-box-shadow: 0 -3px 15px -12px black inset;
-    -o-box-shadow: 0 -3px 15px -12px black inset;
-    -ms-box-shadow: 0 -3px 15px -12px black inset;
-    box-shadow: 0 -3px 15px -12px black inset;
+    /* background-image: url(../../img/noise.png); */
+    /* border-bottom: 1px solid white; */
+    /* -webkit-box-shadow: 0 -3px 15px -12px black inset; */
+    /* -moz-box-shadow: 0 -3px 15px -12px black inset; */
+    /* -o-box-shadow: 0 -3px 15px -12px black inset; */
+    /* -ms-box-shadow: 0 -3px 15px -12px black inset; */
+    /* box-shadow: 0 -3px 15px -12px black inset; */
 }
 
 #globalNavi li {
