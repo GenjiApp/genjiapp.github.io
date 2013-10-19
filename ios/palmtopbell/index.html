@@ -4,7 +4,6 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../init.css" />
-    <link rel="stylesheet" href="../../common.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Palmtop Bell</title>
     <script type="text/javascript">
@@ -24,40 +23,36 @@
 
   <body>
 
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../../index.html">Genji App</a></li>
-          <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
-        </ul>
-      </nav>
+    <ul id="globalNavi">
+      <li><a href="../../index.html">Genji App</a></li>
+      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
+    </ul>
 
+    <header>
       <hgroup>
         <h1>Palmtop Bell</h1>
         <h2>Service Bell + Timer</h2>
       </hgroup>
+
+      <p id="leadSentence">iPhone / iPod touch 上で卓上ベルを再現するアプリです。ベルが鳴る時間を設定できるタイマ機能付き。</p>
     </header>
 
-    <section>
-      <h1>概要</h1>
-      <figure>
-        <img src="img/screenshot_main.png" />
-        <img src="img/screenshot_timer_table.png" />
-        <img src="img/screenshot_set_timer.png" />
-      </figure>
-      <p>iPhone / iPod touch 上で卓上ベルを再現するアプリです。ベルが鳴る時間を設定できるタイマ機能付き。iOS 4 以降をインストールした iPhone 3GS と iPhone 4 では、アプリケーション切り替え（Fast App Switching）とローカル通知（Local Notification）に対応しています。</p>
-    </section>
+    <figure>
+      <img src="img/screenshot_main.png" />
+      <img src="img/screenshot_preferences.png" />
+      <img src="img/screenshot_set_timer.png" />
+    </figure>
 
-    <section>
-      <h1>ダウンロード</h1>
-      <ul>
-        <li><a href="http://itunes.apple.com/jp/app/palmtop-bell/id380876750">Palmtop Bell</a> (App Store)</li>
-      </ul>
-    </section>
+    <ul id="downloadList">
+      <li class="badge"><a href="https://itunes.apple.com/jp/app/palmtop-bell-2/id724557784"><span>Available on the </span>App Store</a></li>
+    </ul>
 
-    <section id="history">
+    <article>
       <h1>ヴァージョン履歴</h1>
       <dl>
+        <dt>2013-10-19, ver. 2.0</dt>
+        <dd>iOS 7に最適化</dd>
+
         <dt>2010-09-30, ver. 1.2.2</dt>
         <dd>iPadで起動時にクラッシュするバグを修正</dd>
 
@@ -80,7 +75,7 @@
         <dt>2010-7-12, ver. 1.0</dt>
         <dd>初期ヴァージョン</dd>
       </dl>
-    </section>
+    </article>
 
     <footer>
       <address>
