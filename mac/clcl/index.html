@@ -1,115 +1,60 @@
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../init.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>CLCL — Universal Launcher for Mac OS X</title>
-    <script type="text/javascript">
+---
+layout: app_page
+title: CLCL
+subtitle: 修飾キィ連打によるアプリケーションラウンチャ
+description: CLCLはMac OS X用のラウンチャアプリケーションです。修飾キー押下により様々なアプリケーションを起動・アクティヴ化します。
+language: ja
+---
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-767076-9']);
-      _gaq.push(['_trackPageview']);
+<p>CLCLはMac OS X用のラウンチャアプリケーションです。</p>
+<p>修飾キー（Command/Option/Shift/Control/Fn）を素早くダブルプレス（トリプルプレス）することで、登録したアプリケーションを起動もしくはアクティヴ化します。また、登録したURLをディフォルトのウェブブラウザで開いたり、直前にアクティヴだったアプリケーションへ切り替えたりといった動作を行うこともできます。</p>
+<p>Lite版は登録できる修飾キーがCommandとOptionに限定されます。</p>
 
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+<figure>
+  <img src="img/clcl.png" alt="CLCL"/>
+</figure>
 
-    </script>
-  </head>
+<h2>ダウンロード</h2>
+<ul>
+  <li><a href="https://gumroad.com/l/auv">CLCL</a> (Available on Gumroad.com)</li>
+  <li><a href="http://itunes.apple.com/jp/app/clcl-lite/id495511246?mt=12">CLCL Lite</a></li>
+</ul>
 
-  <body>
+<p>Gumroad から購入するとダウンロード用 URL が発行されます。購入後に CLCL がアップデートした場合、同じ URL からアップデートヴァージョンがダウンロードできるようになります。</p>
+<p>アップデートはこのウェブページと<a href="http://twitter.com/genji_tw">開発者のTwitterアカウント</a>で告知されます。</p>
 
-    <ul id="globalNavi">
-      <li><a href="../../index.html">Genji App</a></li>
-      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
+<h2>使用方法</h2>
+<ol>
+  <li>CLCLを起動</li>
+  <li>メニューバーにCLCLのアイコンが現れるので、それをクリック</li>
+  <li>メニューから「環境設定...」を選択</li>
+  <li>「ホットキー」からアクションを登録したい修飾キーを選択</li>
+  <li>「アクション」から修飾キーに割り当てるアクションを選択</li>
+  <li>修飾キーをダブルプレス（トリプルプレス）してアクションを実行
+    <ul>
+      <li>アプリケーションを選択した場合、そのアプリケーションの実行、もしくはアクティヴ化</li>
+      <li>URL を設定した場合、ウェブブラウザでそのURLを開く</li>
+      <li>「直前のアプリケーションに戻る」を選択した場合、直前にアクティヴだったアプリケーションの起動、もしくは再アクティヴ化</li>
+      <li>「サイクルアクティベーション」を選択した場合、登録した複数のアプリケーションを、ホットキーを押すたびに順番に起動、もしくはアクティヴ化</li>
     </ul>
+  </li>
+</ol>
 
-    <header>
-      <div>
-      <hgroup>
-        <h1>CLCL</h1>
-        <h2>Universal Launcher for Mac OS X</h2>
-      </hgroup>
+<h2>ヴァージョン履歴</h2>
+<dl>
+  <dt>ver. 1.2, 2013年1月3日</dt>
+  <dd>メニューバーのアイコンを非表示にする設定項目を追加</dd>
 
-      <p id="leadSentence">CLCL は Mac OS X 用のラウンチャアプリケーションです。修飾キー押下により様々なアプリケーションを起動・アクティヴ化します。</p>
-      </div>
-    </header>
+  <dt>ver. 1.1.1, 2012年2月24日</dt>
+  <dd>アプリケーションがクラッシュしてしまう場合がある問題を修正</dd>
 
-    <article>
+  <dt>ver. 1.1, 2012年2月4日</dt>
+  <dd>新しい特殊アクション&quot;サイクルアクティベーション&quot;を追加</dd>
+  <dd>App Sandboxを有効化</dd>
 
-      <section>
-        <h1>概要</h1>
-        <p>CLCL は Mac OS X 用のラウンチャアプリケーションです。</p>
-        <p>修飾キー（Command/Option/Shift/Control/Fn）を素早くダブルプレス（トリプルプレス）することで、登録したアプリケーションを起動もしくはアクティヴ化します。また、登録した URL をディフォルトのウェブブラウザで開いたり、直前にアクティヴだったアプリケーションへ切り替えたりといった動作を行うこともできます。</p>
-        <p>Lite 版は登録できる修飾キーが Command と Option に限定されます。</p>
+  <dt>ver. 1.0.1, 2012年1月20日</dt>
+  <dd>Mac OS X 10.6で起動しない問題を修正</dd>
 
-        <figure>
-          <img src="img/clcl.png" />
-        </figure>
-      </section>
-
-      <section>
-        <h1>ダウンロード</h1>
-        <ul>
-          <li><a href="https://gumroad.com/l/auv">CLCL</a> (Available on Gumroad.com)</li>
-          <li><a href="http://itunes.apple.com/jp/app/clcl-lite/id495511246?mt=12">CLCL Lite</a></li>
-        </ul>
-
-        <p>Gumroad から購入するとダウンロード用 URL が発行されます。購入後に CLCL がアップデートした場合、同じ URL からアップデートヴァージョンがダウンロードできるようになります。</p>
-        <p>アップデートはこのウェブページと<a href="http://twitter.com/genji_tw">開発者の Twitter アカウント</a>で告知されます。</p>
-      </section>
-
-      <section>
-        <h1>使用方法</h1>
-        <ol>
-          <li>CLCL を起動</li>
-          <li>メニューバーに CLCL のアイコンが現れるので、それをクリック</li>
-          <li>メニューから「環境設定...」を選択</li>
-          <li>「ホットキー」からアクションを登録したい修飾キーを選択</li>
-          <li>「アクション」から修飾キーに割り当てるアクションを選択</li>
-          <li>修飾キーをダブルプレス（トリプルプレス）してアクションを実行
-            <ul>
-              <li>アプリケーションを選択した場合、そのアプリケーションの実行、もしくはアクティヴ化</li>
-              <li>URL を設定した場合、ウェブブラウザでその URL を開く</li>
-              <li>「直前のアプリケーションに戻る」を選択した場合、直前にアクティヴだったアプリケーションの起動、もしくは再アクティヴ化</li>
-              <li>「サイクルアクティベーション」を選択した場合、登録した複数のアプリケーションを、ホットキーを押すたびに順番に起動、もしくはアクティヴ化</li>
-            </ul>
-          </li>
-        </ol>
-      </section>
-
-      <section>
-        <h1>ヴァージョン履歴</h1>
-        <dl>
-
-          <dt>ver. 1.2, 2013年1月3日</dt>
-          <dd>メニューバーのアイコンを非表示にする設定項目を追加</dd>
-
-          <dt>ver. 1.1.1, 2012年2月24日</dt>
-          <dd>アプリケーションがクラッシュしてしまう場合がある問題を修正</dd>
-
-          <dt>ver. 1.1, 2012年2月4日</dt>
-          <dd>新しい特殊アクション &quot;サイクルアクティベーション&quot; を追加</dd>
-          <dd>App Sandbox を有効化</dd>
-
-          <dt>ver. 1.0.1, 2012年1月20日</dt>
-          <dd>Mac OS X 10.6 で起動しない問題を修正</dd>
-
-          <dt>ver. 1.0, 2012年1月18日</dt>
-          <dd>最初のヴァージョン</dd>
-        </dl>
-      </section>
-
-    </article>
-
-    <footer>
-      <address>
-        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
-      </address>
-    </footer>
-
-  </body>
-</html>
+  <dt>ver. 1.0, 2012年1月18日</dt>
+  <dd>最初のヴァージョン</dd>
+</dl>

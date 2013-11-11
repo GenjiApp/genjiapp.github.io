@@ -1,5 +1,8 @@
-header > hgroup {
-    background-image: url(img/icon.png), url(../../img/noise.png);
-    background-repeat: no-repeat, repeat;
-    background-position: left center, left top;
+header div {
+    background-image: url(img/icon.png);
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
 }

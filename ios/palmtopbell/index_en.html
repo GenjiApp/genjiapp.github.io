@@ -1,91 +1,45 @@
-<!doctype html>
-<html lang="ja">
+---
+layout: app_page
+title: Palmtop Bell
+subtitle: simulates a desktop bell with timer feature
+language: en
+description: This app simulate a desktop bell. You can set 3 timers.
+---
 
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../init.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Palmtop Bell</title>
-    <script type="text/javascript">
+<figure>
+  <img src="img/screenshot_main.png" alt="Main Screen"/>
+  <img src="img/screenshot_preferences.png" alt="Preferences Screen"/>
+  <img src="img/screenshot_set_timer.png" alt="Setting Timer Screen"/>
+</figure>
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-767076-9']);
-      _gaq.push(['_trackPageview']);
+<ul id="downloadList">
+  <li class="badge"><a href="https://itunes.apple.com/app/palmtop-bell-2/id724557784"><span>Available on the </span>App Store</a></li>
+</ul>
 
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+<h2>Version History</h2>
+<dl>
+  <dt>2013-10-19, ver. 2.0</dt>
+  <dd>Optimized for iOS 7</dd>
 
-    </script>
-  </head>
+  <dt>2010-09-30, ver. 1.2.2</dt>
+  <dd>Fixed iPad crush bug</dd>
 
-  <body>
+  <dt>2010-09-21, ver. 1.2.1</dt>
+  <dd>New Bell Sound</dd>
 
-    <ul id="globalNavi">
-      <li><a href="../../index_en.html">Genji App</a></li>
-      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
-    </ul>
+  <dt>2010-09-08, ver. 1.2</dt>
+  <dd>Added support for Task Switching</dd>
+  <dd>Added support for Local Notification</dd>
 
-    <header>
-      <hgroup>
-        <h1>Palmtop Bell</h1>
-        <h2>Service Bell + Timer</h2>
-      </hgroup>
+  <dt>2010-08-04, ver. 1.1</dt>
+  <dd>Changed the maximum number timers to 3</dd>
+  <dd>New Bell images</dd>
+  <dd>New Application icons (Support Retina display and iPad)</dd>
 
-      <p id="leadSentence">This app simulates a desktop bell. You can set 3 timers.</p>
-    </header>
+  <dt>2010-07-27, ver. 1.0.1</dt>
+  <dd>New Bell images</dd>
+  <dd>Changed the interval time to 5 seconds</dd>
 
-    <figure>
-      <img src="img/screenshot_main.png" />
-      <img src="img/screenshot_preferences.png" />
-      <img src="img/screenshot_set_timer.png" />
-    </figure>
-
-    <ul id="downloadList">
-      <li class="badge"><a href="https://itunes.apple.com/app/palmtop-bell-2/id724557784"><span>Available on the </span>App Store</a></li>
-    </ul>
-
-    <article>
-      <h1>Version History</h1>
-      <dl>
-        <dt>2013-11-08, ver. 2.0.1</dt>
-        <dd>Improved visual feedback for buttons</dd>
-
-        <dt>2013-10-19, ver. 2.0</dt>
-        <dd>Optimized for iOS 7</dd>
-
-        <dt>2010-09-30, ver. 1.2.2</dt>
-        <dd>Fixed iPad crush bug</dd>
-
-        <dt>2010-09-21, ver. 1.2.1</dt>
-        <dd>New Bell Sound</dd>
-
-        <dt>2010-09-08, ver. 1.2</dt>
-        <dd>Added support for Task Switching</dd>
-        <dd>Added support for Local Notification</dd>
-
-        <dt>2010-08-04, ver. 1.1</dt>
-        <dd>Changed the maximum number timers to 3</dd>
-        <dd>New Bell images</dd>
-        <dd>New Application icons (Support Retina display and iPad)</dd>
-
-        <dt>2010-07-27, ver. 1.0.1</dt>
-        <dd>New Bell images</dd>
-        <dd>Changed the interval time to 5 seconds</dd>
-
-        <dt>2010-7-12, ver. 1.0</dt>
-        <dd>First release</dd>
-      </dl>
-    </article>
-
-    <footer>
-      <address>
-        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
-      </address>
-    </footer>
-
-  </body>
-
-</html>
+  <dt>2010-7-12, ver. 1.0</dt>
+  <dd>First release</dd>
+</dl>

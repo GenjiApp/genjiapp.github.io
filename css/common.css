@@ -1,0 +1,117 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, address, code, del, ins, em,
+img, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+header, footer, hgroup, menu, nav, section, summary,
+time, mark {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    Background: transparent;
+}
+
+article, aside, details, figure, figcaption,
+header, hgroup, footer, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family: serif;
+}
+
+ul, ol, dl {
+    margin: 0.5em 1em;
+}
+
+ul li, ol li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+dl dt {
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+dl dt:first-child {
+    margin-top: 0;
+}
+
+dl dd {
+    margin-left: 2em;
+}
+
+p {
+    line-height: 1.8;
+}
+
+a {
+    color: #08C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#globalNavi {
+    margin: 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#globalNavi ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+#globalNavi ul li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+#globalNavi ul:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    font-size: 80%;
+}
+
+footer > div {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+}
+
+footer > div > div {
+    margin: 10px 30px;
+}
+
+footer div h2 {
+    margin: 0;
+}
+
+footer address {
+    padding: 20px 0;
+    text-align: center;
+    font-style: normal;
+}

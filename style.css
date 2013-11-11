@@ -3,6 +3,16 @@ body {
     color: #444;
 }
 
+#globalNavi ul:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body {
+    color: #444;
+}
+
 body > header {
     background-image: url(img/noise.png);
     width: 100%;
@@ -46,17 +56,4 @@ body > header > h1 {
 body > article {
     width: 850px;
     margin: 2em auto 0 auto;
-}
-
-#langSwitcher {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    list-style-type: none;
-    margin: 0;
-}
-
-#langSwitcher li {
-    display: inline-block;
-    margin: 0 0.5em;
 }

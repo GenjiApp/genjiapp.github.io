@@ -1,31 +1,21 @@
+---
+title: Murasaki — Version History
+language: en
+fileID: history
+---
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../init.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Murasaki Version History</title>
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-767076-9']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    <meta charset="utf-8"/>
+    <link href="/css/common.css" rel="stylesheet"/>
+    <link href="/css/app_page.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <title>{{ page.title }}</title>
   </head>
 
   <body>
 
-    <ul id="globalNavi">
-      <li><a href="../../index_en.html">Genji App</a></li>
-      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
-    </ul>
+    {% include global_navi.html %}
 
     <article id="history">
       <ul id="usefulLinks">
@@ -33,7 +23,7 @@
         <li><a href="help_en.html">User Manual</a></li>
       </ul>
 
-      <h1>Version history</h1>
+      <h1>Version History</h1>
       <dl>
         <dt>2013-6-26: ver. 2.2</dt>
         <dd>Added support for EPUB 3 Page List</dd>
@@ -157,9 +147,7 @@
       </dl>
     </article>
 
-    <footer>
-      <p>Genji (<a href="http://twitter.com/genji_tw">@genji_tw</a>)</p>
-    </footer>
+    {% include footer.html %}
 
   </body>
 </html>

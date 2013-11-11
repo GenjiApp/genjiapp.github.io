@@ -1,146 +1,130 @@
+---
+title: Murasaki
+subtitle: The Scroll-based EPUB Reader for OS X
+description: Murasakiはシンプルなユーザインターフェイスと豊富な機能を持った、OS X用のEPUB閲覧アプリケーションです（DRMで保護されたEPUBは開けません）。
+language: ja
+fileID: index
+---
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../init.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Murasaki — The Scroll-based EPUB Reader for Mac OS X</title>
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <meta charset="utf-8"/>
+    <link href="/css/common.css" rel="stylesheet"/>
+    <link href="/css/app_page.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/slideshow.js"></script>
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-767076-9']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    <title>{{ page.title }} — {{ page.subtitle }}</title>
   </head>
+
   <body>
 
-    <ul id="globalNavi">
-      <li><a href="../../index.html">Genji App</a></li>
-      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
-    </ul>
+    {% include global_navi.html %}
 
-    <header>
-      <hgroup>
-        <h1>Murasaki</h1>
-        <h2>The Scroll-based EPUB Reader for Mac OS X</h2>
-      </hgroup>
-
-      <p id="leadSentence">Murasaki はシンプルなユーザインターフェイスと豊富な機能を持った、Mac OS X 用の EPUB 閲覧アプリケーションです（DRM で保護された EPUB は開けません）</p>
-    </header>
+    {% include header.html %}
 
     <div id="slideShow">
       <ul>
-        <li><img src="img/main.png" /></li>
-        <li><img src="img/pagination.png"></li>
-        <li><img src="img/swipe.png"></li>
-        <li><img src="img/popover.png" /></li>
-        <li><img src="img/search.png" /></li>
-        <li><img src="img/dictionary.png" /></li>
-        <li><img src="img/vertical.png" /></li>
-        <li><img src="img/spotlight_quicklook.png" /></li>
+        <li><img src="img/main.png"/></li>
+        <li><img src="img/pagination.png"/></li>
+        <li><img src="img/swipe.png"/></li>
+        <li><img src="img/popover.png"/></li>
+        <li><img src="img/search.png"/></li>
+        <li><img src="img/dictionary.png"/></li>
+        <li><img src="img/vertical.png"/></li>
+        <li><img src="img/spotlight_quicklook.png"/></li>
       </ul>
     </div>
 
-    <ul id="downloadList">
-      <li class="badge"><a href="http://itunes.apple.com/jp/app/murasaki/id430300762?mt=12"><span>Available on the </span>Mac App Store</a></li>
-      <li class="badge"><a href="http://bit.ly/ujorwr"><span>Free Download</span> Old Version</a></li>
-    </ul>
-
     <article>
+
+      <ul id="downloadList">
+        <li class="badge"><a href="http://itunes.apple.com/jp/app/murasaki/id430300762?mt=12"><span>Available on the </span>Mac App Store</a></li>
+        <li class="badge"><a href="http://bit.ly/ujorwr"><span>Free Download</span> Old Version</a></li>
+      </ul>
 
       <ul id="usefulLinks">
         <li><a href="history.html">ヴァージョン履歴</a></li>
         <li><a href="help.html">ユーザマニュアル</a></li>
       </ul>
 
-      <h1>主要な機能</h1>
-
+      <h2>主要な機能</h2>
       <div class="featuresRow">
-        <section>
-          <h2>スクロール</h2>
+        <div>
+          <h3>スクロール</h3>
           <p>Murasaki はウェブブラウザのようにページをスクロールして EPUB のコンテンツを表示します。iBooks のようなページめくりをベースとしたリーダではありません。</p>
-        </section>
+        </div>
 
-        <section>
-          <h2>パージネーション（横組みのみ）</h2>
+        <div>
+          <h3>パージネーション（横組みのみ）</h3>
           <p>本文をカラム構成したパージネーション表示をサポートしています。自由なスクロールとカラムにスナップする動作を併せ持つハイブリッドな表示形式です（横組みのみ）。</p>
-        </section>
+        </div>
       </div>
 
       <div class="featuresRow">
-        <section>
-          <h2>スワイプナヴィゲーション</h2>
+        <div>
+          <h3>スワイプナヴィゲーション</h3>
           <p>二本指スワイプでページ移動することができます（Mac OS X 10.7〜）。スクロールとスワイプを用いてトラックパッドのみで読み進めることができます。</p>
-        </section>
+        </div>
 
-        <section>
-          <h2><a href="help.html#opening_in_new_window">マルチウィンドウ</a></h2>
+        <div>
+          <h3><a href="help.html#opening_in_new_window">マルチウィンドウ</a></h3>
           <p>複数の EPUB を同時に開けるというだけではなく、ひとつの EPUB の別々の箇所を複数のウィンドウで同時に閲覧することができます。</p>
-        </section>
+        </div>
       </div>
 
       <div class="featuresRow">
-        <section>
-          <h2><a href="help.html#opening_in_popover">Popover</a></h2>
+        <div>
+          <h3><a href="help.html#opening_in_popover">Popover</a></h3>
           <p>リンクを Popover で開くことで、関連する別のページや脚注等を素早くチェックすることができます（Mac OS X 10.7〜）。</p>
-        </section>
+        </div>
 
-        <section>
-          <h2><a href="help.html#opening_image_in_panel">画像パネル</a></h2>
+        <div>
+          <h3><a href="help.html#opening_image_in_panel">画像パネル</a></h3>
           <p>コンテンツ中の画像をパネルで開いておくことで、図版等を参照しながら文章を読み進めることができます。</p>
-        </section>
+        </div>
       </div>
 
       <div class="featuresRow">
-        <section>
-          <h2><a href="help.html#searching">検索</a></h2>
+        <div>
+          <h3><a href="help.html#searching">検索</a></h3>
           <p>EPUB に含まれるページを横断して語句の検索をすることができます。</p>
-        </section>
+        </div>
 
-        <section>
-          <h2><a href="help.html#bookmarking_page">ブックマーク</a></h2>
+        <div>
+          <h3><a href="help.html#bookmarking_page">ブックマーク</a></h3>
           <p>ページをブックマークしておいて、あとから参照することができます。</p>
-        </section>
+        </div>
 
       </div>
 
       <div class="featuresRow">
-        <section>
-          <h2>フルスクリーン</h2>
+        <div>
+          <h3>フルスクリーン</h3>
           <p>フルスクリーンモードにすることで、画面いっぱいにコンテンツを表示することができます（Mac OS X 10.7〜）。</p>
-        </section>
+        </div>
 
-        <section>
-          <h2><a href="help.html#applying_user_style">ユーザスタイルシート</a></h2>
+        <div>
+          <h3><a href="help.html#applying_user_style">ユーザスタイルシート</a></h3>
           <p>ユーザ定義のスタイルシートを適用することで、自分好みの体裁で閲覧することができます。</p>
-        </section>
+        </div>
       </div>
 
       <div class="featuresRow">
-        <section>
-          <h2>Popover 辞書</h2>
+        <div>
+          <h3>Popover 辞書</h3>
           <p>Mac OS X 標準の Popover 辞書を使用することで、単語の意味を素早く調べることができます。</p>
-        </section>
+        </div>
 
-        <section>
-          <h2>Spotlight / Quick Look</h2>
+        <div>
+          <h3>Spotlight / Quick Look</h3>
           <p>EPUB 用の Spotlight および Quick Look プラグインが同梱されています。Finder からの検索、プレヴューをかんたんに行うことができます。</p>
-        </section>
+        </div>
       </div>
+
     </article>
 
-    <footer>
-      <p>Genji (<a href="http://twitter.com/genji_tw">@genji_tw</a>)</p>
-    </footer>
+    {% include footer.html %}
 
   </body>
 </html>

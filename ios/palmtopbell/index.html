@@ -1,91 +1,45 @@
-<!doctype html>
-<html lang="ja">
+---
+layout: app_page
+title: Palmtop Bell
+subtitle: タイマ付き卓上ベルアプリケーション
+language: ja
+description: iPhone / iPod touch上で卓上ベルを再現するアプリケーションです。ベルが鳴る時間を設定できるタイマ機能付き。
+---
 
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../init.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Palmtop Bell</title>
-    <script type="text/javascript">
+<figure>
+  <img src="img/screenshot_main.png" alt="メイン画面"/>
+  <img src="img/screenshot_preferences.png" alt="設定画面"/>
+  <img src="img/screenshot_set_timer.png" alt="タイマ設定"/>
+</figure>
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-767076-9']);
-      _gaq.push(['_trackPageview']);
+<ul id="downloadList">
+  <li class="badge"><a href="https://itunes.apple.com/jp/app/palmtop-bell-2/id724557784"><span>Available on the </span>App Store</a></li>
+</ul>
 
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+<h2>ヴァージョン履歴</h2>
+<dl>
+  <dt>2013-10-19, ver. 2.0</dt>
+  <dd>iOS 7に最適化</dd>
 
-    </script>
-  </head>
+  <dt>2010-09-30, ver. 1.2.2</dt>
+  <dd>iPadで起動時にクラッシュするバグを修正</dd>
 
-  <body>
+  <dt>2010-09-21, ver. 1.2.1</dt>
+  <dd>ベル音の差し替え</dd>
 
-    <ul id="globalNavi">
-      <li><a href="../../index.html">Genji App</a></li>
-      <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
-    </ul>
+  <dt>2010-09-08, ver. 1.2</dt>
+  <dd>タスクスウィッチングに対応</dd>
+  <dd>ローカル通知に対応</dd>
 
-    <header>
-      <hgroup>
-        <h1>Palmtop Bell</h1>
-        <h2>Service Bell + Timer</h2>
-      </hgroup>
+  <dt>2010-08-04, ver. 1.1</dt>
+  <dd>最大3個のタイマを設定できるようになった</dd>
+  <dd>ベル画像の差し替え</dd>
+  <dd>新しいアプリケーションアイコン（Retinaディスプレイ、iPad用）</dd>
 
-      <p id="leadSentence">iPhone / iPod touch 上で卓上ベルを再現するアプリです。ベルが鳴る時間を設定できるタイマ機能付き。</p>
-    </header>
+  <dt>2010-07-27, ver. 1.0.1</dt>
+  <dd>ベル画像の差し替え</dd>
+  <dd>設定秒数を5秒刻みに変更</dd>
 
-    <figure>
-      <img src="img/screenshot_main.png" />
-      <img src="img/screenshot_preferences.png" />
-      <img src="img/screenshot_set_timer.png" />
-    </figure>
-
-    <ul id="downloadList">
-      <li class="badge"><a href="https://itunes.apple.com/jp/app/palmtop-bell-2/id724557784"><span>Available on the </span>App Store</a></li>
-    </ul>
-
-    <article>
-      <h1>ヴァージョン履歴</h1>
-      <dl>
-        <dt>2013-11-08, ver. 2.0.1</dt>
-        <dd>ボタンの視覚フィードバックを改善</dd>
-
-        <dt>2013-10-19, ver. 2.0</dt>
-        <dd>iOS 7に最適化</dd>
-
-        <dt>2010-09-30, ver. 1.2.2</dt>
-        <dd>iPadで起動時にクラッシュするバグを修正</dd>
-
-        <dt>2010-09-21, ver. 1.2.1</dt>
-        <dd>ベル音の差し替え</dd>
-
-        <dt>2010-09-08, ver. 1.2</dt>
-        <dd>タスクスウィッチングに対応</dd>
-        <dd>ローカル通知に対応</dd>
-
-        <dt>2010-08-04, ver. 1.1</dt>
-        <dd>最大3個のタイマを設定できるようになった</dd>
-        <dd>ベル画像の差し替え</dd>
-        <dd>新しいアプリケーションアイコン（Retinaディスプレイ、iPad用）</dd>
-
-        <dt>2010-07-27, ver. 1.0.1</dt>
-        <dd>ベル画像の差し替え</dd>
-        <dd>設定秒数を5秒刻みに変更</dd>
-
-        <dt>2010-7-12, ver. 1.0</dt>
-        <dd>初期ヴァージョン</dd>
-      </dl>
-    </article>
-
-    <footer>
-      <address>
-        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
-      </address>
-    </footer>
-
-  </body>
-
-</html>
+  <dt>2010-7-12, ver. 1.0</dt>
+  <dd>初期ヴァージョン</dd>
+</dl>

@@ -1,38 +1,13 @@
-a {
-    color: orange;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 body {
     color: #ddd;
     background-color: #333;
     font-family: serif;
 }
 
-#globalNavi {
-    margin: 0;
-    list-style-type: none;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
-#globalNavi li {
-    display: inline-block;
-    margin: 0;
-}
-
-#globalNavi li a {
-    display: block;
-    padding: 10px;
-}
-
 header {
-    padding: 10px 0;
-    background-image: url(./img/carbon_fiber.png);
+    background-image: url(img/carbon_fiber.png);
+    background-position: left, top;
+    background-repeat: repeat;
     -webkit-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
     -moz-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
     -o-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
@@ -41,85 +16,18 @@ header {
 }
 
 header div {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
-    width: 850px;
-    height: 256px;
-    margin: 0 auto;
     background-image: url(img/icon.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    text-shadow: 2px 2px 0 black;
 }
 
-header hgroup {
-    padding-left: 260px;
-    line-height: 1;
+a {
+    color: orange;
 }
 
-header hgroup h1 {
-    font-weight: normal;
-    font-size: 600%;
-}
-
-header hgroup h2 {
-    font-weight: normal;
-    font-size: 120%;
-    font-style: italic;
-    margin-top: -0.5em;
-}
-
-header #leadSentence {
-    font-size: 95%;
-    margin-top: 1em;
-    padding-left: 260px;
-}
-
-#downloadList {
-    text-align: center;
-    margin: 1em 0 2em 0;
-    padding: 0;
-}
-
-#downloadList li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-article {
-    width: 850px;
-    margin: 1em auto;
-}
-
-article h1 {
-    font-size: 150%;
-    margin-bottom: 10px;
-}
-
-article p {
+p {
     text-indent: 1em;
 }
 
-article figure {
-    text-align: center;
-    margin: 20px;
-}
-
-article figure img {
+figure img {
     -webkit-box-shadow: 0 0 5px rgb(0, 0, 0);
     -moz-box-shadow: 0 0 5px rgb(0, 0, 0);
     -o-box-shadow: 0 0 5px rgb(0, 0, 0);
@@ -127,11 +35,6 @@ article figure img {
     box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-footer {
-    margin: 0 0 1em 0;
-    text-align: center;
+footer > div {
+    border-top-color: #444;
 }
