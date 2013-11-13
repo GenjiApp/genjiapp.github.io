@@ -2,13 +2,13 @@
 <nav id="globalNavi">
   <ul>
     <li><a href="/index{% if page.language == 'en' %}_en{% endif %}.html">Genji App</a></li>
-    <!-- <li>Blog</li> -->
+    <li><a href="/blog/">Blog</a></li>
     <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
   </ul>
 
-  <ul>
+  {% unless page.url contains '/blog/' %}<ul id="languageSwitcher">
     <li>{% if page.language == 'en' %}<a href="./{% if page.fileID %}{{ page.fileID }}{% else %}index{% endif %}.html">{% endif %}日本語{% if page.language == 'en' %}</a>{% endif %}</li>
     <li>{% if page.language == 'ja' %}<a href="./{% if page.fileID %}{{ page.fileID }}{% else %}index{% endif %}_en.html">{% endif %}English{% if page.language == 'ja' %}</a>{% endif %}</li>
-  </ul>
+  </ul>{% endunless %}
 </nav>
 <!-- end of including from global_navi.html -->

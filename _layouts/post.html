@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <link href="/css/common.css" rel="stylesheet"/>
+    <link href="/css/post.css" rel="stylesheet"/>
+    <title>{{ page.title }} — {{ site.name }} Blog</title>
+  </head>
+
+  <body>
+
+    {% include global_navi.html %}
+
+    <article>
+      <p class="date">{{ page.date | date: "%Y年%m月%d日" }}</p>
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+    </article>
+
+    {% include footer.html %}
+
+  </body>
+</html>

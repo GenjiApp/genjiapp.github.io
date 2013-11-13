@@ -9,10 +9,6 @@ body {
     left: 0;
 }
 
-body {
-    color: #444;
-}
-
 body > header {
     background-image: url(img/noise.png);
     width: 100%;

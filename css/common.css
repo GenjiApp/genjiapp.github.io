@@ -75,7 +75,7 @@ a:hover {
     padding: 5px 10px;
 }
 
-#globalNavi ul:last-child {
+#globalNavi ul#languageSwitcher {
     position: absolute;
     top: 0;
     right: 0;
