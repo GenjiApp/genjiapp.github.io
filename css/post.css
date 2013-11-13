@@ -4,7 +4,7 @@ body {
 
 article {
     background-color: white;
-    width: 850px;
+    max-width: 850px;
     margin: 30px auto;
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -32,6 +32,7 @@ article h2 {
 article p {
     text-align: justify;
     line-height: 2;
+    margin: 1em 0;
 }
 
 nav.paginator ul {
@@ -42,10 +43,32 @@ nav.paginator ul li {
     display: inline-block;
 }
 
+pre {
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #EEE;
+    margin: 10px 30px;
+    white-space: pre-wrap;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+pre code {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    line-height: 1.5;
+}
+
 code {
-    color: black;
     background-color: #eee;
     font-family: monospace;
+    margin: 0 3px;
     padding: 3px 5px;
     border: 1px solid gray;
     -webkit-border-radius: 5px;
