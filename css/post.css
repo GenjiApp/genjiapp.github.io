@@ -6,7 +6,7 @@ article {
     background-color: white;
     max-width: 850px;
     margin: 30px auto;
-    padding: 20px;
+    padding: 20px 30px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -33,6 +33,21 @@ article p {
     text-align: justify;
     line-height: 2;
     margin: 1em 0;
+}
+
+article p img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+article ul, article ol {
+    margin: 0 1em;
+}
+
+article ul li, article ol li {
+    line-height: 2;
+    margin: 0 2em;
 }
 
 nav.paginator ul {
