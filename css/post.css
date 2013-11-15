@@ -2,10 +2,17 @@ body {
     background-color: #eee;
 }
 
+body > p.feed {
+    font-size: 80%;
+    margin: 0 auto -40px auto;
+    max-width: 850px;
+    text-align: right;
+}
+
 article {
     background-color: white;
     max-width: 850px;
-    margin: 30px auto;
+    margin: 50px auto;
     padding: 20px 30px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

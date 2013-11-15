@@ -1,4 +1,7 @@
 name: Genji App
+url: http://genjiapp.com
+
+blogDescription: Genji App Blogの更新情報
 
 permalink: /blog/:year/:month/:day/:title.html
 

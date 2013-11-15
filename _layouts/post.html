@@ -4,12 +4,15 @@
     <meta charset="utf-8"/>
     <link href="/css/common.css" rel="stylesheet"/>
     <link href="/css/post.css" rel="stylesheet"/>
+    <link href="/blog/feed.xml" type="application/rss+xml" title="{{ site.name }} Blog" rel="alternate"/>
     <title>{{ page.title }} — {{ site.name }} Blog</title>
   </head>
 
   <body>
 
     {% include global_navi.html %}
+
+    <p class="feed"><a href="/blog/feed.xml">[feed]</a></p>
 
     <article>
       <p class="date">{{ page.date | date: "%Y年%m月%d日" }}</p>
