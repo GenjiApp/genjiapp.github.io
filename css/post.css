@@ -1,7 +1,3 @@
-body {
-    background-color: #eee;
-}
-
 body > p.feed {
     font-size: 80%;
     margin: 0 auto -40px auto;
@@ -10,24 +6,14 @@ body > p.feed {
 }
 
 article {
-    background-color: white;
     max-width: 850px;
     margin: 50px auto;
     padding: 20px 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
 }
 
 article h1 {
     font-size: 200%;
+    border-bottom: 2px solid orange;
     margin-bottom: 30px;
 }
 
@@ -44,6 +30,10 @@ article p {
     text-align: justify;
     line-height: 2;
     margin: 1em 0;
+}
+
+article p.date {
+    margin: 0;
 }
 
 article p img {
