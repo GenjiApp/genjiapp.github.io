@@ -18,23 +18,23 @@ paginate_path: "blog/page:num"
 
 ## 記事の出力
 
-　`paginator`には、そのページ内で羅列される記事件数分（この場合は5件）の記事情報が`posts`属性を持っている。`blog/index.html`内で以下のように記述すれば、5件分の記事が出力される。
+　`paginator`は`posts`属性を持っており、そのページ内で羅列される件数分（この場合は5件）の記事情報が保持されている。`blog/index.html`内で以下のように記述すれば、5件分の記事が出力される。
 
 {% raw %}
 ```
 {% for post in paginator.posts %}
-  <article>
-    <p class="date">{{ post.date | date: "%Y年%m月%d日" }}</p>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    {{ post.content }}
-  </article>
+<article>
+  <p class="date">{{ post.date | date: "%Y年%m月%d日" }}</p>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  {{ post.content }}
+</article>
 {% endfor %}
 ```
 {% endraw %}
 
 　上記は各記事の全文を出力している。全文が必要ない場合は`post.content`の代わりに`post.excerpt`を使う。
 
-　`blog/page2/index.html`以降では`blog/index.html`がテンプレート的に使われて同じ形態のファイルが出力される。`paginator.posts`はそのページが出力するべき記事情報が入っている。全記事数が12件で`paginate: 5`指定の場合、最初のページ（`blog/index.html`）では最新5件分、2ページ目（`blog/page2/index.html`）で次の5件分、3ページ目（`blog/page3/index.html`）で最後の2件分が`paginator.posts`に入っている。`paginator`が持つその他の属性も出力するページにあわせて変化する。
+　`blog/page2/index.html`以降では`blog/index.html`がテンプレート的に使われて同じ形態のファイルが出力される。`paginator.posts`には、そのページが出力するべき記事情報が入っている。全記事数が12件で`paginate: 5`指定の場合、最初のページ（`blog/index.html`）では最新5件分、2ページ目（`blog/page2/index.html`）で次の5件分、3ページ目（`blog/page3/index.html`）で最後の2件分が`paginator.posts`に入っている。`paginator`が持つその他の属性も出力するページにあわせて変化する。
 
 ## 前後ページへのリンク出力
 
