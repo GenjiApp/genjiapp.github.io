@@ -70,7 +70,6 @@ pre {
     padding: 10px;
     background-color: #EEE;
     margin: 10px 30px;
-    white-space: pre-wrap;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -81,6 +80,7 @@ pre {
 
 pre code {
     border: none;
+    white-space: pre-wrap;
     padding: 0;
     margin: 0;
     background-color: transparent;
@@ -90,6 +90,7 @@ pre code {
 code {
     background-color: #eee;
     font-family: monospace;
+    white-space: nowrap;
     margin: 0 3px;
     padding: 3px;
     border: 1px solid gray;
