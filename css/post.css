@@ -59,6 +59,12 @@ nav.paginator ul li {
     display: inline-block;
 }
 
+blockquote {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    margin: 10px 50px;
+}
+
 pre {
     border: 1px solid gray;
     padding: 10px;
