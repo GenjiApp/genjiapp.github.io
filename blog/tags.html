@@ -1,0 +1,30 @@
+---
+---
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <link href="/css/common.css" rel="stylesheet"/>
+    <link href="/css/post.css" rel="stylesheet"/>
+    <title>Tags — {{ site.name }} Blog</title>
+  </head>
+
+  <body>
+
+    {% include global_navi.html %}
+
+    {% for tag in site.tags %}
+    <article>
+      <h1 id="tag_{{tag[0]}}">{{ tag[0] }}</h1>
+      <ul>
+        {% for post in tag[1] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </article>
+    {% endfor %}
+
+    {% include footer.html %}
+
+  </body>
+</html>
