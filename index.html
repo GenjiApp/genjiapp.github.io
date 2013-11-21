@@ -1,56 +1,16 @@
 ---
+layout: top_page
 language: ja
 ---
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8"/>
-    <link href="/css/common.css" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
-    <title>Genji App</title>
-  </head>
+<h2>OS X Applications</h2>
+<ul>
+  <li><a href="mac/murasaki/">Murasaki</a> — スクロール型EPUBリーダ</li>
+  <li><a href="mac/clcl/">CLCL</a> — 修飾キィ連打によるアプリケーションラウンチャ</li>
+  <li><a href="mac/imagediff/">ImageDiff</a> — 画像間差分を表示するアプリケーション</li>
+</ul>
 
-  <body>
-
-    <header>
-      {% include global_navi.html %}
-      <h1>Genji App</h1>
-    </header>
-
-    <article>
-      <h2>OS X Applications</h2>
-      <ul>
-        <li><a href="mac/murasaki/">Murasaki</a> — スクロール型EPUBリーダ</li>
-        <li><a href="mac/clcl/">CLCL</a> — 修飾キィ連打によるアプリケーションラウンチャ</li>
-        <li><a href="mac/imagediff/">ImageDiff</a> — 画像間差分を表示するアプリケーション</li>
-      </ul>
-
-      <h2>iOS Applications</h2>
-      <ul>
-        <li><a href="ios/palmtopbell/">Palmtop Bell</a> — タイマ付き卓上ベルアプリケーション</li>
-        <li><a href="ios/kanjimagnifier/">KanjiMagnifier</a> — 漢字を大きく表示するアプリケーション（辞書引き機能付き）</li>
-      </ul>
-
-      <h2>Recent Blog Posts [<a href="/blog/feed.xml">feed</a>]</h2>
-      <ul>
-        {% for post in site.posts limit:5 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-
-      <h2>Link</h2>
-      <ul>
-        <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
-        <li><a href="https://github.com/GenjiApp">GitHub</a></li>
-        <li><a href="http://twitter.com/genji_tw">Twitter</a></li>
-      </ul>
-    </article>
-
-    <footer>
-      <address>
-        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
-      </address>
-    </footer>
-
-  </body>
-</html>
+<h2>iOS Applications</h2>
+<ul>
+  <li><a href="ios/palmtopbell/">Palmtop Bell</a> — タイマ付き卓上ベルアプリケーション</li>
+  <li><a href="ios/kanjimagnifier/">KanjiMagnifier</a> — 漢字を大きく表示するアプリケーション（辞書引き機能付き）</li>
+</ul>
