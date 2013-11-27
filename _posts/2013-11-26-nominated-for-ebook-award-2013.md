@@ -22,4 +22,5 @@ tags: ebook murasaki
 ## 他の候補者のブログ記事
 
 - [JEPA電子出版アワード2013にでんでんコンバーターがノミネートされました - 電書ちゃんねる](http://densho.hatenablog.com/entry/jepa-award-2013-denden)
+- [JEPA(日本電子出版協会)の電子出版アワード2013候補作品に選ばれました | ハチログ](http://www.hachi-log.com/jepa-award2013/)
 
