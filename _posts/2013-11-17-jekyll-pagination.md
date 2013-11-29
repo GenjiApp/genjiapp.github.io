@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JekyllのPagination設定
+title: JekyllのPagination設定（2013年11月30日追記）
 tags: jekyll
 ---
 　[JekyllのPagination](http://jekyllrb.com/docs/pagination/)とは、一ページ中にブログ記事がいくつか羅列してあり、一番下まで行くと「前の記事へ」「次の記事へ」などと前後の記事羅列ページへのリンクが貼ってあり、当該前後ページでまた記事が羅列されているという、よくあるアレである。
@@ -51,3 +51,17 @@ paginate_path: "blog/page:num"
 {% endraw %}
 
 　ひとつ注意が必要なのは、2ページ目以降のパスは`blog/page2/index.html`、...であるが、最初のページのパスは`blog/index.html`であって、`blog/page1/index.html`ではないということである。したがって、`paginator.previous_page`が`1`のときとそれ以外で処理を分ける必要がある。
+
+## 追記（2013年11月30日）
+
+　前節「前後ページへのリンク出力」について、`previous_page`は日付上では新しい方向のページ番号を、`next_page`は古い方向のページ番号を意味する。前節のように、変数名に合わせてそれぞれのリンク文字列を「前の〜」「次の〜」とすると、（考え方にもよるが、私は）気持ち悪い。
+　なので、リンク文字列をそれぞれ「新しい〜」「古い〜」と改めた。
+
+```
+{% raw %}
+<ul>
+  {% if paginator.previous_page %}<li><a href="/blog/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}/{% endif %}">新しい記事</a></li>{% endif %}
+  {% if paginator.next_page %}<li><a href="/blog/page{{ paginator.next_page }}/">古い記事</a></li>{% endif %}
+</ul>
+{% endraw %}
+```
