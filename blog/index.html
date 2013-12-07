@@ -24,7 +24,7 @@
         <h2>tags</h2>
         <ul>
           {% for tag in post.tags %}
-          <li><a href="/blog/tags.html#tag_{{ tag }}">{{ tag }}</a></li>
+          <li><a href="/search.html?q=%5B{{ tag }}%5D">{{ tag }}</a></li>
           {% endfor %}
         </ul>
       </nav>

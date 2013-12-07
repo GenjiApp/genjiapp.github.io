@@ -1,0 +1,41 @@
+h1 {
+    font-size: 150%;
+    border-bottom: 2px solid orange;
+    margin-bottom: 1em;
+}
+
+div {
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+#tagList ul {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -o-column-count: 4;
+    -ms-column-count: 4;
+    column-count: 4;
+}
+
+#filteredList {
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+#filteredList dt {
+    display: list-item;
+    margin-bottom: 0.3em;
+}
+
+#filteredList dt:not(:first-child) {
+    margin-top: 1em;
+}
+
+#filteredList dd {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+#filteredList p {
+    text-align: center;
+}
