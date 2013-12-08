@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Jekyllで簡易タグ一覧ページを作る
+title: Jekyllで簡易タグ一覧ページを作る（2013年12月8日追記）
 tags: jekyll github
 ---
-　ブログ記事にタグを設定し、[タグ一覧ページ](/blog/tags.html)を作った。
+　ブログ記事にタグを設定し、[タグ一覧ページ](/blog/tags.html)を作った（2013年12月8日追記：「[Jekyll製ウェブサイトに簡易検索機能を実装する]({% post_url 2013-12-08-simple-search-feature-on-jekyll-generated-website %})」にて実装した検索機能に統合したためdeprecated）。
 
 ## Front-matterでタグを付ける
 
