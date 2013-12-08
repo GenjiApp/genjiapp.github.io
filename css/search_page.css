@@ -17,25 +17,25 @@ div {
     column-count: 4;
 }
 
-#filteredList {
+#matchedList {
     max-width: 850px;
     margin: 50px auto;
 }
 
-#filteredList dt {
+#matchedList dt {
     display: list-item;
     margin-bottom: 0.3em;
 }
 
-#filteredList dt:not(:first-child) {
+#matchedList dt:not(:first-child) {
     margin-top: 1em;
 }
 
-#filteredList dd {
+#matchedList dd {
     display: inline-block;
     margin-left: 1em;
 }
 
-#filteredList p {
+#matchedList p {
     text-align: center;
 }

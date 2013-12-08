@@ -23,7 +23,7 @@ $(function() {
     queryString += '[' + tagName + '] ';
   });
   queryString += query.keywords.join(' ');
-  $('#searchField').val(queryString);
+  $('#globalNavi form input[type="search"]').val(queryString);
 
   var matchedPosts = [];
   $.getJSON('/search.json', function(posts) {
@@ -71,8 +71,8 @@ $(function() {
           dl.append(dd);
         }
       });
-      $('#filteredList').append(dl);
+      $('#matchedList').append(dl);
     }
-    else $('#filteredList').append('<p>no search result.</p>');
+    else $('#matchedList').append('<p>no search result.</p>');
   });
 });
