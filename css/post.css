@@ -105,8 +105,8 @@ blockquote {
 pre {
     border: 1px solid gray;
     padding: 10px;
-    background-color: #EEE;
-    margin: 10px 30px;
+    background-color: #eee;
+    margin: 10px 0;
 
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
