@@ -29,10 +29,10 @@ $(function() {
   $.getJSON('/search.json', function(posts) {
     posts.forEach(function(postInfo) {
       if(!postInfo.tags) postInfo.tags = [];
-      var contains = true;
-      query.tags.forEach(function(tagName) {
-        contains = postInfo.tags.indexOf(tagName) != -1;
-        if(!contains) return;
+      var contains = false;
+      $.each(query.tags, function(index, tagName) {
+        contains = (postInfo.tags.indexOf(tagName) != -1);
+        if(!contains) return false;
       });
       if(contains && !query.keywords.length) matchedPosts.push(postInfo);
       else if(contains || !query.tags.length) {
