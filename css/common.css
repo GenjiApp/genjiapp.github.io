@@ -98,20 +98,29 @@ footer {
 footer > div {
     padding-top: 20px;
     border-top: 1px solid #eee;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    display: box;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
 }
 
 footer > div > div {
-    margin: 10px 30px;
+    -webkit-flex-basis: 150px;
+    -moz-flex-basis: 150px;
+    -o-flex-basis: 150px;
+    -ms-flex-basis: 150px;
+    flex-basis: 150px;
 }
 
 footer div h2 {
