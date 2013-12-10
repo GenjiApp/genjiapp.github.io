@@ -85,7 +85,7 @@ article ul, article ol {
 
 article ul li, article ol li {
     line-height: 2;
-    margin: 0 2em;
+    margin-left: 1em;
 }
 
 nav.paginator ul {
