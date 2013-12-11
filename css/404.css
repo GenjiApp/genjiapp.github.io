@@ -9,27 +9,27 @@ html, body {
 
 body {
     background-image: url(/img/noise.png);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    -ms-box-align: center;
-    box-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 body article h1 {
     font-size: 400%;
     text-shadow: 1px 1px 0 white;
+    text-align: center;
 }
 
 body article ul {
