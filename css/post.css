@@ -8,7 +8,7 @@ body > p.feed {
 article {
     max-width: 850px;
     margin: 50px auto;
-    padding: 20px 30px;
+    padding: 20px 5px;
 }
 
 article h1 {
