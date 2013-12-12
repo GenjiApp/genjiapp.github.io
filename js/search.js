@@ -39,7 +39,6 @@ $(function() {
         var regexpString = '';
         if(query.keywords.length == 1) regexpString = query.keywords[0];
         else {
-          console.log(111);
           query.keywords.forEach(function(keyword) {
             regexpString += '(?=.*' + keyword + ')';
           });
