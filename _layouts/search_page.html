@@ -1,32 +1,17 @@
-<!doctype html>
-<html{% if page.language %} lang="{{ page.language }}"{% endif %}>
-  <head>
-    <meta charset="utf-8"/>
-    <link href="/css/common.css" rel="stylesheet"/>
-    <link href="/css/search_page.css" rel="stylesheet"/>
-    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="/js/search.js"></script>
-    <title>{{ page.title }} — {{ site.name }}</title>
-  </head>
+---
+layout: default
+css: [/css/search_page.css]
+js: [/js/jquery-1.7.2.min.js, /js/search.js]
+---
+<div id="matchedList">
+  <h1>{{ page.title }}</h1>
+</div>
 
-  <body>
-
-    {% include global_navi.html %}
-
-    <div id="matchedList">
-      <h1>{{ page.title }}</h1>
-    </div>
-
-    <div id="tagList">
-      <h1>タグ一覧</h1>
-      <ul>
-        {% for tag in site.tags %}
-        <li><a href="/search{% if page.language == 'en' %}_en{% endif %}.html?q=%5B{{ tag[0] }}%5D">{{ tag[0] }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+<div id="tagList">
+  <h1>{% if page.language == 'en' %}Tags{% else %}タグ一覧{% endif %}</h1>
+  <ul>
+    {% for tag in site.tags %}
+    <li><a href="/search{% if page.language == 'en' %}_en{% endif %}.html?q=%5B{{ tag[0] }}%5D">{{ tag[0] }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

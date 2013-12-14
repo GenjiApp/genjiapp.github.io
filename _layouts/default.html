@@ -1,0 +1,28 @@
+<!doctype html>
+<html{% if page.language %} lang="{{ page.language }}"{% endif %}>
+  <head>
+    <meta charset="utf-8"/>
+    <link href="/css/common.css" rel="stylesheet"/>
+    {% for css in page.css %}
+    <link href="{{ css }}" rel="stylesheet"/>
+    {% endfor %}
+    {% for js in page.js %}
+    <script type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}
+    <title>{{ page.title }}{% if page.subtitle %} — {{ page.subtitle }}{% endif %}</title>
+  </head>
+
+  <body>
+
+    {% unless page.url contains '404.html' %}
+    {% include global_navi.html %}
+    {% endunless %}
+
+    {{ content }}
+
+    {% unless page.url contains '404.html' %}
+    {% include footer.html %}
+    {% endunless %}
+
+  </body>
+</html>

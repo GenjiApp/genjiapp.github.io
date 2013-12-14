@@ -1,26 +1,11 @@
-<!doctype html>
-<html{% if page.language %} lang="{{ page.language }}"{% endif %}>
-  <head>
-    <meta charset="utf-8"/>
-    <link href="/css/common.css" rel="stylesheet"/>
-    <link href="/css/app_page.css" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
-    <title>{{ page.title }} — {{ page.subtitle }}</title>
-  </head>
+---
+layout: default
+css: [/css/app_page.css, style.css]
+---
+{% include header.html %}
 
-  <body>
+<article>
 
-    {% include global_navi.html %}
+  {{ content }}
 
-    {% include header.html %}
-
-    <article>
-
-      {{ content }}
-
-    </article>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+</article>
