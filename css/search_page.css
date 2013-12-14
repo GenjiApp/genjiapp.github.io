@@ -4,11 +4,6 @@ h1 {
     margin-bottom: 1em;
 }
 
-div {
-    max-width: 850px;
-    margin: 50px auto;
-}
-
 #tagList ul {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -17,7 +12,7 @@ div {
     column-count: 4;
 }
 
-#matchedList {
+#tagList, #matchedList {
     max-width: 850px;
     margin: 50px auto;
 }
