@@ -1,10 +1,19 @@
-a {
-    color: orange;
+#globalNavigation {
+    background: -webkit-linear-gradient(#444, #333);
+}
+
+#globalNavigation ul,
+#globalNavigation ul li {
+    border-color: #222;
+}
+
+#globalNavigation ul li a:hover {
+    background-color: #333;
 }
 
 body {
-    color: white;
-    background-color: black;
+    color: #ddd;
+    background-color: 333;
     background: -webkit-linear-gradient(top, #444, #000);
     background: -moz-linear-gradient(top, #444, #000);
     background: -o-linear-gradient(top, #444, #000);
@@ -12,14 +21,48 @@ body {
     background: linear-gradient(top, #444, #000);
 }
 
+a {
+    color: orange;
+}
+
+header {
+    background-image: url(img/carbon_fiber.png);
+    background-position: left, top;
+    background-repeat: repeat;
+    border-bottom: none;
+    -webkit-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+    -moz-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+    -o-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+    -ms-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+    box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+}
+
 header div {
     background-image: url(img/icon.png);
 }
 
-figure img {
-    max-width: 30%;
+header div h1 {
+    text-shadow: 1px 1px 0 black;
 }
 
-footer > div {
-    border-top-color: #444;
+figure img {
+    max-width: 30%;
+    margin: 5px;
+    -webkit-box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+footer {
+    border-top-color: #222;
+}
+
+@media screen and (max-width: 800px) {
+    figure img {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    figure img {
+        max-width: 90%;
+    }
 }

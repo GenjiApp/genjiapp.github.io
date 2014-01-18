@@ -2,6 +2,8 @@
 <html{% if page.language %} lang="{{ page.language }}"{% endif %}>
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
     <link href="/css/common.css" rel="stylesheet"/>
     {% for css in page.css %}
     <link href="{{ css }}" rel="stylesheet"/>
@@ -15,7 +17,7 @@
   <body>
 
     {% unless page.url contains '404.html' %}
-    {% include global_navi.html %}
+    {% include global_navigation.html %}
     {% endunless %}
 
     {{ content }}

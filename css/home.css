@@ -1,0 +1,27 @@
+body {
+    color: #444;
+}
+
+header {
+    border: 1px solid transparent;
+    border-bottom: 1px solid silver;
+    margin-bottom: 50px;
+    background: -webkit-linear-gradient(white, #eee);
+    background: -moz-linear-gradient(white, #eee);
+    background: -o-linear-gradient(white, #eee);
+    background: -ms-linear-gradient(white, #eee);
+    background: linear-gradient(white, #eee);
+}
+
+header h1 {
+    font-size: 900%;
+    font-family: serif;
+    text-align: center;
+    text-shadow: -1px -1px 0 black;
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        font-size: 350%;
+    }
+}

@@ -1,0 +1,39 @@
+<!-- including from global_navi.html -->
+<nav id="globalNavigation">
+  <ul>
+    {% unless page.url == '/index.html' %}
+    {% unless page.url == '/index_en.html' %}
+    <li><a href="/{% if page.language == 'en' %}index_en.html{% endif %}">{% if page.language == 'en' %}Home{% else %}ホーム{% endif %}</a></li>
+    {% endunless %}
+    {% endunless %}
+
+    {% if page.language != 'en' %}
+    <li><a href="/blog/">{% if page.language == 'en' %}Blog{% else %}ブログ{% endif %}</a></li>
+    {% endif %}
+
+    <li>
+      <a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">{% if page.language == 'en' %}Contact{% else %}コンタクト{% endif %}</a>
+    </li>
+
+    {% if page.language %}
+    <li id="languageSwitcher">
+      {% if page.language == 'en' %}
+      <a href="./{% if page.fileID %}{{ page.fileID }}.html{% endif %}">日本語</a>
+      {% endif %}
+
+      {% if page.language == 'ja' %}
+      <a href="./{% if page.fileID %}{{ page.fileID }}{% else %}index{% endif %}_en.html">English</a>
+      {% endif %}
+    </li>
+    {% endif %}
+
+    <li id="searchField">
+      <form action="/search{% if page.language == 'en' %}_en{% endif %}.html" method="get">
+        <input type="search" name="q" placeholder="{% if page.language == 'en' %}Search{% else %}検索{% endif %}"/>
+      </form>
+    </li>
+
+  </ul>
+  
+</nav>
+<!-- end of including from global_navi.html -->

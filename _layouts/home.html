@@ -2,14 +2,16 @@
 <html{% if page.language %} lang="{{ page.language }}"{% endif %}>
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
     <link href="/css/common.css" rel="stylesheet"/>
-    <link href="/css/top_page.css" rel="stylesheet"/>
+    <link href="/css/home.css" rel="stylesheet"/>
     <title>{{ site.name }}</title>
   </head>
 
   <body>
 
-    {% include global_navi.html %}
+    {% include global_navigation.html %}
 
     <header>
       <h1>{{ site.name }}</h1>
@@ -35,11 +37,7 @@
       </ul>
     </article>
 
-    <footer>
-      <address>
-        Genji(<a href="http://twitter.com/genji_tw">@genji_tw</a>)
-      </address>
-    </footer>
+    {% include footer.html %}
 
   </body>
 </html>

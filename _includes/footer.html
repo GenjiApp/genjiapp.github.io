@@ -1,12 +1,14 @@
 <!-- including from footer.html -->
 <footer>
+  {% unless page.url == '/index.html' %}
+  {% unless page.url == '/index_en.html' %}
   <div>
     <div>
       <h2>Genji App</h2>
       <ul>
-        <li><a href="/{% if page.language == 'en' %}index_en.html{% endif %}">Top</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">Contact</a></li>
+        <li><a href="/{% if page.language == 'en' %}index_en.html{% endif %}">{% if page.language == 'en' %}Home{% else %}ホーム{% endif %}</a></li>
+        <li><a href="/blog/">{% if page.language == 'en' %}Blog{% else %}ブログ{% endif %}</a></li>
+        <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dHZLVGhBRnZUb1JTelcwUFN5X3o3V1E6MQ" target="_blank">{% if page.language == 'en' %}Contact{% else %}コンタクト{% endif %}</a></li>
       </ul>
     </div>
 
@@ -35,9 +37,12 @@
       </ul>
     </div>
   </div>
+  {% endunless %}
+  {% endunless %}
 
   <address>
     Genji (<a href="http://twitter.com/genji_tw">@genji_tw</a>)
   </address>
 </footer>
 <!-- end of including from footer.html -->
+

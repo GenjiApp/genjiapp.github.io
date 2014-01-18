@@ -8,6 +8,7 @@ header div h1 {
 
 figure img {
     max-width: 30%;
+    margin: 5px;
     border: 1px solid lightgray;
     -webkit-box-shadow: 0 0 3px lightgray;
     -moz-box-shadow: 0 0 3px lightgray;
@@ -16,10 +17,22 @@ figure img {
     box-shadow: 0 0 3px lightgray;
 }
 
-.badge a {
-    -webkit-box-shadow: 0 0 1px gray;
-    -moz-box-shadow: 0 0 1px gray;
-    -o-box-shadow: 0 0 1px gray;
-    -ms-box-shadow: 0 0 1px gray;
-    box-shadow: 0 0 1px gray;
+@media screen and (max-width: 800px) {
+    header div h1 {
+        font-size: 400%;
+    }
+
+    figure img {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header div h1 {
+        font-size: 300%;
+    }
+
+    figure img {
+        max-width: 90%;
+    }
 }

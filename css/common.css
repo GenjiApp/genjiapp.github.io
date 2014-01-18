@@ -1,52 +1,25 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, address, code, del, ins, em,
-img, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-header, footer, hgroup, menu, nav, section, summary,
-time, mark {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    Background: transparent;
+/* override normalize.css */
+html {
+    font-family: HelveticaNeue-Light, sans-serif;
 }
 
-article, aside, details, figure, figcaption,
-header, hgroup, footer, menu, nav, section {
-    display: block;
+input[type="search"] {
+    -webkit-appearance: searchfield;
 }
 
-body {
-    font-family: serif;
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
 }
 
-ul, ol, dl {
-    margin: 0.5em 1em;
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: searchfield-decoration;
 }
 
-ul li, ol li {
-    margin-left: 1em;
-}
 
-dl dt {
-    margin-top: 0.5em;
-    margin-left: 1em;
-}
-
-dl dt:first-child {
-    margin-top: 0;
-}
-
-dl dd {
-    margin-left: 2em;
-}
-
-p {
-    line-height: 1.8;
+/* common styles */
+body > article {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 a {
@@ -58,34 +31,101 @@ a:hover {
     text-decoration: underline;
 }
 
-#globalNavi {
-    margin: 0;
-    list-style-type: none;
-    font-weight: bold;
+ul li, ol li {
+    line-height: 1.8;
+}
+
+p {
+    line-height: 2;
+    text-align: justify;
+}
+
+pre {
+    border: 1px solid silver;
     padding: 10px;
+    color: black;
+    background-color: #eee;
+    margin: 10px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+pre code {
+    border: none;
+    white-space: pre-wrap;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    line-height: 1.5;
+}
+
+code {
+    background-color: #eee;
+    font-family: monospace;
+    white-space: nowrap;
+    margin: 0 3px;
+    padding: 3px;
+    border: 1px solid silver;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/* styles for global_navigation.html */
+#globalNavigation {
+    font-family: HelveticaNeue-Middle, sans-serif;
+    background: -webkit-linear-gradient(white, #f2f2f2);
+    background: -moz-linear-gradient(white, #f2f2f2);
+    background: -o-linear-gradient(white, #f2f2f2);
+    background: -ms-linear-gradient(white, #f2f2f2);
+    background: linear-gradient(white, #f2f2f2);
+}
+
+#globalNavigation ul,
+#globalNavigation ul li {
+    border-color: silver;
+    border-style: solid;
+    border-width: 0px;
+}
+
+#globalNavigation ul {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    border-width: 1px 0 1px 0;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
     display: -ms-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
-#globalNavi ul {
-    margin: 0;
+#globalNavigation ul li {
     list-style-type: none;
+    border-width: 0 1px 0 0;
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -o-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
-#globalNavi ul li {
-    display: inline-block;
-    margin: 0 20px 0 0;
+#globalNavigation ul li:last-child {
+    border-width: 0;
 }
 
-#globalNavi ul:first-child {
+#globalNavigation #searchField {
     -webkit-flex: 1 0 auto;
     -moz-flex: 1 0 auto;
     -o-flex: 1 0 auto;
@@ -93,19 +133,54 @@ a:hover {
     flex: 1 0 auto;
 }
 
-#globalNavi form {
-    margin-top: -1px;
+#globalNavigation #searchField form,
+#globalNavigation a {
+    padding: 5px 10px;
 }
 
+#globalNavigation #searchField form {
+    text-align: right;
+}
+
+#globalNavigation #searchField form input {
+    height: 20px;
+}
+
+#globalNavigation a {
+    display: inline-block;
+}
+
+#globalNavigation a:hover {
+    background-color: #eee;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    #globalNavigation {
+        font-size: 90%;
+    }
+
+    #globalNavigation #searchField form input {
+        width: 60px;
+    }
+
+    #globalNavigation #searchField form,
+    #globalNavigation a {
+        padding: 5px 3px;
+    }
+}
+
+
+/* styles for footer.html */
 footer {
-    width: 95%;
+    border-top: 1px solid #eee;
     margin: 20px auto 0 auto;
     font-size: 80%;
 }
 
 footer > div {
-    padding-top: 20px;
-    border-top: 1px solid #eee;
+    max-width: 900px;
+    margin: 0 auto;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -123,16 +198,23 @@ footer > div {
     justify-content: space-around;
 }
 
-footer > div > div {
-    -webkit-flex-basis: 150px;
-    -moz-flex-basis: 150px;
-    -o-flex-basis: 150px;
-    -ms-flex-basis: 150px;
-    flex-basis: 150px;
+footer > div h2 {
+    margin: 20px 0 5px 0;
+    font-size: 90%;
+    white-space: nowrap;
 }
 
-footer div h2 {
+footer > div > div {
+    -webkit-flex: 1 1 150px;
+    -moz-flex: 1 1 150px;
+    -o-flex: 1 1 150px;
+    -ms-flex: 1 1 150px;
+    flex: 1 1 150px;
+}
+
+footer > div > div > ul {
     margin: 0;
+    padding-left: 2em;
 }
 
 footer address {

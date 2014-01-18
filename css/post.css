@@ -1,76 +1,71 @@
-body > p.feed {
-    font-size: 80%;
-    margin: 0 auto -40px auto;
-    max-width: 850px;
+#feed {
     text-align: right;
+    max-width: 900px;
+    margin: 10px auto;
 }
 
 article {
-    max-width: 850px;
     margin: 50px auto;
-    padding: 20px 5px;
+}
+
+article:first-of-type {
+    margin-top: 0;
+}
+
+article p.postDate {
+    margin: 0;
 }
 
 article h1 {
-    font-size: 200%;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     border-bottom: 2px solid orange;
 }
 
+article #postTags {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    font-size: 1rem;
+}
+
+article #postTags h2 {
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+}
+
+article #postTags h2:after {
+    content: ":";
+}
+
+article #postTags ul {
+    font-size: inherit;
+    margin: 0 0 0 0.5em;
+    padding: 0;
+}
+
+article #postTags ul li {
+    font-size: inherit;
+    display: inline-block;
+    line-height: 1;
+}
+
+article #postTags ul li:after {
+    content: ",";
+}
+
+article #postTags ul li:last-child:after {
+    content: "";
+}
+
 article h2 {
-    font-size: 120%;
     margin: 30px 0 10px 0;
 }
 
 article h2 code {
     font-weight: normal;
-}
-
-article p {
-    text-align: justify;
-    line-height: 2;
-    margin: 1em 0;
-}
-
-article p.date {
-    margin: 0;
-}
-
-article #tags {
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    display: box;
-}
-
-article #tags h2 {
-    margin: 0;
-    font-weight: normal;
-    font-size: 100%;
-}
-
-article #tags h2:after {
-    content: ":";
-}
-
-article #tags ul {
-    margin-left: 5px;
-}
-
-article #tags ul li {
-    display: inline-block;
-    margin: 0;
-    line-height: 1;
-}
-
-article #tags ul li:after {
-    content: ",";
-}
-
-article #tags ul li:last-child:after {
-    content: ""
 }
 
 article p img {
@@ -79,61 +74,18 @@ article p img {
     margin: 1em auto;
 }
 
-article ul, article ol {
-    margin: 0 1em;
-}
-
-article ul li, article ol li {
-    line-height: 2;
-    margin-left: 1em;
+article blockquote {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
 }
 
 nav.paginator ul {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 nav.paginator ul li {
     display: inline-block;
-}
-
-blockquote {
-    border-top: 1px solid silver;
-    border-bottom: 1px solid silver;
-    margin: 10px 50px;
-}
-
-pre {
-    border: 1px solid gray;
-    padding: 10px;
-    background-color: #eee;
-    margin: 10px 0;
-
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-}
-
-pre code {
-    border: none;
-    white-space: pre-wrap;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    line-height: 1.5;
-}
-
-code {
-    background-color: #eee;
-    font-family: monospace;
-    white-space: nowrap;
-    margin: 0 3px;
-    padding: 3px;
-    border: 1px solid gray;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
+    margin: 0 10px;
 }

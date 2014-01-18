@@ -1,8 +1,6 @@
 $(window).load(function() {
     $('#slideShow ul li:not(:first-child)').hide();
     var $img = $('#slideShow ul li:first-child img');
-    var width = $img.width();
-    $('#slideShow ul').css('width', width + 'px');
 
     var numberOfChildren = $('#slideShow ul li').length;
     var $ol = $('#slideShow').append('<ol/>').children('ol');
@@ -14,10 +12,10 @@ $(window).load(function() {
     $('#slideShow ol li').click(function() {
         var index = $(this).parent('ol').children().index(this) + 1;
         var $li = $('#slideShow ul li:nth-child(' + index + ')');
-        $('#slideShow ul').css({
-            'width': $li.width() + 'px',
-            'height': $li.height() + 'px'
-        });
+        // $('#slideShow ul').css({
+        //     'width': $li.width() + 'px',
+        //     'height': $li.height() + 'px'
+        // });
         $('#slideShow ol li.active').removeClass('active');
         $(this).addClass('active');
         $('#slideShow ul li').hide();

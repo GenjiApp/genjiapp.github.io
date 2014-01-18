@@ -1,253 +1,238 @@
 ---
+layout: default
 title: Murasaki User Manual
 language: en
 fileID: help
+css: [style.css]
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <link href="/css/common.css" rel="stylesheet"/>
-    <link href="/css/app_page.css" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
-    <title>{{ page.title }}</title>
-  </head>
+<article id="help">
 
-  <body>
+  <ul id="usefulLinks">
+    <li><a href="index_en.html">←Back to Murasaki Home</a></li>
+    <li><a href="history_en.html">Version History</a></li>
+  </ul>
 
-    {% include global_navi.html %}
+  <h1>User Manual</h1>
 
-    <article id="help">
+  <nav id="helpNavi">
+    <ul>
+      <li><a href="#basic_usage">Basic Usage</a>
+        <ul>
+          <li><a href="#opening_epub">Opening EPUB</a></li>
+          <li><a href="#moving_page">Moving Page</a></li>
+          <li><a href="#changing_text_size">Changing Text Size</a></li>
+          <li><a href="#bookmarking_page">Bookmarking a Page</a></li>
+          <li><a href="#searching">Searching</a></li>
+          <li><a href="#sidebar">Sidebar</a></li>
+          <li><a href="#opening_in_new_window">Opening a Page in New Window</a></li>
+          <li><a href="#opening_in_popover">Opening a Link Destination Page in Popover</a></li>
+          <li><a href="#opening_image_in_panel">Opening an Image in Panel</a></li>
+          <li><a href="#applying_user_style">Applying user style</a></li>
+        </ul>
+      </li>
+      <li><a href="#cannot_open_sidebar">Cannot open sidebar</a></li>
+    </ul>
+  </nav>
 
-      <ul id="usefulLinks">
-        <li><a href="index_en.html">←Back to Murasaki Home</a></li>
-        <li><a href="history_en.html">Version History</a></li>
+  <section id="basic_usage">
+    <h2>Basic Usage</h2>
+    <h3 id="opening_epub">Opening EPUB</h3>
+    <ol>
+      <li>Launch Murasaki</li>
+      <li>Choose &quot;Open...&quot; from &quot;File&quot; from menu bar, or Press <kbd>Command</kbd>-<kbd>O</kbd> keyboard shortcut</li>
+      <li>Choose EPUB file you want to open</li>
+    </ol>
+    <p>If Murasaki is an application to open EPUBs, you can open an EPUB by double-clicking an EPUB file in Finder.</p>
+
+    <h3 id="moving_page">Moving Page</h3>
+    <section>
+      <h4>Moving page in reading order</h4>
+      <p>Each HTML files in EPUB are set the reading order. To move page in the reading order:</p>
+      <ul>
+        <li>Choose &quot;Previous&quot; or &quot;Next&quot; from &quot;Move&quot; from menu bar</li>
+        <li>Click &quot;Previous/Next&quot; button on tool bar</li>
+        <li>Press <kbd>←</kbd>, <kbd>→</kbd> keyboard shortcut</li>
       </ul>
+    </section>
 
-      <h1>User Manual</h1>
+    <section>
+      <h4>Moving page in visited page history</h4>
+      <p>To move page in visited page history like usual web browser:</p>
+      <ul>
+        <li>Choose &quot;Back&quot; or &quot;Forward&quot; from &quot;Move&quot; from menu bar</li>
+        <li>Click &quot;Back/Forward&quot; button on tool bar</li>
+        <li>Press <kbd>Command</kbd>-<kbd>[</kbd>, <kbd>Command</kbd>-<kbd>]</kbd> keyboard shortcut</li>
+      </ul>
+    </section>
 
-      <nav id="helpNavi">
-        <ul>
-          <li><a href="#basic_usage">Basic Usage</a>
-            <ul>
-              <li><a href="#opening_epub">Opening EPUB</a></li>
-              <li><a href="#moving_page">Moving Page</a></li>
-              <li><a href="#changing_text_size">Changing Text Size</a></li>
-              <li><a href="#bookmarking_page">Bookmarking a Page</a></li>
-              <li><a href="#searching">Searching</a></li>
-              <li><a href="#sidebar">Sidebar</a></li>
-              <li><a href="#opening_in_new_window">Opening a Page in New Window</a></li>
-              <li><a href="#opening_in_popover">Opening a Link Destination Page in Popover</a></li>
-              <li><a href="#opening_image_in_panel">Opening an Image in Panel</a></li>
-              <li><a href="#applying_user_style">Applying user style</a></li>
-            </ul>
-          </li>
-          <li><a href="#cannot_open_sidebar">Cannot open sidebar</a></li>
-        </ul>
-      </nav>
+    <h3 id="changing_text_size">Changing Text Size</h3>
+    <p>To change text size:</p>
+    <ul>
+      <li>Choose &quot;Zoom In&quot; or &quot;Zoom Out&quot; from &quot;View&quot; from menu bar</li>
+      <li>Click &quot;Zoom&quot; button on tool bar</li>
+      <li>Press <kbd>Command</kbd>-<kbd>+</kbd>, <kbd>Command</kbd>-<kbd>-</kbd> keyboard shortcut</li>
+    </ul>
+    <p>To change text size to actual size:</p>
+    <li>Choose &quot;Actual Size&quot; from &quot;View&quot; from menu bar</li>
+    <li>Press <kbd>Command</kbd>-<kbd>0</kbd> keyboard shortcut</li>
 
-      <section id="basic_usage">
-        <h2>Basic Usage</h2>
-        <h3 id="opening_epub">Opening EPUB</h3>
-        <ol>
-          <li>Launch Murasaki</li>
-          <li>Choose &quot;Open...&quot; from &quot;File&quot; from menu bar, or Press <kbd>Command</kbd>-<kbd>O</kbd> keyboard shortcut</li>
-          <li>Choose EPUB file you want to open</li>
-        </ol>
-        <p>If Murasaki is an application to open EPUBs, you can open an EPUB by double-clicking an EPUB file in Finder.</p>
+    <h3 id="bookmarking_page">Bookmarking a Page</h3>
+    <p>You can bookmark each HTML pages that are in EPUB.</p>
 
-        <h3 id="moving_page">Moving Page</h3>
-        <section>
-          <h4>Moving page in reading order</h4>
-          <p>Each HTML files in EPUB are set the reading order. To move page in the reading order:</p>
-          <ul>
-            <li>Choose &quot;Previous&quot; or &quot;Next&quot; from &quot;Move&quot; from menu bar</li>
-            <li>Click &quot;Previous/Next&quot; button on tool bar</li>
-            <li>Press <kbd>←</kbd>, <kbd>→</kbd> keyboard shortcut</li>
-          </ul>
-        </section>
+    <section>
+      <h4>Bookmarking a Page</h4>
+      <p>At first, open a page you want to bookmark.</p>
+      <ul>
+        <li>Choose &quot;Add Bookmark...&quot; from &quot;Bookmarks&quot; from menu bar</li>
+        <li>Click &quot;Add Bookmark&quot; button on tool bar</li>
+        <li>Press <kbd>Command</kbd>-<kbd>D</kbd> keyboard shortcut</li>
+      </ul>
+      <p>Then a bookmark adding sheet is appeared, input bookmark title and click &quot;OK&quot; button.</p>
+    </section>
 
-        <section>
-          <h4>Moving page in visited page history</h4>
-          <p>To move page in visited page history like usual web browser:</p>
-          <ul>
-            <li>Choose &quot;Back&quot; or &quot;Forward&quot; from &quot;Move&quot; from menu bar</li>
-            <li>Click &quot;Back/Forward&quot; button on tool bar</li>
-            <li>Press <kbd>Command</kbd>-<kbd>[</kbd>, <kbd>Command</kbd>-<kbd>]</kbd> keyboard shortcut</li>
-          </ul>
-        </section>
+    <section>
+      <h4>Viewing a Bookmarked Page</h4>
+      <ul>
+        <li>Choose an item you want to view from &quot;Bookmarks&quot; from menu bar</li>
+        <li>Choose an item you want to view from &quot;Bookmarks&quot; from sidebar</li>
+      </ul>
+    </section>
 
-        <h3 id="changing_text_size">Changing Text Size</h3>
-        <p>To change text size:</p>
-        <ul>
-          <li>Choose &quot;Zoom In&quot; or &quot;Zoom Out&quot; from &quot;View&quot; from menu bar</li>
-          <li>Click &quot;Zoom&quot; button on tool bar</li>
-          <li>Press <kbd>Command</kbd>-<kbd>+</kbd>, <kbd>Command</kbd>-<kbd>-</kbd> keyboard shortcut</li>
-        </ul>
-        <p>To change text size to actual size:</p>
-        <li>Choose &quot;Actual Size&quot; from &quot;View&quot; from menu bar</li>
-        <li>Press <kbd>Command</kbd>-<kbd>0</kbd> keyboard shortcut</li>
+    <section>
+      <h4>Removing a Bookmarks</h4>
+      <p>At first, open a bookmarked page.</p>
+      <ul>
+        <li>Choose &quot;Remove Bookmark&quot; from &quot;Bookmarks&quot; from menu bar</li>
+        <li>Click &quot;Remove Bookmark&quot; button on tool bar</li>
+        <li>Press <kbd>Command</kbd>-<kbd>D</kbd> keyboard shortcut</li>
+      </ul>
+      <p>Or,</p>
+      <ol>
+        <li>Choose &quot;Edit Bookmarks...&quot; from &quot;Bookmarks&quot; from menu bar</li>
+        <li>Choose an item you want to remove, then click &quot-&quot; button on the sheet</li>
+      </ol>
+    </section>
 
-        <h3 id="bookmarking_page">Bookmarking a Page</h3>
-        <p>You can bookmark each HTML pages that are in EPUB.</p>
+    <section>
+      <h4>Editing Bookmarks</h4>
+      <p>To edit a bookmark title or reorder bookmarks, choose &quot;Edit Bookmarks...&quot; from &quot;Bookmarks&quot; from menu bar:</p>
+      <ul>
+        <li>Double-click a bookmark title to change a title of bookmark</li>
+        <li>Drag and drop to reorder bookmarks</li>
+      </ul>
+    </section>
 
-        <section>
-          <h4>Bookmarking a Page</h4>
-          <p>At first, open a page you want to bookmark.</p>
-          <ul>
-            <li>Choose &quot;Add Bookmark...&quot; from &quot;Bookmarks&quot; from menu bar</li>
-            <li>Click &quot;Add Bookmark&quot; button on tool bar</li>
-            <li>Press <kbd>Command</kbd>-<kbd>D</kbd> keyboard shortcut</li>
-          </ul>
-          <p>Then a bookmark adding sheet is appeared, input bookmark title and click &quot;OK&quot; button.</p>
-        </section>
+    <h3 id="searching">Searching</h3>
+    <p>To search a word contained in an EPUB:</p>
+    <ul>
+      <li>Choose &quot;Find...&quot; from &quot;Find&quot; from &quot;Edit&quot; from menu bar</li>
+      <li>Press <kbd>Command</kbd>-<kbd>F</kbd> keyboard shortcut</li>
+    </ul>
+    <p>Search bar is appears at the bottom of tool bar. Enter a word in search field, and then press <kbd>Enter</kbd>. If pages are hit, hit pages are listed in Bookmarks pane in sidebar.</p>
 
-        <section>
-          <h4>Viewing a Bookmarked Page</h4>
-          <ul>
-            <li>Choose an item you want to view from &quot;Bookmarks&quot; from menu bar</li>
-            <li>Choose an item you want to view from &quot;Bookmarks&quot; from sidebar</li>
-          </ul>
-        </section>
+    <h3 id="sidebar">Sidebar</h3>
+    <p>Sidebar of Murasaki has 4 panes. Each pane shows an individual page list as follows. By clicking an item of page list, you can open its page.</p>
+    <dl>
+      <dt>Navigation</dt>
+      <dd>Navigation pane shows a navigation structure of EPUB. Navigation may have hierarchy structure.</dd>
+      <dt>List of pages</dt>
+      <dd>List of pages pane lists the reading order of EPUB. List of pages doesn't have hierarchy structure.</dd>
+      <dt>Bookmarks</dt>
+      <dd>Bookmarks pane shows a list of bookmarked pages. There aren't bookmarked pages, this pane shows nothing.</dd>
+      <dt>Search results</dt>
+      <dd>Search results pane shows a list of search results. If there aren't search results, this pane shows nothing.</dd>
+    </dl>
 
-        <section>
-          <h4>Removing a Bookmarks</h4>
-          <p>At first, open a bookmarked page.</p>
-          <ul>
-            <li>Choose &quot;Remove Bookmark&quot; from &quot;Bookmarks&quot; from menu bar</li>
-            <li>Click &quot;Remove Bookmark&quot; button on tool bar</li>
-            <li>Press <kbd>Command</kbd>-<kbd>D</kbd> keyboard shortcut</li>
-          </ul>
-          <p>Or,</p>
-          <ol>
-            <li>Choose &quot;Edit Bookmarks...&quot; from &quot;Bookmarks&quot; from menu bar</li>
-            <li>Choose an item you want to remove, then click &quot-&quot; button on the sheet</li>
-          </ol>
-        </section>
+    <h3 id="opening_in_new_window">Opening a Page in New Window</h3>
+    <p>You can open a current page or a link destination page in new window. To open a current page in new window:</p>
+    <ul>
+      <li>Choose &quot;Open This Page in New Window&quot; from &quot;File&quot; from menu bar</li>
+      <li>Choose &quot;Open This Page in New Window&quot; from context menu which is invoked by right-clicking or <kdb>Control</kdb>-clicking at an area where doesn't contain any other element</li>
+    </ul>
+    <p>To open a link destination page in new window:</p>
+    <ul>
+      <li>Choose &quot;Open Link in New Window&quot; from context menu which is invoked by right-clicking or <kdb>Control</kdb>-clicking at a hyperlink</li>
+      <li><kdb>Command</kdb>-click at a hyperlink</li>
+    </ul>
+    <p>By opening a page in new window, you can read different parts in same page or different pages in same EPUB at once.</p>
 
-        <section>
-          <h4>Editing Bookmarks</h4>
-          <p>To edit a bookmark title or reorder bookmarks, choose &quot;Edit Bookmarks...&quot; from &quot;Bookmarks&quot; from menu bar:</p>
-          <ul>
-            <li>Double-click a bookmark title to change a title of bookmark</li>
-            <li>Drag and drop to reorder bookmarks</li>
-          </ul>
-        </section>
+    <h3 id="opening_in_popover">Opening a Link Destination Page in Popover</h3>
+    <p>You can open a link destination page in popover. To open a link destination page in popover:</p>
+    <ul>
+      <li>Choose &quot;Open Link in Popover&quot; from context menu which is invoked by right-clicking or <kdb>Control</kdb>-clicking at a hyperlink</li>
+      <li><kdb>Option</kdb>-click at a hyperlink</li>
+    </ul>
+    <p>By opening a link destination page in popover, you can check quickly what is in its page.</p>
 
-        <h3 id="searching">Searching</h3>
-        <p>To search a word contained in an EPUB:</p>
-        <ul>
-          <li>Choose &quot;Find...&quot; from &quot;Find&quot; from &quot;Edit&quot; from menu bar</li>
-          <li>Press <kbd>Command</kbd>-<kbd>F</kbd> keyboard shortcut</li>
-        </ul>
-        <p>Search bar is appears at the bottom of tool bar. Enter a word in search field, and then press <kbd>Enter</kbd>. If pages are hit, hit pages are listed in Bookmarks pane in sidebar.</p>
+    <h3 id="opening_image_in_panel">Opening an Image in Panel</h3>
+    <p>To open images in panel, choose &quot;Open Image in Panel&quot; from context menu which is invoked by right-clicking or <kbd>Control</kbd>-clicking at an image.</p>
 
-        <h3 id="sidebar">Sidebar</h3>
-        <p>Sidebar of Murasaki has 4 panes. Each pane shows an individual page list as follows. By clicking an item of page list, you can open its page.</p>
-        <dl>
-          <dt>Navigation</dt>
-          <dd>Navigation pane shows a navigation structure of EPUB. Navigation may have hierarchy structure.</dd>
-          <dt>List of pages</dt>
-          <dd>List of pages pane lists the reading order of EPUB. List of pages doesn't have hierarchy structure.</dd>
-          <dt>Bookmarks</dt>
-          <dd>Bookmarks pane shows a list of bookmarked pages. There aren't bookmarked pages, this pane shows nothing.</dd>
-          <dt>Search results</dt>
-          <dd>Search results pane shows a list of search results. If there aren't search results, this pane shows nothing.</dd>
-        </dl>
+    <h3 id="applying_user_style">Applying user style</h3>
+    <p>Murasaki has two user style feature as follows.</p>
 
-        <h3 id="opening_in_new_window">Opening a Page in New Window</h3>
-        <p>You can open a current page or a link destination page in new window. To open a current page in new window:</p>
-        <ul>
-          <li>Choose &quot;Open This Page in New Window&quot; from &quot;File&quot; from menu bar</li>
-          <li>Choose &quot;Open This Page in New Window&quot; from context menu which is invoked by right-clicking or <kdb>Control</kdb>-clicking at an area where doesn't contain any other element</li>
-        </ul>
-        <p>To open a link destination page in new window:</p>
-        <ul>
-          <li>Choose &quot;Open Link in New Window&quot; from context menu which is invoked by right-clicking or <kdb>Control</kdb>-clicking at a hyperlink</li>
-          <li><kdb>Command</kdb>-click at a hyperlink</li>
-        </ul>
-        <p>By opening a page in new window, you can read different parts in same page or different pages in same EPUB at once.</p>
+    <ul>
+      <li>Default user style</li>
+      <li>Adhoc user style</li>
+    </ul>
 
-        <h3 id="opening_in_popover">Opening a Link Destination Page in Popover</h3>
-        <p>You can open a link destination page in popover. To open a link destination page in popover:</p>
-        <ul>
-          <li>Choose &quot;Open Link in Popover&quot; from context menu which is invoked by right-clicking or <kdb>Control</kdb>-clicking at a hyperlink</li>
-          <li><kdb>Option</kdb>-click at a hyperlink</li>
-        </ul>
-        <p>By opening a link destination page in popover, you can check quickly what is in its page.</p>
+    <p><a href="./downloads/userstyle.css">Download a sample of user style sheet</a>, and follow steps below.</p>
 
-        <h3 id="opening_image_in_panel">Opening an Image in Panel</h3>
-        <p>To open images in panel, choose &quot;Open Image in Panel&quot; from context menu which is invoked by right-clicking or <kbd>Control</kbd>-clicking at an image.</p>
+    <section>
+      <h4>Default user style</h4>
+      <p>Default user style is set from Preferences window.</p>
 
-        <h3 id="applying_user_style">Applying user style</h3>
-        <p>Murasaki has two user style feature as follows.</p>
+      <ol>
+        <li>Choose &quot;Preferences...&quot; from Application menu</li>
+        <li>Click &quot;Advanced&quot; tool bar button on Preferences window to open Advanced pane</li>
+        <li>Choose &quot;Open Style Sheet Folder&quot; from &quot;Default user style sheet&quot; pop up menu</li>
+        <li>Locate CSS file to the folder</li>
+        <li>CSS file appears in &quot;Default user style sheet&quot; pop up menu, then choose CSS file you want to apply</li>
+      </ol>
 
-        <ul>
-          <li>Default user style</li>
-          <li>Adhoc user style</li>
-        </ul>
+      <p>Default user style is applied automatically whenever you open EPUBs.</p>
+    </section>
 
-        <p><a href="./downloads/userstyle.css">Download a sample of user style sheet</a>, and follow steps below.</p>
+    <section>
+      <h4>Adhoc user style</h4>
+      <p>Adhoc user style is set from &quot;View&quot; menu.</p>
 
-        <section>
-          <h4>Default user style</h4>
-          <p>Default user style is set from Preferences window.</p>
+      <ol>
+        <li>Choose &quot;Open Style Sheet Folder&quot; from &quot;Adhoc User Style Sheet&quot; from &quot;View&quot; menu</li>
+        <li>Locate CSS file to the folder</li>
+        <li>CSS file appears in &quot;User Style Sheet&quot; menu, then choose CSS file you want to apply</li>
+      </ol>
 
-          <ol>
-            <li>Choose &quot;Preferences...&quot; from Application menu</li>
-            <li>Click &quot;Advanced&quot; tool bar button on Preferences window to open Advanced pane</li>
-            <li>Choose &quot;Open Style Sheet Folder&quot; from &quot;Default user style sheet&quot; pop up menu</li>
-            <li>Locate CSS file to the folder</li>
-            <li>CSS file appears in &quot;Default user style sheet&quot; pop up menu, then choose CSS file you want to apply</li>
-          </ol>
+      <p>Adhoc user style is not applied automatically when you open EPUBs. You must choose CSS file menu from &quot;View&quot; -&gt; &quot;Adhoc User Style Sheet&quot;, manually.</p>
+    </section>
 
-          <p>Default user style is applied automatically whenever you open EPUBs.</p>
-        </section>
+    <section>
+      <h4>Note about User style</h4>
+      <p>User style may be overridden by the styles of EPUBs. Use <code>!important</code> declaration to not be overridden.</p>
 
-        <section>
-          <h4>Adhoc user style</h4>
-          <p>Adhoc user style is set from &quot;View&quot; menu.</p>
-
-          <ol>
-            <li>Choose &quot;Open Style Sheet Folder&quot; from &quot;Adhoc User Style Sheet&quot; from &quot;View&quot; menu</li>
-            <li>Locate CSS file to the folder</li>
-            <li>CSS file appears in &quot;User Style Sheet&quot; menu, then choose CSS file you want to apply</li>
-          </ol>
-
-          <p>Adhoc user style is not applied automatically when you open EPUBs. You must choose CSS file menu from &quot;View&quot; -&gt; &quot;Adhoc User Style Sheet&quot;, manually.</p>
-        </section>
-
-        <section>
-          <h4>Note about User style</h4>
-          <p>User style may be overridden by the styles of EPUBs. Use <code>!important</code> declaration to not be overridden.</p>
-
-          <pre><code>body { background-color: lightyellow <strong>!important</strong>; }
+      <pre><code>body { background-color: lightyellow <strong>!important</strong>; }
 p { font-family: serif <strong>!important</strong>; font-size: 110% <strong>!important</strong>; }
 img { width: 100% <strong>!important</strong>; }</code></pre>
-        </section>
-      </section>
+    </section>
+  </section>
 
-      <section id="cannot_open_sidebar">
-        <h2>Cannot open sidebar</h2>
-        <p>If you cannot open sidebar by clicking &quot;Show Sidebar&quot; in &quot;View&quot; on menubar or clicking &quot;Sidebar&quot; button on toolbar, try to remove <code>~/Library/Preferences/jp.genji.Murasaki.plist</code> and relaunch Murasaki.</p>
-        <ol>
-          <li>
-            Select &quot;Go to Folder...&quot; in &quot;Go&quot; on menubar of Finder<br />
-            <img src="img/remove_plist01_en.png" />
-          </li>
-          <li>
-            &quot;Go to the folder&quot; dialog appears. Type <code>~/Library/Preferences</code> in text field and click &quot;Go&quot; button<br />
-            <img src="img/remove_plist02_en.png" />
-          </li>
-          <li>
-            Remove <code>jp.genji.Murasaki.plist</code> in that folder<br />
-            <img src="img/remove_plist03_en.png" />
-          </li>
-          <li>Relaunch Murasaki</li>
-        </ol>
-      </section>
+  <section id="cannot_open_sidebar">
+    <h2>Cannot open sidebar</h2>
+    <p>If you cannot open sidebar by clicking &quot;Show Sidebar&quot; in &quot;View&quot; on menubar or clicking &quot;Sidebar&quot; button on toolbar, try to remove <code>~/Library/Preferences/jp.genji.Murasaki.plist</code> and relaunch Murasaki.</p>
+    <ol>
+      <li>
+        Select &quot;Go to Folder...&quot; in &quot;Go&quot; on menubar of Finder<br />
+        <img src="img/remove_plist01_en.png" />
+      </li>
+      <li>
+        &quot;Go to the folder&quot; dialog appears. Type <code>~/Library/Preferences</code> in text field and click &quot;Go&quot; button<br />
+        <img src="img/remove_plist02_en.png" />
+      </li>
+      <li>
+        Remove <code>jp.genji.Murasaki.plist</code> in that folder<br />
+        <img src="img/remove_plist03_en.png" />
+      </li>
+      <li>Relaunch Murasaki</li>
+    </ol>
+  </section>
 
-    </article>
-
-  </body>
-</html>
+</article>

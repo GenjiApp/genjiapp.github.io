@@ -14,7 +14,7 @@ tags: css
   <li><a href="#" class="_demo_horizontal">横型デモ</a></li>
   <li><a href="#" class="_demo_vertical">縦型デモ</a></li>
 </ul>
-<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/jquery.js"></script>
 <script>
 $('a', $('#positionFixedDemo')).click(function(ev) {
   ev.preventDefault();

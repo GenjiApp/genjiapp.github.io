@@ -23,7 +23,7 @@ $(function() {
     queryString += '[' + tagName + '] ';
   });
   queryString += query.keywords.join(' ');
-  $('#globalNavi form input[type="search"]').val(queryString);
+  $('#globalNavigation form input[type="search"]').val(queryString);
 
   var matchedPosts = [];
   $.getJSON('/search.json', function(posts) {

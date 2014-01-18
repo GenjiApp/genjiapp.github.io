@@ -1,26 +1,31 @@
+header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
 header div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    -ms-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
-    width: 850px;
-    height: 300px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    max-width: 900px;
+    min-height: 300px;
     margin: 0 auto;
     padding-left: 260px;
     line-height: 1;
@@ -31,6 +36,7 @@ header div {
 header div h1 {
     font-weight: normal;
     font-size: 600%;
+    margin: 0;
 }
 
 header div h2 {
@@ -46,18 +52,13 @@ header p {
     text-indent: 0;
 }
 
-article {
-    width: 850px;
-    margin: 1em auto;
-}
-
-h2 {
-    margin: 30px 0 10px 0;
-}
-
 figure {
     text-align: center;
     margin: 10px 0;
+}
+
+figure img {
+    max-width: 95%;
 }
 
 #downloadList {
@@ -70,6 +71,18 @@ figure {
     display: inline-block;
     margin: 0;
     padding: 0;
+}
+
+dl {
+    margin-left: 1em;
+}
+
+dl dt {
+    margin-top: 15px;
+}
+
+dl dt:first-child {
+    margin-top: 0;
 }
 
 .badge a {
@@ -99,4 +112,41 @@ figure {
 .badge a span {
     display: block;
     font-size: 75%;
+}
+
+@media screen and (max-width: 800px) {
+    header div {
+        padding: 10px 0 10px 155px;
+        background-size: 150px;
+        min-height: 0;
+        font-size: 85%;
+    }
+
+    header div h1 {
+        font-size: 300%;
+    }
+
+    header div h2 {
+        font-size: 100%;
+    }
+
+    header p {
+        margin-top: 0.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header div {
+        background-image: none !important;
+        padding: 10px 0;
+    }
+
+    header div h1 {
+        font-size: 400%;
+        text-align: center;
+    }
+
+    header div h2 {
+        text-align: center;
+    }
 }

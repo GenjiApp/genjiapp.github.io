@@ -1,130 +1,104 @@
 ---
+layout: default
 title: Murasaki
 subtitle: The Scroll-based EPUB Reader for OS X
 description: Murasaki is an EPUB reader application that has simple user interfaces and various features (CANNOT open DRM-encrypted EPUBs)
 language: en
-fileID: index
+css: [/css/app.css, style.css]
+js: [/js/jquery.js, js/slideshow.js]
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <link href="/css/common.css" rel="stylesheet"/>
-    <link href="/css/app_page.css" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
-    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/slideshow.js"></script>
-    <title>{{ page.title}} — {{ page.subtitle }}</title>
-  </head>
+{% include app_header.html %}
 
-  <body>
+<article>
 
-    {% include global_navi.html %}
+  <div id="slideShow">
+    <ul>
+      <li><img src="img/main_en.png"/></li>
+      <li><img src="img/pagination_en.png"/></li>
+      <li><img src="img/swipe_en.png"/></li>
+      <li><img src="img/popover_en.png"/></li>
+      <li><img src="img/search_en.png"/></li>
+      <li><img src="img/dictionary_en.png"/></li>
+      <li><img src="img/vertical_en.png"/></li>
+      <li><img src="img/spotlight_quicklook_en.png"/></li>
+    </ul>
+  </div>
 
-    {% include header.html %}
+  <div id="sub_article">
 
-    <div id="slideShow">
-      <ul>
-        <li><img src="img/main_en.png"/></li>
-        <li><img src="img/pagination_en.png"/></li>
-        <li><img src="img/swipe_en.png"/></li>
-        <li><img src="img/popover_en.png"/></li>
-        <li><img src="img/search_en.png"/></li>
-        <li><img src="img/dictionary_en.png"/></li>
-        <li><img src="img/vertical_en.png"/></li>
-        <li><img src="img/spotlight_quicklook_en.png"/></li>
-      </ul>
+    <ul id="downloadList">
+      <li class="badge"><a href="http://itunes.apple.com/app/murasaki/id430300762?mt=12"><span>Available on the </span>Mac App Store</a></li>
+      <li class="badge"><a href="http://bit.ly/ujorwr"><span>Free Download</span> Old Version</a></li>
+    </ul>
+
+    <ul id="usefulLinks">
+      <li><a href="history_en.html">Version History</a></li>
+      <li><a href="help_en.html">User Manual</a></li>
+    </ul>
+
+    <h2>Key Features</h2>
+    <div class="features">
+      <div>
+        <h3>Scrolling</h3>
+        <p>Murasaki is a scroll-based reader like usual web browers, not a page flip-based reader like iBooks.</p>
+      </div>
+
+      <div>
+        <h3>Pagination (horizontal writing mode only)</h3>
+        <p>Murasaki supports the pagination view mode. This is a hybrid view mode which has both a free scrolling and a snapping to column (horizontal writing mode only).</p>
+      </div>
+
+      <div>
+        <h3>Swipe navigation</h3>
+        <p>Murasaki supports two-finger swipe gesture to move between contents (Mac OS X 10.7+). To read through an EPUB, use scroll and swipe gestures on trackpad.</p>
+      </div>
+
+      <div>
+        <h3><a href="help_en.html#opening_in_new_window">Multi Windows</a></h3>
+        <p>Murasaki can open different EPUBs in multiple windows. Moreover Murasaki can open different parts of one EPUB in multiple windows at once.</p>
+      </div>
+
+      <div>
+        <h3><a href="help_en.html#opening_in_popover">Popover</a></h3>
+        <p>By opening a link in a popover, you can check a related page, footnote, and so on quickly without moving page (Mac OS X 10.7+).</p>
+      </div>
+
+      <div>
+        <h3><a href="help_en.html#opening_image_in_panel">Image Panel</a></h3>
+        <p>By opening images in panels, you can read through text with reference to these images.</p>
+      </div>
+
+      <div>
+        <h3><a href="help_en.html#searching">Searching</a></h3>
+        <p>You can search a word that is contained in a EPUB.</p>
+      </div>
+
+      <div>
+        <h3><a href="help_en.html#bookmarking_page">Bookmarking</a></h3>
+        <p>You can bookmark, and can refer these pages later.</p>
+      </div>
+
+      <div>
+        <h3>Full Screen</h3>
+        <p>By entering full screen mode, you can view the EPUB contents in full screen (Mac OS X 10.7+).</p>
+      </div>
+
+      <div>
+        <h3><a href="help_en.html#applying_user_style">User Style Sheet</a></h3>
+        <p>Murasaki can apply user style sheets.</p>
+      </div>
+
+      <div>
+        <h3>Popover Dictionary</h3>
+        <p>You can look up a word in popover dictionary.</p>
+      </div>
+
+      <div>
+        <h3>Spotlight / Quick Look</h3>
+        <p>Murasaki includes Spotlight and Quick Look plug-ins for EPUB. You can search and preview EPUBs in Finder</p>
+      </div>
     </div>
 
-    <article>
+  </div>
 
-      <ul id="downloadList">
-        <li class="badge"><a href="http://itunes.apple.com/app/murasaki/id430300762?mt=12"><span>Available on the </span>Mac App Store</a></li>
-        <li class="badge"><a href="http://bit.ly/ujorwr"><span>Free Download</span> Old Version</a></li>
-      </ul>
-
-      <ul id="usefulLinks">
-        <li><a href="history_en.html">Version History</a></li>
-        <li><a href="help_en.html">User Manual</a></li>
-      </ul>
-
-      <h2>Key Features</h2>
-      <div class="featuresRow">
-        <div>
-          <h3>Scrolling</h3>
-          <p>Murasaki is a scroll-based reader like usual web browers, not a page flip-based reader like iBooks.</p>
-        </div>
-
-        <div>
-          <h3>Pagination (horizontal writing mode only)</h3>
-          <p>Murasaki supports the pagination view mode. This is a hybrid view mode which has both a free scrolling and a snapping to column (horizontal writing mode only).</p>
-        </div>
-      </div>
-
-      <div class="featuresRow">
-        <div>
-          <h3>Swipe navigation</h3>
-          <p>Murasaki supports two-finger swipe gesture to move between contents (Mac OS X 10.7+). To read through an EPUB, use scroll and swipe gestures on trackpad.</p>
-        </div>
-
-        <div>
-          <h3><a href="help_en.html#opening_in_new_window">Multi Windows</a></h3>
-          <p>Murasaki can open different EPUBs in multiple windows. Moreover Murasaki can open different parts of one EPUB in multiple windows at once.</p>
-        </div>
-      </div>
-
-      <div class="featuresRow">
-        <div>
-          <h3><a href="help_en.html#opening_in_popover">Popover</a></h3>
-          <p>By opening a link in a popover, you can check a related page, footnote, and so on quickly without moving page (Mac OS X 10.7+).</p>
-        </div>
-
-        <div>
-          <h3><a href="help_en.html#opening_image_in_panel">Image Panel</a></h3>
-          <p>By opening images in panels, you can read through text with reference to these images.</p>
-        </div>
-      </div>
-
-      <div class="featuresRow">
-        <div>
-          <h3><a href="help_en.html#searching">Searching</a></h3>
-          <p>You can search a word that is contained in a EPUB.</p>
-        </div>
-
-        <div>
-          <h3><a href="help_en.html#bookmarking_page">Bookmarking</a></h3>
-          <p>You can bookmark, and can refer these pages later.</p>
-        </div>
-
-      </div>
-
-      <div class="featuresRow">
-        <div>
-          <h3>Full Screen</h3>
-          <p>By entering full screen mode, you can view the EPUB contents in full screen (Mac OS X 10.7+).</p>
-        </div>
-
-        <div>
-          <h3><a href="help_en.html#applying_user_style">User Style Sheet</a></h3>
-          <p>Murasaki can apply user style sheets.</p>
-        </div>
-      </div>
-
-      <div class="featuresRow">
-        <div>
-          <h3>Popover Dictionary</h3>
-          <p>You can look up a word in popover dictionary.</p>
-        </div>
-
-        <div>
-          <h3>Spotlight / Quick Look</h3>
-          <p>Murasaki includes Spotlight and Quick Look plug-ins for EPUB. You can search and preview EPUBs in Finder</p>
-        </div>
-      </div>
-
-    </article>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+</article>

@@ -2,6 +2,8 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="/css/normalize.css" rel="stylesheet"/>
     <link href="/css/common.css" rel="stylesheet"/>
     <link href="/css/post.css" rel="stylesheet"/>
     <link href="/blog/feed.xml" type="application/rss+xml" title="{{ site.name }} Blog" rel="alternate"/>
@@ -10,25 +12,25 @@
 
   <body>
 
-    {% include global_navi.html %}
+    {% include global_navigation.html %}
 
-    <p class="feed"><a href="/blog/feed.xml">[feed]</a></p>
+    <p id="feed"><a href="/blog/feed.xml">feed</a></p>
 
     <article>
-      <p class="date">{{ page.date | date: "%Y年%m月%d日" }}</p>
+      <p class="postDate">{{ page.date | date: "%Y年%m月%d日" }}</p>
       <h1>{{ page.title }}</h1>
-      <nav id="tags">
+      <aside id="postTags">
         <h2>tags</h2>
         <ul>
           {% for tag in page.tags %}
           <li><a href="/search.html?q=%5B{{ tag }}%5D">{{ tag }}</a></li>
           {% endfor %}
         </ul>
-      </nav>
+      </aside>
 
       {{ content }}
 
-      <nav>
+      <aside>
         <h2>最近の記事</h2>
         <ul>
           {% for post in site.posts limit:5 %}
@@ -37,7 +39,7 @@
           {% endif %}
           {% endfor %}
         </ul>
-      </nav>
+      </aside>
     </article>
 
     {% include footer.html %}
