@@ -1,6 +1,7 @@
 ---
 title: ドコモにMNPしてiPhone 5s 16GBを0円で入手した
 layout: post
+tags: misc
 ---
 　ソフトバンクのiPhone 4（4Sにあらず）からドコモにMNPしてiPhone 5sに変更した。余計なオプション契約なしで端末代金が一括0円、他のキャッシュバック等はなし、という案件。
 
