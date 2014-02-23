@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 佐野昌一（海野十三）の「虫喰い算大会」電子書籍版を公開
-tags: ebook
+tags: ebook release
 ---
 　佐野昌一（海野十三）の「虫喰い算大会」を横組みにし、問題部分をSVG画像化した電子書籍をGitHubで公開しました。
 
