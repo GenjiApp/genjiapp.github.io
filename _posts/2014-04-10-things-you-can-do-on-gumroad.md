@@ -19,6 +19,8 @@ tags: gumroad
 
 ## Gumroadの機能
 
+　以下ではGumroadの様々な機能を紹介する。詳細な機能紹介は[Gumroadご利用ガイド](https://gumroad.com/guide)に書かれている。ここで紹介するもの以外にも様々な特徴、機能があるので一読をお勧めする。
+
 ### [販売数、販売国の限定](https://gumroad.com/guide/basics/customizing-your-product#limit-sales)
 
 　販売数を100個までとか限定できたり、販売国は日本だけとか限定できる。
@@ -64,8 +66,6 @@ tags: gumroad
 
 
 ## 最後に
-
-　Gumroadが持つ機能の詳細や使い方は[Gumroadご利用ガイド](https://gumroad.com/guide)で。ここで紹介したもの以外にも様々な特徴、機能がある。
 
 　今回、[Gumroadを利用した投げ銭](https://gumroad.com/l/IaST)を作って、このウェブサイト全体に掲載してみた（ブログ記事の末尾とフッタ部）。Pay What You Wantモデルで価格付けをしているので、0円でも購入可能。その場合はクレジットカードは必要なく、メイルアドレスのみで購入できる。それでも購入者があった旨はこちらに通知されるので、ウェブ拍手代わりにもなったりするかも。
 　0円の場合はウェブ拍手的に、お金払ってくれる場合は投げ銭的にと、Pay What You Wantモデルを用いればひとつでふたつの役割に兼用できる。
