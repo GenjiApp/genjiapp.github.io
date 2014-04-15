@@ -7,11 +7,14 @@ js: [/js/jquery.js, /js/search.js]
   <h1>{{ page.title }}</h1>
 </div>
 
+{% capture tagNamesString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tagNames = tagNamesString | split:',' | sort %}
+
 <aside id="tagList">
   <h1>{% if page.language == 'en' %}Tags{% else %}タグ一覧{% endif %}</h1>
   <ul>
-    {% for tag in site.tags %}
-    <li><a href="/search{% if page.language == 'en' %}_en{% endif %}.html?q=%5B{{ tag[0] }}%5D">{{ tag[0] }}</a></li>
+    {% for tagName in tagNames %}
+    <li><a href="/search{% if page.language == 'en' %}_en{% endif %}.html?q=%5B{{ tagName }}%5D">{{ tagName }}<span>{{ site.tags[tagName].size }}<span></a></li>
     {% endfor %}
   </ul>
 </aside>

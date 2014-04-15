@@ -52,6 +52,12 @@ article #postTags ul li {
     line-height: 1;
 }
 
+article #postTags ul li a span {
+    vertical-align: super;
+    font-size: 70%;
+    padding-left: 1px;
+}
+
 article #postTags ul li:after {
     content: ",";
 }

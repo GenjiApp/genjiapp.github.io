@@ -18,6 +18,13 @@ h1 {
     margin: 50px auto;
 }
 
+#tagList ul li a span,
+#matchedList dl dd a span {
+    vertical-align: super;
+    font-size: 70%;
+    padding-left: 1px;
+}
+
 #matchedList dl {
     margin-left: 1.5em;
 }
