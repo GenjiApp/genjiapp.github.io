@@ -20,9 +20,8 @@ h1 {
 
 #tagList ul li a span,
 #matchedList dl dd a span {
-    vertical-align: super;
-    font-size: 70%;
-    padding-left: 1px;
+     font-size: 80%;
+    padding-left: 2px;
 }
 
 #matchedList dl {

@@ -24,7 +24,7 @@
         {% assign sortedTagNames = page.tags | sort %}
         <ul>
           {% for tagName in sortedTagNames %}
-          <li><a href="/search.html?q=%5B{{ tagName }}%5D">{{ tagName }}<span>{{ site.tags[tagName].size }}</span></a></li>
+          <li><a href="/search.html?q=%5B{{ tagName }}%5D">{{ tagName }}<span>[{{ site.tags[tagName].size }}]</span></a></li>
           {% endfor %}
         </ul>
       </aside>
