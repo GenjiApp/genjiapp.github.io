@@ -14,7 +14,7 @@ js: [/js/jquery.js, /js/search.js]
   <h1>{% if page.language == 'en' %}Tags{% else %}タグ一覧{% endif %}</h1>
   <ul>
     {% for tagName in tagNames %}
-    <li><a href="/search{% if page.language == 'en' %}_en{% endif %}.html?q=%5B{{ tagName }}%5D">{{ tagName }}<span>{{ site.tags[tagName].size }}<span></a></li>
+    <li><a href="/search{% if page.language == 'en' %}_en{% endif %}.html?q=%5B{{ tagName }}%5D">{{ tagName }}<span>{{ site.tags[tagName].size }}</span></a></li>
     {% endfor %}
   </ul>
 </aside>
