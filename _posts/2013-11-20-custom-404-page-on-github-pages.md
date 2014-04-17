@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub Pagesでカスタム404ページを配置する
-tags: github
+tags: github development
 ---
 　このウェブサイトは現在[GitHub Pages](http://pages.github.com)でホストされている。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyllの最新記事と関連記事
-tags: jekyll
+tags: jekyll development
 ---
 　Jekyllの`site`変数は`posts`と`related_posts`メンバを持つ。`posts`は全ブログ記事が新しい順に入っており、`related_posts`は処理中のブログ記事に関連している記事が最大10件分入っている。
 
