@@ -49,7 +49,7 @@ tags: jekyll github javascript development
 　全体を配列として、その中にブログ記事の情報を詰め込む。
 
 　ポイントは`content`の値に適用するフィルタ。
-　`post.content`にはブログ記事の本文がHTMLタグ付きで入っているので、`strip_html`フィルタを適用してHTMLタグを取り除く。`strip_newline`で改行文字を除去して単一行にし、最後に`escape`でクォーテイション文字等をエスケープする。
+　`post.content`にはブログ記事の本文がHTMLタグ付きで入っているので、`strip_html`フィルタを適用してHTMLタグを取り除く。`strip_newlines`で改行を除去して単一行にし、最後に`escape`でクォーテイション文字等をエスケープする。
 
 　JSONファイルが作成できたら、一度Jekyllによる生成後のファイルを検査し（[JSONLint - The JSON Validator](http://jsonlint.com)）、Validなファイルができているかを確認した方が良い。
 
@@ -78,9 +78,9 @@ tags: jekyll github javascript development
 
 　`search.js`の要点を書くと、
 
-1. `search.html`は`GET`リクエストが送信されているので、URL文字列からクエリィ文字列を取り出し、整形する。
-2. `search.json`を読み込む。
-3. `search.json`から読み込んだブログ記事情報の配列から検索条件に合致するものを抜き出し、`search.html`に配置している`div`に情報を整形して埋め込む。
+1. `search.html`は`GET`リクエストが送信されているので、URL文字列から検索キィワードを取り出し、整形する
+2. `search.json`を読み込む
+3. `search.json`から読み込んだブログ記事情報の配列から検索条件に合致するものを抜き出し、`search.html`に配置している`div`に情報を整形して埋め込む
 
 　本文にキィワードが含まれているかどうかは`String.match()`の正規表現を用いた。たとえばキィワードが`jekyll 検索`であれば`(?=.*jekyll)(?=.*検索)`という正規表現を本文文字列に対して用いた。この場合は、本文文字列内に「jekyll」「検索」の両方（順不同）が含まれている場合にマッチする。
 
@@ -90,7 +90,7 @@ tags: jekyll github javascript development
 　実際のファイル構成はGitHubリポジトリィを参照。
 
 - [search.json](https://github.com/GenjiApp/genjiapp.github.io/blob/master/search.json)
-- [search_page.html](https://github.com/GenjiApp/genjiapp.github.io/blob/master/_layouts/search_page.html)
+- [search.html](https://github.com/GenjiApp/genjiapp.github.io/blob/master/_layouts/search.html)
 - [search.js](https://github.com/GenjiApp/genjiapp.github.io/blob/master/js/search.js)
 
 　この方式の問題点はブログ記事数が増えるごとに生成されるJSONファイルが肥大化し、検索速度が低下することだが、それはそのときになって考えれば良いとして、今回はこれまで。
