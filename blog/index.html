@@ -18,12 +18,12 @@
 
     <p id="feed"><a href="/blog/feed.xml">feed</a></p>
 
-    {% capture tagNamesString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-    {% assign tagNames = tagNamesString | split:',' | sort %}
     <aside id="tagList">
       <h1>タグ一覧</h1>
       <ul>
-        {% for tagName in tagNames %}
+        {% capture tagNamesString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        {% assign sortedTagNames = tagNamesString | split:',' | sort %}
+        {% for tagName in sortedTagNames %}
         <li><a href="/search.html?q=%5B{{ tagName }}%5D">{{ tagName }}<span>[{{ site.tags[tagName].size }}]</span></a></li>
         {% endfor %}
       </ul>
