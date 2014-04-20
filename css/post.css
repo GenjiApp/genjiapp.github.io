@@ -143,12 +143,20 @@ article blockquote {
 }
 
 nav.paginator ul {
-    margin: 0;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    position: relative;
 }
 
 nav.paginator ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav.paginator ul li:last-child {
+    text-align: right;
+    position: absolute;
+    right: 0;
 }
