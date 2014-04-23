@@ -38,7 +38,7 @@ tags: jekyll github javascript development
     "url": "{{ post.url }}",
     "date": {"year": "{{ post.date | date: "%Y" }}", "month": "{{ post.date | date: "%m" }}", "day": "{{ post.date | date: "%d" }}"},
     "content": "{{ post.content | strip_html | strip_newlines | escape }}"
-  }{% if forloop.last %}{% else %},{% endif %}
+  }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
 ```
