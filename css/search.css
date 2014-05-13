@@ -41,6 +41,8 @@ h1 {
     display: inline-block;
     margin-left: 0;
     margin-right: 1em;
+    color: #444;
+    font-size: 90%;
 }
 
 #matchedList p {
