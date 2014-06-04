@@ -1,7 +1,7 @@
 ---
 title: QuickTime Playerでスクリーンキャプチャしたmovからベターなアニメーションgifを作る
 layout: post
-tags: 
+tags: [gif, ffmpeg, imagemagick]
 ---
 　QuickTime Playerで「ファイル」→「新規画面収録」することで、画面の操作をmovファイルの動画にすること（スクリーンキャプチャ）ができる。そのmovからある程度きれいでファイルサイズが小さいアニメーションgifを作ることを考える。
 
