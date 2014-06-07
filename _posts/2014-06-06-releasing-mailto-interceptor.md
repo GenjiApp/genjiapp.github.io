@@ -18,7 +18,7 @@ tags: [os x, release, mailto interceptor]
 - Gmailの作成画面を開く
 - 上記の動作と指定メイルアプリケーションの起動を選択できるメニューをポップアップ（推奨動作）
 
-　Mailto Interceptorが`mailto:`に反応した起動した場合、Dockへのアイコン表示、およびDockアイコンのバウンドアニメーション等はしないので、ユーザはMailto Interceptorの存在を意識することなく上記の動作を実行させることができます。
+　Mailto Interceptorが`mailto:`に反応して起動した場合、Dockへのアイコン表示、およびDockアイコンのバウンドアニメーション等はしないので、ユーザはMailto Interceptorの存在を意識することなく上記の動作を実行させることができます。
 
 ![](/blog/img/20140606/demo.gif)
 
