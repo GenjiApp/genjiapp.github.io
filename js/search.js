@@ -71,7 +71,7 @@ $(function() {
           });
         }
         var regExp = new RegExp(regexpString, 'i');
-        if(postInfo.content.match(regExp) != null) {
+        if(postInfo.title.match(regExp) != null || postInfo.content.match(regExp) != null) {
           matchedPosts.push(postInfo);
         }
       }
