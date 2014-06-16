@@ -11,3 +11,5 @@ paginate_path: "blog/page:num"
 markdown: redcarpet
 redcarpet:
   extensions: ["autolink", "hard_wrap"]
+
+historyURL: https://github.com/GenjiApp/genjiapp.github.io/commits/master/

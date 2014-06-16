@@ -31,7 +31,7 @@
 
     {% for post in paginator.posts %}
     <article>
-      <p class="postDate">{{ post.date | date: "%Y年%m月%d日" }}</p>
+      <p class="postDate">{{ post.date | date: "%Y年%m月%d日" }}, <a href="{{ site.historyURL }}{{ post.path }}">編集履歴</a></p>
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <aside id="postTags">
         <h2>tags</h2>
