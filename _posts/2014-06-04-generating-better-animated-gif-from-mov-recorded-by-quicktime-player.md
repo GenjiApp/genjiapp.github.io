@@ -59,6 +59,8 @@ $ convert -delay 2 -layers optimize frames/*.png output.gif
 
 　ちなみに上記のアニメーションGIFは2014年6月4日現在Mac App Storeに申請中のアプリケーションのデモアニメーションです。`mailto:`リンクのクリックによる意図しないメイルアプリケーションの起動を抑制します。メイルアプリケーションの起動の代わりにアドレスをコピィしたり、Gmailの作成画面を開いたりできるようになるアプリケーションです。
 
+　追記：上記アプリケーションをリリースしました（「[Mailto Interceptorをリリースしました]({% post_url 2014-06-06-releasing-mailto-interceptor %})」）。
+
 ## 参考
 
 - [ffmpeg と ImageMagick で動画をアニメGIF 変換](http://futuremix.org/2012/03/ffmpeg-imagemagick-animation-gif)
