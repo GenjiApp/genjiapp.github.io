@@ -6,8 +6,7 @@ tags: jekyll github javascript development
 ## はじめに
 
 　[Jekyll](http://jekyllrb.com)は静的ウェブサイト生成システムであり、検索機能は付いていない。
-　プラグインで検索機能を付けられるのかもしれないが、[GitHub Pages](http://pages.github.com)上でビルド・ホストをする場合は使えないので、ちゃんと探していない。
-　かんたんにサイト内検索を実現するならGoogleのカスタム検索を使用する方法もあるが、Googleには頼りたくないので今回は自分で実装した。
+　プラグインで検索機能を付けられるのかもしれないが、[GitHub Pages](http://pages.github.com)上でビルド・ホストをする場合は使えないので、ちゃんと探していない。かんたんにサイト内検索を実現するならGoogleのカスタム検索を使用する方法もあるが、Googleには頼りたくないので今回は自分で実装した。
 
 　こんなの。
 
@@ -34,7 +33,7 @@ tags: jekyll github javascript development
   {% for post in site.posts %}
   {
     "title": "{{ post.title | escape }}",
-    "tags": [{% for tag in post.tags%}"{{ tag }}"{% if forloop.last %}{% else %}, {% endif %}{% endfor %}],
+    "tags": [{% for tag in post.tags%}"{{ tag }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
     "url": "{{ post.url }}",
     "date": {"year": "{{ post.date | date: "%Y" }}", "month": "{{ post.date | date: "%m" }}", "day": "{{ post.date | date: "%d" }}"},
     "content": "{{ post.content | strip_html | strip_newlines | escape }}"
@@ -44,14 +43,12 @@ tags: jekyll github javascript development
 ```
 {% endraw %}
 
-　Jekyllの処理対象とするためにファイル先頭にYAML Front-matterが必要。
-
-　全体を配列として、その中にブログ記事の情報を詰め込む。
+　全体を配列として、その中にブログ記事の情報を詰め込む。Jekyllの処理対象とするためにファイル先頭にYAML Front-matterが必要。
 
 　ポイントは`content`の値に適用するフィルタ。
 　`post.content`にはブログ記事の本文がHTMLタグ付きで入っているので、`strip_html`フィルタを適用してHTMLタグを取り除く。`strip_newlines`で改行を除去して単一行にし、最後に`escape`でクォーテイション文字等をエスケープする。
 
-　JSONファイルが作成できたら、一度Jekyllによる生成後のファイルを検査し（[JSONLint - The JSON Validator](http://jsonlint.com)）、Validなファイルができているかを確認した方が良い。
+　JSONファイルが作成できたら、一度ローカルでビルド、生成されたJSONファイルを検査し（[JSONLint - The JSON Validator](http://jsonlint.com)）、Validなファイルができているかを確認した方が良い。
 
 
 ## 検索フォーム、検索結果ページの作成
