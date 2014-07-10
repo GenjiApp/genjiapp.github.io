@@ -27,7 +27,7 @@ language: ja
 
 <p>Mailto Interceptorは常駐型のアプリケーションではありません。あらかじめシステムのデフォルトメールアプリケーションとしてMailto Interceptorを指定することで、<code>mailto:</code>リンクのクリックに反応して自動的に起動します。その際、Dockアイコンのバウンド表示等はされず、動作後は自動終了するので、Mailto Interceptorの存在を意識することはありません。</p>
 
-<p>Mailto Interceptorは、ブラウザから<code>mailto:</code>リンクのクリック以外にも、連絡先アプリケーションや各種アプリケーションの共有メニューからのメール送信機能に対しても反応して起動します。上記の動作の内、「<code>mailto:</code>リンクを無視」と「メールアドレスをコピー」はユーザに対するヴィジュアルフィードバックがありません。「メニューをポップアップ」動作を推奨します。</p>
+<p>Mailto Interceptorは、ブラウザから<code>mailto:</code>リンクのクリック以外にも、<strong>連絡先アプリケーションや各種アプリケーションの共有メニューからのメール送信機能に対しても反応して起動します</strong>。</p>
 
 
 <h2>システム要件</h2>
@@ -43,10 +43,16 @@ language: ja
   <li>Mailto Interceptor.appを終了</li>
 </ol>
 
+<p>この初期設定を行うことで<code>mailto:</code>リンクのクリック等にMailto Interceptorが反応するようになります。</p>
+
 
 <h2>ヴァージョン履歴</h2>
 
 <dl>
+  <dt>ver. 1.1: 2014年7月10日</dt>
+  <dd>動作通知パネルを表示する機能を追加</dd>
+  <dd>UIの改良</dd>
+
   <dt>ver. 1.0: 2014年6月6日</dt>
   <dd>最初のヴァージョン</dd>
 </dl>
