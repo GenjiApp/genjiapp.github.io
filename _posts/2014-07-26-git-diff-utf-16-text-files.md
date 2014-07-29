@@ -5,11 +5,11 @@ tags: git development
 ---
 　UTF-16でエンコーディングされたテキストファイルを`git-diff`等で表示することを考える。
 
-## `.gitattributes`をレポジトリィに追加する
+## `.gitattributes`をリポジトリィに追加する
 
 　`.gitattributes`ファイルを用いることで、特定のファイルやディレクトリィ単位で個別のdiffツールやmergeツールを用いるといった設定を行うことができる。
 
-　レポジトリィに以下のような内容の`.gitattributes`ファイルを追加する。
+　リポジトリィに以下のような内容の`.gitattributes`ファイルを追加する。
 
 ```
 *.txt diff=utf16
