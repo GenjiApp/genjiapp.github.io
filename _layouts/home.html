@@ -21,7 +21,7 @@
       {{ content }}
 
       {% if page.language == 'ja' %}
-      <h2>Recent Blog Posts [<a href="/blog/feed.xml">feed</a>]</h2>
+      <h2><a href="/blog/">Blog</a> [<a href="/blog/feed.xml">feed</a>]</h2>
       <ul id="recentPosts">
         {% for post in site.posts limit:5 %}
         <li>{{ post.date | date: "%Y年%m月%d日" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
