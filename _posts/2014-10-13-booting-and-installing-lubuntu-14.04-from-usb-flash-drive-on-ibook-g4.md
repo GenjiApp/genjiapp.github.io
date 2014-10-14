@@ -33,7 +33,7 @@ $ diskutil unmountDisk /dev/disk1
 でUSBメモリィをマウント解除する（USBメモリィ自体は差し込んだまま）。
 
 ```
-sudo dd if=/path/to/lubuntu-14.04.1-desktop-powerpc.iso of=/dev/disk1 bs=1m
+$ sudo dd if=/path/to/lubuntu-14.04.1-desktop-powerpc.iso of=/dev/disk1 bs=1m
 ```
 
 でディスクイメージをUSBメモリィに書き込む（`/path/to/lubuntu-14.04.1-desktop-powerpc.iso`はディスクイメージのパス）。パスワードを効かれるので入力すると書き込みが始まる。数分間待つ。**それまでのUSBメモリィの中身は消去されるので注意のこと**。書き込みが終わればLubuntu起動・インストール用のUSBメモリィが完成。
