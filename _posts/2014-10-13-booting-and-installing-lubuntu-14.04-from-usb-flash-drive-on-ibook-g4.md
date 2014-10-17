@@ -36,7 +36,7 @@ $ diskutil unmountDisk /dev/disk1
 $ sudo dd if=/path/to/lubuntu-14.04.1-desktop-powerpc.iso of=/dev/disk1 bs=1m
 ```
 
-でディスクイメージをUSBメモリィに書き込む（`/path/to/lubuntu-14.04.1-desktop-powerpc.iso`はディスクイメージのパス）。パスワードを効かれるので入力すると書き込みが始まる。数分間待つ。**それまでのUSBメモリィの中身は消去されるので注意のこと**。書き込みが終わればLubuntu起動・インストール用のUSBメモリィが完成。
+でディスクイメージをUSBメモリィに書き込む（`/path/to/lubuntu-14.04.1-desktop-powerpc.iso`はディスクイメージのパス）。パスワードを聞かれるので入力すると書き込みが始まる。数分間待つ。**それまでのUSBメモリィの中身は消去されるので注意のこと**。書き込みが終わればLubuntu起動・インストール用のUSBメモリィが完成。
 
 ## Open FirmwareからUSB起動
 
