@@ -56,9 +56,11 @@ $ qlmanage -r
 
 ![](/blog/img/20150404/quick-look.png)
 
-　Spotlight検索からのプレヴューは以下のような感じ（EPUBだけを対象にしたい場合は、以下の画像のように`kind:epub`とするとよい）。
+　Spotlight検索からのQuick Lookプレヴューは以下のような感じ。Spotlight検索でEPUBだけを対象にしたい場合は、以下の画像のように`kind:epub`という条件を加えると良い。
 
 ![](/blog/img/20150404/spotlight.png)
+
+　赤線による強調は画像処理による。画像のようにEPUB内の単語でSpotlight検索できていることが解る。
 
 ### `style`要素の`scoped`属性
 
