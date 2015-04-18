@@ -13,28 +13,28 @@ tags: misc
 <table>
   <caption>マシン環境</caption>
   <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px; text-align: right; background-color: #eee; font-weight: bold;">機種</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">MacBook Late 2008 アルミニウム</td>
-  <tr>
-
-  <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px; text-align: right; background-color: #eee; font-weight: bold;">OS</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">OS X 10.10 Yosemite</td>
+    <th>機種</th>
+    <td>MacBook Late 2008 アルミニウム</td>
   </tr>
 
   <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px; text-align: right; background-color: #eee; font-weight: bold;">プロセッサ</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">2GHz Intel Core 2 Duo</td>
+    <th>OS</th>
+    <td>OS X 10.10 Yosemite</td>
   </tr>
 
   <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px; text-align: right; background-color: #eee; font-weight: bold;">メモリィ</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">8GB DDR3</td>
+    <th>プロセッサ</th>
+    <td>2GHz Intel Core 2 Duo</td>
   </tr>
 
   <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px; text-align: right; background-color: #eee; font-weight: bold;">ストーレッジ</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">256GB SSD</td>
+    <th>メモリィ</th>
+    <td>8GB DDR3</td>
+  </tr>
+
+  <tr>
+    <th>ストーレッジ</th>
+    <td>256GB SSD</td>
   </tr>
 </table>
 
@@ -50,31 +50,33 @@ tags: misc
 
 <table>
   <caption>ベンチマーク結果概要</caption>
+  <thead>
+    <tr>
+      <th colspan="2">状況</th>
+      <th>総合スコア</th>
+      <th>CPU Test</th>
+    </tr>
+  </thead>
+
   <tr>
-    <td colspan="2" style="border: 1px solid gray; padding: 3px 10px; text-align: center;">状況</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">総合スコア</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">CPU Test</td>
+    <th>1</th>
+    <th>ACアダプタ接続 & バッテリィ</th>
+    <td>80.73</td>
+    <td>138.85</td>
   </tr>
 
   <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px;">1</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">ACアダプタ接続 & バッテリィ</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">80.73</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">138.85</td>
+    <th>2</th>
+    <th>バッテリィのみ</th>
+    <td>79.33</td>
+    <td>137.94</td>
   </tr>
 
   <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px;">2</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">バッテリィのみ</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">79.33</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">137.94</td>
-  </tr>
-
-  <tr>
-    <td style="border: 1px solid gray; padding: 3px 10px;">3</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">ACアダプタ接続のみ</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">56.79</td>
-    <td style="border: 1px solid gray; padding: 3px 10px;">109.89</td>
+    <th>3</th>
+    <th>ACアダプタ接続のみ</th>
+    <td>56.79</td>
+    <td>109.89</td>
   </tr>
 </table>
 

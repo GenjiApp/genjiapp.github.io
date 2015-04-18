@@ -142,6 +142,21 @@ article blockquote {
     border-bottom: 1px solid silver;
 }
 
+article table {
+    margin: 20px auto;
+}
+
+article table th,
+article table td {
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+
+article table th {
+    background-color: #eee;
+    text-align: center;
+}
+
 nav.paginator ul {
     max-width: 900px;
     margin: 0 auto;

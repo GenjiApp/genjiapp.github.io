@@ -32,13 +32,10 @@ tags: misc
 ![](/blog/img/20150406/results.png)
 
 <div>
-<style scoped="scoped">
-table { margin: 0 auto; }
-tr:nth-child(even) { background-color: #eee; }
-td { border: 1px solid black; padding: 5px 10px; }
-</style>
+
 <table>
-<tr><td>受信月</td><td>account 1の受信数</td><td>account 2の受信数</td></tr>
+<caption>迷惑メール受信数</caption>
+<thead><tr><th>受信月</th><th>account 1の受信数</th><th>account 2の受信数</th></tr></thead>
 <tr><td>2014年4月</td><td>1099</td><td>973</td></tr>
 <tr><td>2014年5月</td><td>1144</td><td>1148</td></tr>
 <tr><td>2014年6月</td><td>1016</td><td>1065</td></tr>
