@@ -5,7 +5,7 @@ tags: gumroad
 ---
 　「[Gumroadでできること]({% post_url 2014-04-10-things-you-can-do-on-gumroad %})」では、主に売り手側が使える[Gumroad](https://gumroad.com)の機能を紹介した。今回は買い手がどのような手順でGumroadで購入処理を進めるのかを解説する。
 
-　[CLCLの商品ページ](https://gumroad.com/l/auv)を例として示す（CLCLについては[本サイトのアプリケーション紹介ページ](/mac/clcl/)を参照。機能限定の[Lite版はMac App Store](https://itunes.apple.com/jp/app/clcl-lite/id495511246?mt=12)にあります）。
+　[CLCLの商品ページ](https://gumroad.com/l/ZdLUh)を例として示す（CLCLについては[本サイトのアプリケーション紹介ページ](/mac/clcl/)を参照。機能限定の[Lite版はMac App Store](https://itunes.apple.com/jp/app/clcl-lite/id495511246?mt=12)にあります）。
 
 　**買い手はGumroadにアカウント登録する必要はない**。基本的にはメイルアドレスとクレジットカードがあればGumroadで商品を購入することができる。
 
