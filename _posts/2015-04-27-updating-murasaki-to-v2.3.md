@@ -22,4 +22,4 @@ tags: [release, murasaki, os x]
 
 　EPUB内コンテンツ統合ウィンドウは、EPUB内のすべてのコンテントドキュメントを統合して一度に表示する特別なウィンドウです。コンテンツすべてを一度に選択、コピィ、印刷が行えます。ただし、統合ウィンドウではスタイルが多少崩れることがあります。今のところ横書きのみです。
 
-　Spotlight / Quick Lookプラグインの改良は「[OS XのEPUB用Spotlight/Quick Lookプラグインを作り直した]({ post_url 2015-04-04-os-x-spotlight-and-quick-look-plugins-for-epub})」で最初から書き直したものに差し替えました。当初はMurasaki v2系には同梱しない予定でしたが、OS Xの不具合が解消されたことにより古いMac OS Xにも対応できるようになりました。
+　Spotlight / Quick Lookプラグインの改良は「[OS XのEPUB用Spotlight/Quick Lookプラグインを作り直した]({% post_url 2015-04-04-os-x-spotlight-and-quick-look-plugins-for-epub %})」で最初から書き直したものに差し替えました。当初はMurasaki v2系には同梱しない予定でしたが、OS Xの不具合が解消されたことにより古いMac OS Xにも対応できるようになりました。
