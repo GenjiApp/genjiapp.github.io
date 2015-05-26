@@ -1,0 +1,174 @@
+---
+layout: default
+title: Emoji IM
+subtitle: Emoji IM Manual
+language: en
+fileID: manual
+css: style.css
+---
+
+<header>
+  <a href="index_en.html"><img src="img/icon.png" width="128px" height="128px"/></a>
+  <div>
+    <h1><a href="index_en.html">Emoji IM</a></h1>
+    <h2>{{ page.subtitle }}</h2>
+  </div>
+</header>
+
+<div id="container">
+  <ul>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#uninstall">Uninstall</a></li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#caps_lock_mode">Caps Lock Mode</a></li>
+        <li><a href="#skin_tone">Skin Tone</a></li>
+        <li><a href="#ignore_eisu_key">Ignore Eisu Key (for Apple JIS Keyboard)</a></li>
+        <li><a href="#register_favorites">Register Favorites</a></li>
+        <li><a href="#excluded_apps">Excluded Applications</a></li>
+        <li><a href="#look_up_emoji_name">Look up Emoji's Name</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 id="install">Install</h2>
+
+  <ol>
+    <li>Run “Emoji IM Installer.pkg”.
+      <figure><img src="img/install00.png"/></figure>
+    </li>
+    <li>Open System Preferences.
+      <figure><img src="img/install01-en.png"/></figure>
+    </li>
+    <li>Choose “Keyboard” Preferences.
+      <figure><img src="img/install02-en.png"/></figure>
+    </li>
+    <li>Choose “Input Sources” tab and click “+” button (and also check “Show Input menu in menu bar”).
+      <figure><img src="img/install03-en.png"/></figure>
+    </li>
+    <li>Choose “English” and “Emoji IM”, and click “Add”.
+      <figure><img src="img/install04-en.png"/></figure>
+    </li>
+    <li>Make sure “Emoji IM” is added.
+      <figure><img src="img/install05-en.png"/></figure>
+    </li>
+  </ol>
+
+  <h2 id="uninstall">Uninstall</h2>
+
+  <ol>
+    <li>Open System Preferences.</li>
+    <li>Choose “Keyboard” Preferences.</li>
+    <li>Choose “Input Source” tab and “Emoji IM”, and click “-” button.</li>
+    <li>Reboot system.</li>
+    <li>Remove Emoji IM.app from <code>/Library/Input Methods</code>.</li>
+  </ol>
+
+  <h2 id="usage">Usage</h2>
+
+  <ol>
+    <li>Choose “Emoji IM” in Input menu.
+      <figure><img src="img/how-to-input01-en.png"/></figure>
+    </li>
+    <li>Type Emoji's name in <strong>UPPERCASE</strong> (type with <kbd>Shift</kbd> key or turn on <kbd>Caps Lock</kbd> key).</li>
+    <li>Candidates window is shown.</li>
+    <li>To select emoji, type <kbd>Tab</kbd>/<kbd>Shift-Tab</kbd>, <kbd>Up arrow key</kbd>/<kbd>Down arrow key</kbd> or <kbd>Control-p</kbd>/<kbd>Control-n</kbd>.</li>
+    <li>To input a selected emoji, type <kbd>Enter</kbd> or double-click.
+      <ul>
+        <li>If you pressed <kbd>Option</kbd> key at this time, hexadecimal code point is inputted instead of emoji.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <figure>
+    <video controls width="400" height="250">
+      <source src="img/how-to-input.mp4"/>
+      <source src="img/how-to-input.webm"/>
+    </video>
+  </figure>
+
+  <h3 id="caps_lock_mode">Caps Lock Mode</h3>
+
+  <p>In Caps Lock Mode, you can only input Emojis when Caps Lock is on.</p>
+
+  <ol>
+    <li>Choose “Emoji IM” from Input menu.</li>
+    <li>Choose “Preferences...” from Input menu.</li>
+    <li>Check “Caps Lock Mode” in “General” tab.
+      <figure><img src="img/caps-lock-mode-en.png"/></figure>
+    </li>
+  </ol>
+
+  <h3 id="skin_tone">Skin Tone</h3>
+
+  <p>You can set skin tone.</p>
+
+  <ol>
+    <li>Choose “Emoji IM” from Input menu.</li>
+    <li>Choose “Preferences...” from Input menu.</li>
+    <li>Choose “Skin Tone” pop up button in “General” tab.
+      <figure><img src="img/skin-tone-en.png"/></figure>
+    </li>
+  </ol>
+
+  <h3 id="ignore_eisu_key">Ignore Eisu Key (for Apple JIS Keyboard)</h3>
+
+  <p>If you use Apple JIS keyboard and you type Eisu key, a whitespace character is inputted unintentionally. To ignore Eisu key event:</p>
+
+  <ol>
+    <li>Choose “Emoji IM” from Input menu.</li>
+    <li>Open “Preferences...” from Input menu.
+      <figure><img src="img/ignore-eisu01-en.png"/></figure>
+    </li>
+    <li>Check “Ignore Eisu Key” in “General” tab.
+      <figure><img src="img/ignore-eisu02-en.png"/></figure>
+    </li>
+  </ol>
+
+  <h3 id="register_favorites">Register Favorites</h3>
+
+  <p>You can register custom name of emojis:</p>
+
+  <ol>
+    <li>Choose “Emoji IM” from Input menu.</li>
+    <li>Choose “Preferences...” from Input menu.</li>
+    <li>Choose “Favorites” tab.</li>
+    <li>Click “+” button.
+      <figure><img src="img/favorites-en.png"/></figure>
+    </li>
+    <li>Input custom name to “Replace” text field and emoji to “With” text field.</li>
+    <li>Click “OK” button.</li>
+  </ol>
+
+  <h3 id="excluded_apps">Excluded Applications</h3>
+
+  <p>You can register excluded apps to not enter emoji mode:</p>
+
+  <ol>
+    <li>Choose “Emoji IM” from Input menu.</li>
+    <li>Choose “Preferences...” from Input menu.</li>
+    <li>Choose “Excluded Apps” tab.</li>
+    <li>Click “+” button.
+      <figure><img src="img/excluded-apps-en.png"/></figure>
+    </li>
+    <li>Choose applications you want to add to excluded apps, and click “Open” button.</li>
+  </ol>
+
+  <h3 id="look_up_emoji_name">Look up Emoji's name</h3>
+
+  <p>To look up emoji's name:</p>
+
+  <ol>
+    <li>Choose “Show Character Viewer” from input menu.
+      <figure><img src="img/look-up-emoji-name01-en.png"/></figure>
+    </li>
+    <li>Look up emojis's name.
+      <figure><img src="img/look-up-emoji-name02-en.png"/></figure>
+    </li>
+  </ol>
+
+  
+
+
+
+</div>

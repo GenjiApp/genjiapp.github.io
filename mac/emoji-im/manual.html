@@ -1,0 +1,166 @@
+---
+layout: default
+title: Emoji IM
+subtitle: Emoji IMのマニュアル
+language: ja
+fileID: manual
+css: style.css
+---
+
+<header>
+  <a href="index.html"><img src="img/icon.png" width="128px" height="128px"/></a>
+  <div>
+    <h1><a href="index.html">Emoji IM</a></h1>
+    <h2>{{ page.subtitle }}</h2>
+  </div>
+</header>
+
+<div id="container">
+  
+  <ul>
+    <li><a href="#install">インストール</a></li>
+    <li><a href="#uninstall">アンインストール</a></li>
+    <li><a href="#usage">使用方法</a>
+      <ul>
+        <li><a href="#caps_lock_mode">Caps Lockモードを使用する</a></li>
+        <li><a href="#skin_tone">スキントーンを設定する</a></li>
+        <li><a href="#ignore_eisu_key">英数キィを無視する</a></li>
+        <li><a href="#register_favorites">お気に入りを登録する</a></li>
+        <li><a href="#excluded_apps">除外アプリケーションを設定する</a></li>
+        <li><a href="#look_up_emoji_name">絵文字の名前を調べる</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 id="install">インストール</h2>
+
+  <ol>
+    <li>「Emoji IM Installer.pkg」を実行
+      <figure><img src="img/install00.png"/></figure>
+    </li>
+    <li>「システム環境設定」を開く
+      <figure><img src="img/install01.png"/></figure>
+    </li>
+    <li>「キーボード」環境設定を開く
+      <figure><img src="img/install02.png"/></figure>
+    </li>
+    <li>「入力ソース」タブの「＋」ボタンをクリック（「メニューバーに入力メニューを表示」をチェックしておく）
+      <figure><img src="img/install03.png"/></figure>
+    </li>
+    <li>「英語」から「Emoji IM」を選択し、「追加」ボタンをクリック
+      <figure><img src="img/install04.png"/></figure>
+    </li>
+    <li>「Emoji IM」が追加されたことを確認
+      <figure><img src="img/install05.png"/></figure>
+    </li>
+  </ol>
+
+  <h2 id="uninstall">アンインストール</h2>
+
+  <ol>
+    <li>「システム環境設定」を開く</li>
+    <li>「キーボード」環境設定を開く</li>
+    <li>「入力ソース」タブで「Emoji IM」を選択し、「-」ボタンをクリック</li>
+    <li>システム再起動</li>
+    <li><code>/Library/Input Methods</code>から「Emoji IM.app」を削除する</li>
+  </ol>
+
+  <h2 id="usage">使用方法</h2>
+  
+  <p>入力メニューから「Emoji IM」を選択した状態で、絵文字の名前を<strong>大文字</strong>で入力してください。変換候補ウィンドウが表示され、候補が絞りこまれていきます。候補を選択するには<kbd>Tab</kbd>/<kbd>Shift-Tab</kbd>や<kbd>↑</kbd>/<kbd>↓</kbd>、<kbd>Control-p</kbd>/<kbd>Control-n</kbd>を、選択した候補の決定は<kbd>Enter</kbd>あるいはダブルクリックを行います。候補決定時に<kbd>Option</kbd>を押していると、絵文字の代わりに16進コードポイントが入力されます。</p>
+
+  <figure>
+    <video controls width="400" height="250">
+      <source src="img/how-to-input.mp4"/>
+      <source src="img/how-to-input.webm"/>
+    </video>
+  </figure>
+
+  <h3 id="caps_lock_mode">Caps Lockモードを使用する</h3>
+
+  <p>絵文字を入力するには<strong>大文字</strong>で入力しますが、これは<kbd>Shift</kbd>キィを押しながらか、あるいは<kbd>Caps Lock</kbd>キィをオンにして入力します。Emoji IMのCaps Lockモードは<kbd>Caps Lock</kbd>をオンにしたときだけ、絵文字の入力モードに切り替わるようになります。</p>
+
+  <ol>
+    <li>入力メニューで「Emoji IM」を選択する</li>
+    <li>入力メニューからEmoji IMの「環境設定...」を選択する</li>
+    <li>「一般」タブの「Caps Lock モード」をチェックする
+      <figure><img src="img/caps-lock-mode.png"/></figure>
+    </li>
+  </ol>
+
+  <h3 id="skin_tone">スキントーンを設定する</h3>
+
+  <p>絵文字で使用する肌色を設定します。</p>
+
+  <ol>
+    <li>入力メニューで「Emoji IM」を選択する</li>
+    <li>入力メニューからEmoji IMの「環境設定...」を選択する</li>
+    <li>「一般」タブの「スキントーン」で肌色を選択する
+      <figure><img src="img/skin-tone.png"/></figure>
+    </li>
+  </ol>
+
+  <h3 id="ignore_eisu_key">英数キィを無視する</h3>
+
+  <p>AppleのJISキィボードの「英数」キィを押すと空白が入力されてしまいます。英数キィの入力を無視するには、</p>
+  <ol>
+    <li>入力メニューで「Emoji IM」を選択する</li>
+    <li>入力メニューからEmoji IMの「環境設定...」を開く
+      <figure><img src="img/ignore-eisu01.png"/></figure>
+    </li>
+    <li>「一般」タブの「英数キーを無視する」のチェックを入れようとすると、
+      <figure><img src="img/ignore-eisu02.png"/></figure>
+      「アクセシビリティ機能」へのアクセス許可を求めるダイアログが出るので、「“システム環境設定”を開く」ボタンをクリック
+      <figure><img src="img/ignore-eisu03.png"/></figure>
+    </li>
+    <li>「プライバシー」タブの「アクセシビリティ」で「 Emoji IM」をチェックする
+      <figure><img src="img/ignore-eisu04.png"/></figure>
+      チェックボックスがグレーアウトして変更できないときは、ウィンドウ左下の錠前アイコンをクリックしてください。
+    </li>
+    <li>Emoji IMの「環境設定...」ウィンドウの「一般」タブで「英数キーを無視する」にチェックを入れる</li>
+  </ol>
+
+  <h3 id="register_favorites">お気に入りを登録する</h3>
+
+  <p>絵文字のユニコード名ではなく、自分で設定した名前で変換できるようにします。</p>
+
+  <ol>
+    <li>入力メニューで「Emoji IM」を選択する</li>
+    <li>入力メニューからEmoji IMの「環境設定...」を選択する</li>
+    <li>「お気に入り」タブを選択する</li>
+    <li>「+」ボタンをクリックする
+      <figure><img src="img/favorites.png"/></figure>
+    </li>
+    <li>「入力」欄にお気に入りの名前、「変換」欄にその名前で変換する絵文字を入力する</li>
+    <li>「OK」ボタンをクリックする</li>
+  </ol>
+
+  <h3 id="excluded_apps">除外アプリケーションを設定する</h3>
+
+  <p>Emoji IMで絵文字変換処理をしたくないアプリケーションを設定することができます。除外アプリケーション上では大文字入力しても絵文字変換モードになりません。</p>
+
+  <ol>
+    <li>入力メニューで「Emoji IM」を選択する</li>
+    <li>入力メニューからEmoji IMの「環境設定...」を選択する</li>
+    <li>「除外アプリケーション」タブを選択する</li>
+    <li>「+」ボタンをクリックする
+      <figure><img src="img/excluded-apps.png"/></figure>
+    </li>
+    <li>ファイル選択パネルが表示されるので、除外したいアプリケーションを選択し、「開く」をクリックする</li>
+  </ol>
+
+  <h3 id="look_up_emoji_name">絵文字の名前を調べる</h3>
+
+  <p>絵文字の名前を調べるには、入力メニューから「文字ビューア」を起動し、「絵文字」カテゴリィを選択すれば絵文字の名前が表示されます。</p>
+
+  <ol>
+    <li>入力メニューから「文字ビューアを表示」を選択する
+      <figure><img src="img/look-up-emoji-name01.png"/></figure>
+    </li>
+    <li>文字ビューアで「絵文字」カテゴリィから調べたい絵文字を選択する
+      <figure><img src="img/look-up-emoji-name02.png"/></figure>
+    </li>
+  </ol>
+
+
+</div>
