@@ -110,23 +110,24 @@ header h1 a:hover {
     margin: auto;
 }
 
-#container h2:before {
-    content: "🐱";
-    margin-right: 5px;
-}
-
-#container h3:before {
-    content: "🐯";
-    margin-right: 5px;
-}
-
-#description,
-.badge {
+#description {
     text-align: center;
 }
 
+#downloadList {
+    padding: 0;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#downloadList li {
+    text-align: center;
+    font-size: 80%;
+}
+
 .badge {
-    margin: 30px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
 }
 
 .badge a {
@@ -176,4 +177,16 @@ figure img {
 
 footer {
     border-top: 1px solid silver;
+}
+
+
+/* for manual page */
+#container h2:before {
+    content: "🐱";
+    margin-right: 5px;
+}
+
+#container h3:before {
+    content: "🐯";
+    margin-right: 5px;
 }
