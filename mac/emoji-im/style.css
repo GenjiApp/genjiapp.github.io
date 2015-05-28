@@ -57,6 +57,7 @@ header h1 {
 
 header h1:after {
     content: "😀";
+    font-weight: normal;
     border-right: 1px solid black;
 
     -webkit-animation: blink 1s step-end 0s infinite normal;
@@ -183,10 +184,12 @@ footer {
 /* for manual page */
 #container h2:before {
     content: "🐱";
+    font-weight: normal;
     margin-right: 5px;
 }
 
 #container h3:before {
     content: "🐯";
+    font-weight: normal;
     margin-right: 5px;
 }
