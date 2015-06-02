@@ -29,6 +29,11 @@ header {
 header img {
   display: block;
   margin: 0 20px 0 0;
+  -webkit-flex: 0 0 auto;
+  -moz-flex: 0 0 auto;
+  -o-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 header div {
@@ -53,6 +58,7 @@ header h1 {
   font-size: 400%;
   text-align: center;
   margin: 0;
+  white-space: nowrap;
 }
 
 header h1:after {
@@ -231,6 +237,7 @@ figure video {
   border: 1px solid silver;
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 figure img {
@@ -256,4 +263,24 @@ footer {
   content: "🐯";
   font-weight: normal;
   margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  header img { width: 96px; height: 96px; }
+  header h1 { font-size: 300%; }
+  .feature > div,
+  .feature:nth-child(even) > div {
+    display: block;
+  }
+  .feature:nth-child(odd) > div > figure {
+    margin: 0;
+  }
+  .feature:nth-child(even) > div > figure {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header img { width: 64px; height: 64px; }
+  header h1 { font-size: 200%; }
 }
