@@ -4,7 +4,7 @@ layout: post
 tags: [development, css]
 ---
 
-　Goocle Chromeに、スタイルで`font-weight:600`以上が指定されていると絵文字が表示されなくなる問題があるようだ（[Issue 465066](https://code.google.com/p/chromium/issues/detail?id=465066)）。
+　Google Chromeには、スタイルで`font-weight:600`以上が指定されていると絵文字が表示されなくなる問題があるようだ（[Issue 465066](https://code.google.com/p/chromium/issues/detail?id=465066)）。
 
 ```
 <p style="font-weight:400;">🙆OK</p>
