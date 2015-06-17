@@ -112,7 +112,7 @@ header h1 a:hover {
   text-decoration: none;
 }
 
-#container, #manual {
+#container, #manual, #versionHistory > div {
   max-width: 900px;
   margin: auto;
 }
@@ -192,6 +192,29 @@ header h1 a:hover {
 
 .feature > div > h2 {
   margin: 0 0 15px 0;
+}
+
+#versionHistory {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+}
+
+#versionHistory dl dt,
+#versionHistory dl dd {
+  line-height: 2;
+}
+
+#versionHistory dl dt {
+  font-weight: bold;
+}
+
+#versionHistory dl dd {
+  display: list-item;
+}
+
+#versionHistory dl dd ul {
+  margin-top: 0;
 }
 
 .badge {
