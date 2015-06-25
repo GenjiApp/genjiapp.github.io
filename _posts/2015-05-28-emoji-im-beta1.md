@@ -1,7 +1,7 @@
 ---
 title: Emoji IM Beta1を公開しました👍
 layout: post
-tags: [development, os x, release]
+tags: [development, os x, release, emoji im]
 ---
 
 ![](/blog/img/20150528/icon.png)
