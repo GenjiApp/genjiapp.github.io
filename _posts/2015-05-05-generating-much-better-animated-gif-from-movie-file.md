@@ -25,18 +25,17 @@ tags:  [ffmpeg, gif]
 　パレット画像を生成するには、以下を実行する。
 
 ```
-$ ffmpeg -i input.mov -vf fps=20,palettegen=stats_mode=diff -y palette.png
+$ ffmpeg -i input.mov -vf palettegen -y palette.png
 ```
 
-　`-i input.mov`で入力動画の指定、`-y palette.png`で出力するパレット画像の指定。
-　`-vf fps=20,palettegen=stats_mode=diff`がフィルタの指定。`fps=20`でFPSを20に指定し（[fpsフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#fps-1)）、`palettegen=stats_mode=diff`でパレット画像の生成を指定（[palettegenフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#palettegen-1)）。今回は`palettegen`に`stats_mode=diff`オプションを指定した。
+　`-i input.mov`で入力動画の指定、`-y palette.png`で出力するパレット画像の指定。`-vf palettegen`でパレット画像の生成を指定（[palettegenフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#palettegen-1)）。
 
 ## アニメーションGIFの生成
 
 　パレット画像を元にアニメーションGIFを生成するには、以下を実行する。
 
 ```
-$ ffmpeg -i input.mov -i palette.png -lavfi fps=20,paletteuse -y output.gif
+$ ffmpeg -i input.mov -i palette.png -lavfi paletteuse -y output.gif
 ```
 
 　入力動画と共にパレット画像も指定し、アニメーションGIFを生成する。`-lavfi fps=20,paletteuse`でFPSとパレット画像の使用を指定（[paletteuseフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#paletteuse)）。
@@ -84,7 +83,7 @@ $ ffmpeg -i input.mov -i palette.png -lavfi fps=20,paletteuse -y output-ffmpeg-p
 　また、処理にかかった時間もパレット画像不使用に比べれば遅いものの、前回の手法の方よりは大幅に速い。出力ファイルサイズもパレット画像不使用よりは大きいが前回の手法よりは小さい、という結果になった。
 
 
-## おまけ（動画の切り抜き、拡大・縮小）
+## おまけ（動画の切り抜き、拡大・縮小、FPSの変更）
 
 　Quick Time Playerでスクリーンキャプチャする際、範囲選択の領域サイズが表示されないので、狙った領域サイズで収録するのが難しい。そこで、範囲選択を大きめに取って収録し、ffmpegを用いて切り抜き、縮小する方法を考える。
 
@@ -103,6 +102,14 @@ $ ffmpeg -i input.mov -vf scale=400:-1:flags=lanczos -y output.mov
 ```
 
 のようにする。`-vf scale=400:-1:flags=lanczos`で拡大・縮小を指定（[scaleフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#scale-1)）。
+
+　FPSの変更は、
+
+```
+$ ffmpeg -i input.mov -vf fps=20 -y output.mov
+```
+
+のようにする（[fpsフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#fps-1)）。
 
 　切り抜きしつつ、縮小しつつ、FPSを指定して、パレット画像の生成をするには、
 
