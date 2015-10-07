@@ -38,7 +38,7 @@ $ ffmpeg -i input.mov -vf palettegen -y palette.png
 $ ffmpeg -i input.mov -i palette.png -lavfi paletteuse -y output.gif
 ```
 
-　入力動画と共にパレット画像も指定し、アニメーションGIFを生成する。`-lavfi fps=20,paletteuse`でFPSとパレット画像の使用を指定（[paletteuseフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#paletteuse)）。
+　入力動画と共にパレット画像も指定し、アニメーションGIFを生成する。`-lavfi paletteuse`でFPSとパレット画像の使用を指定（[paletteuseフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#paletteuse)）。
 
 ## 結果
 
