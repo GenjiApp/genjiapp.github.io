@@ -13,3 +13,6 @@ redcarpet:
   extensions: ["autolink", "hard_wrap", "tables"]
 
 historyURL: https://github.com/GenjiApp/genjiapp.github.io/commits/master/
+
+gems:
+  - jekyll-sitemap
