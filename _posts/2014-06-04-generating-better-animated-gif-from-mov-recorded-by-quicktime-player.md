@@ -50,10 +50,12 @@ $ convert -delay 2 -layers optimize frames/*.png output.gif
 　ターミナルでの操作が嫌なひとは以下のようなGUIアプリケーションがあるので参考まで。
 
 - [LICEcap](http://www.cockos.com/licecap/)
-  LICEcapはWindows/OS X両方で使える。スクリーンキャプチャから一貫してこのアプリひとつでできるのでお手軽。出力の質は本稿の手法より劣ると思う。無料。
+
+    LICEcapはWindows/OS X両方で使える。スクリーンキャプチャから一貫してこのアプリひとつでできるのでお手軽。出力の質は本稿の手法より劣ると思う。無料。
 
 - [GIF Brewery](http://gifbrewery.com)
-  GIF Breweryは動画ファイルをアニメーションGIFに変換するOS X用のアプリケーション。GUIでクロップやリサイズ、オーヴァレイとかできる（本稿の手法でもImageMagickでがんばればクロップやリサイズ等できる）。出力の質は本稿の手法以上。有料。
+
+    GIF Breweryは動画ファイルをアニメーションGIFに変換するOS X用のアプリケーション。GUIでクロップやリサイズ、オーヴァレイとかできる（本稿の手法でもImageMagickでがんばればクロップやリサイズ等できる）。出力の質は本稿の手法以上。有料。
 
 ## 余談
 
