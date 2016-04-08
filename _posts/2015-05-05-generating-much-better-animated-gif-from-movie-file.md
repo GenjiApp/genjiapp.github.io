@@ -38,7 +38,7 @@ $ ffmpeg -i input.mov -vf palettegen -y palette.png
 $ ffmpeg -i input.mov -i palette.png -lavfi paletteuse -y output.gif
 ```
 
-　入力動画と共にパレット画像も指定し、アニメーションGIFを生成する。`-lavfi paletteuse`でFPSとパレット画像の使用を指定（[paletteuseフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#paletteuse)）。
+　入力動画と共にパレット画像も指定し、アニメーションGIFを生成する。`-lavfi paletteuse`でパレット画像の使用を指定（[paletteuseフィルタのドキュメント](https://ffmpeg.org/ffmpeg-filters.html#paletteuse)）。
 
 ## 結果
 
@@ -85,7 +85,7 @@ $ ffmpeg -i input.mov -i palette.png -lavfi fps=20,paletteuse -y output-ffmpeg-p
 
 ## おまけ（動画の切り抜き、拡大・縮小、FPSの変更）
 
-　Quick Time Playerでスクリーンキャプチャする際、範囲選択の領域サイズが表示されないので、狙った領域サイズで収録するのが難しい。そこで、範囲選択を大きめに取って収録し、ffmpegを用いて切り抜き、縮小する方法を考える。
+　QuickTime Playerでスクリーンキャプチャする際、範囲選択の領域サイズが表示されないので、狙った領域サイズで収録するのが難しい。そこで、範囲選択を大きめに取って収録し、ffmpegを用いて切り抜き、縮小する方法を考える。
 
 　切り抜きの場合、
 
