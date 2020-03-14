@@ -1,4 +1,5 @@
 name: Genji App
+title: Genji App
 url: http://genjiapp.com
 
 blogDescription: Genji App Blogの更新情報
@@ -12,8 +13,9 @@ kramdown:
   input: GFM
   hard_wrap: true
 
+
 historyURL: https://github.com/GenjiApp/genjiapp.github.io/commits/master/
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
