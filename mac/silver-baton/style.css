@@ -1,0 +1,13 @@
+header {
+    background-image: url(/img/noise.png);
+}
+
+header div {
+    background-image: url(img/icon.png);
+}
+
+header div h1 {
+    font-size: 500%;
+    text-shadow: 1px 1px 0 gray;
+}
+
