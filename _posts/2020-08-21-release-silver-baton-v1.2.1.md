@@ -1,5 +1,5 @@
 ---
-title: Silver Baton ver. 1.2.1をリリースしました。
+title: Silver Baton ver. 1.2.1をリリースしました
 layout: post
 tags: [os x, release, silver baton]
 ---
