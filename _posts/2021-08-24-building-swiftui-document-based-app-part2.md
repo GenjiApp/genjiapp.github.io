@@ -8,7 +8,7 @@ SwiftUIでDocument-Based Appな画像閲覧アプリ習作の覚書その2。PNG
 
 前回のブログは、
 
-- [SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その1]({% post_url 2021-08-23-building-swiftui-document-based-app-part1 %})
+- [SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その1　プロジェクト作成から画像の表示まで]({% post_url 2021-08-23-building-swiftui-document-based-app-part1 %})
 
 作成したプロジェクトはGitHubで公開している。
 
@@ -21,7 +21,7 @@ SwiftUIでDocument-Based Appな画像閲覧アプリ習作の覚書その2。PNG
 
 である。
 
-前回までで、画像を開いて表示できるところまでを作成した。今回は開いた画像の拡大縮小表示の実装を行う。
+[前回]({% post_url 2021-08-23-building-swiftui-document-based-app-part1 %})までで、画像を開いて表示できるところまでを作成した。今回は開いた画像の拡大縮小表示の実装を行う。
 
 ## `MagnificationGesture`でピンチジェスチャの実装
 
