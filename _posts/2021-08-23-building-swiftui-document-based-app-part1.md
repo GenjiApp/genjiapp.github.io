@@ -37,7 +37,7 @@ Document Typesは必須、既存のファイル形式を扱う場合は「Import
 
 ![](/blog/img/20210823/02-document-types.png)
 
-Document Typesでは、PNG、JPEGそれぞれに形式の名称やUTIを指定する。また、アプリは画像の閲覧専用とするので、「Role」は「Viewer」を、「Handler Rank」は「Alternate」を選択した。
+Document Typesでは、PNG/JPEGそれぞれに形式の名称やUTIを指定する。また、アプリは画像の閲覧専用とするので、「Role」は「Viewer」を、「Handler Rank」は「Alternate」を選択した。
 
 ![](/blog/img/20210823/03-imported-type-identifiers.png)
 
@@ -47,7 +47,7 @@ macOS/iOSのInfo.plistは独立しているので、両対応させる場合は�
 
 ## `FileDocument`/`ReferenceFileDocument`で対応形式を宣言
 
-SwiftUI Document-Based Appでは、対応するファイル形式のモデルを`FileDocument`あるいは`ReferenceFileDocument`に適合したオブジェクトで表現する。`FileDocument`あるいは`ReferenceFileDocument`が持つ`static var writableContentTypes: [UTType] { get }`プロパティで、対応する形式のUTIを`[UTType]`で返すようにする。
+SwiftUI Document-Based Appでは、対応するファイル形式のモデルを`FileDocument`あるいは`ReferenceFileDocument`に適合したオブジェクトで表現する。`FileDocument`あるいは`ReferenceFileDocument`が持つ`static var readableContentTypes: [UTType] { get }`プロパティで、対応する形式のUTIを`[UTType]`で返すようにする。
 
 ```swift
   static var readableContentTypes: [UTType] {
@@ -180,7 +180,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 ```
 
-`ReferenceFileDocument`は`ObservableObject`に適合している。今回のドキュメントモデルは`ReferenceFileDocument`で定義したので、プロパティとして保持するときは`@ObservedObject`で受ける。大きな画像を開いたときにスクロールできるように、`Image`を`ScrollView`に内包させた。
+今回のドキュメントモデルで採用した`ReferenceFileDocument`は`ObservableObject`に適合しているので、プロパティとして保持するときは`@ObservedObject`で受ける。大きな画像を開いたときにスクロールできるように、`Image`を`ScrollView`に内包させた。
 
 ここまでで、とりあえずPNG/JPEG画像を閲覧するアプリが動く。
 
