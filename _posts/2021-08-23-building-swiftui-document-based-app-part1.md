@@ -1,14 +1,18 @@
 ---
-title: SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その1
+title: SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その1　プロジェクト作成から画像の表示まで
 layout: post
 tags: [development, swiftui, os x, ios]
 ---
 
-SwiftUIでDocument-Based Appな画像閲覧アプリを習作した。プロジェクトはGitHubで公開している。
+SwiftUIでDocument-Based Appな画像閲覧アプリを習作した。PNG/JPEG画像を開いて閲覧、スクロール、ピンチジェスチャで拡大縮小、ツールバーにボタン配置等を実装した。その覚書その1。
+
+その2は、
+
+[SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その2　ジェスチャによる拡大縮小]({% post_url 2021-08-24-building-swiftui-document-based-app-part2 %})
+
+プロジェクトはGitHubで公開している。
 
 - [https://github.com/GenjiApp/ImageViewerSwiftUI](https://github.com/GenjiApp/ImageViewerSwiftUI)
-
-PNG/JPEG画像を開いて閲覧、スクロール、ピンチジェスチャで拡大縮小、ツールバーにボタン配置等を実装した。
 
 ビルド環境は、
 
@@ -188,4 +192,4 @@ struct ContentView_Previews: PreviewProvider {
 
 Document-Based Appなので、複数のウィンドウで別々の画像を開いたり、複数開いたウィンドウをタブでひとつのウィンドウにまとめたりできる。
 
-次回はピンチイン／アウトジェスチャによる画像の拡大縮小とツールバーの実装を行う。
+[次回]({% post_url 2021-08-24-building-swiftui-document-based-app-part2 %})はピンチイン／アウトジェスチャによる画像の拡大縮小の実装を行う。
