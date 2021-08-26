@@ -1,7 +1,7 @@
 ---
 title: SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その2　ジェスチャによる拡大縮小
 layout: post
-tags: [development, ios, macos, swiftui]
+tags: [dev, ios, macos, swiftui]
 ---
 
 SwiftUIでDocument-Based Appな画像閲覧アプリ習作の覚書その2。PNG/JPEG画像を開いて閲覧、スクロール、ピンチジェスチャで拡大縮小、ツールバーにボタン配置等を実装した。

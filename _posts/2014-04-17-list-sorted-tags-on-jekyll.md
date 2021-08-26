@@ -1,7 +1,7 @@
 ---
 title: Jekyllでタグをソートして一覧する
 layout: post
-tags: jekyll development
+tags: jekyll dev
 ---
 　[Jekyll](http://jekyllrb.com)を用いたブログで、ブログ記事に付けたタグをソートして一覧することを考える。サイト内の全タグを一覧する場合と、とあるひとつの記事に付けられたタグを一覧する場合のふたつを考える。
 

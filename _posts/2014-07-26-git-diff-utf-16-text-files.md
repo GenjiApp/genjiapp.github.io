@@ -1,7 +1,7 @@
 ---
 title: GitでUTF-16なテキストファイルのdiffを表示する
 layout: post
-tags: git development
+tags: git dev
 ---
 　UTF-16でエンコーディングされたテキストファイルを`git-diff`等で表示することを考える。
 

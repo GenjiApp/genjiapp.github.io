@@ -1,7 +1,7 @@
 ---
 title: ノブなしNSSliderでシークバーを作る
 layout: post
-tags: [cocoa, development, macos]
+tags: [cocoa, dev, macos]
 ---
 
 久しぶりにアプリをリリースしました。「[Silver Baton](/mac/silver-baton)」という、Music.appで再生中の曲の情報表示や再生・一時停止等の操作ができるmacOSアプリです。

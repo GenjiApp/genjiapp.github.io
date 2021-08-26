@@ -2,7 +2,7 @@
 layout: post
 title: JekyllのMarkdown設定（2013年11月18日追記）
 date: 2013-11-13 12:37
-tags: jekyll markdown development
+tags: jekyll markdown dev
 ---
 　[Jekyllを使ってウェブサイトとブログの再構築をした]({% post_url 2013-11-13-rebuild-website-by-using-jekyll %})。その際に用いたMarkdown用の設定メモ。
 　現時点での`_config.yml`ファイルのMarkdown関係の設定は以下。

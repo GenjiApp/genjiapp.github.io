@@ -1,7 +1,7 @@
 ---
 title: Jekyll製ウェブサイトに簡易検索機能を実装する
 layout: post
-tags: jekyll github javascript development
+tags: jekyll github javascript dev
 ---
 ## はじめに
 

@@ -1,7 +1,7 @@
 ---
 title: Jekyllでスペースを含むタグを付ける
 layout: post
-tags: jekyll development
+tags: jekyll dev
 ---
 　Jekyllでは、YAML Front-matterで`tags`変数にタグを割り当てることで、ブログ記事にタグを付けることができる。たとえばこの記事のFront-matterは以下のようになっている。
 

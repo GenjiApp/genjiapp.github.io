@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JekyllのPagination設定（2013年11月30日追記）
-tags: jekyll development
+tags: jekyll dev
 ---
 　[JekyllのPagination](http://jekyllrb.com/docs/pagination/)とは、一ページ中にブログ記事がいくつか羅列してあり、一番下まで行くと「前の記事へ」「次の記事へ」などと前後の記事羅列ページへのリンクが貼ってあり、当該前後ページでまた記事が羅列されているという、よくあるアレである。
 

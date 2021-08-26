@@ -1,7 +1,7 @@
 ---
 title: iOSの着信／通知音量を設定できるアプリ／ショートカットアクションを作った
 layout: post
-tags: [development, ios, ringervolume]
+tags: [dev, ios, ringervolume]
 ---
 
 iOSで着信／通知音量を設定できるRingerVolumeというアプリ／ショートカットアクションを作った。iOSの非公開フレームワークを使っておりApp Storeには出せないので、GitHubにソースコードを公開しておく。

@@ -1,7 +1,7 @@
 ---
 title: Developer IDで署名したインストーラパッケージを作る
 layout: post
-tags: [development, macos]
+tags: [dev, macos]
 ---
 
 　OS XアプリケーションをDeveloper IDで署名し、インストーラパッケージもDeveloper IDで署名する。Developer ID Application/Installer証明書は取得済みであると仮定する。

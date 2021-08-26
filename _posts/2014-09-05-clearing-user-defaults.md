@@ -1,7 +1,7 @@
 ---
 title: 環境設定をクリアする
 layout: post
-tags: [development, macos, cocoa]
+tags: [dev, macos, cocoa]
 ---
 　Cocoaアプリケーションで環境設定を保存するには`NSUserDefaults`を使うのが定石。保存した設定はプロパティリストファイルに保存される。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyllを使ってウェブサイトを再構築
-tags: jekyll github markdown development
+tags: jekyll github markdown dev
 ---
 　[Jekyll](http://jekyllrb.com)という静的ウェブサイト＆ブログ生成システムと[GitHub Pages](http://pages.github.com)を用いて、ウェブサイトを再構築しました。
 　以前からウェブページのホスティングにはGitHubが提供するGitHub Pagesというホスティングサーヴィスを利用してローカルで作成したHTML等をアップロードしていましたが、今回はそれに加えてJekyllという静的ウェブサイト＆ブログ生成システムを用いました。

@@ -1,7 +1,7 @@
 ---
 title: Chromeで絵文字が表示されない問題
 layout: post
-tags: [development, css]
+tags: [dev, css]
 ---
 
 　Google Chromeには、スタイルで`font-weight:600`以上が指定されていると絵文字が表示されなくなる問題があるようだ（[Issue 465066](https://code.google.com/p/chromium/issues/detail?id=465066)）。
