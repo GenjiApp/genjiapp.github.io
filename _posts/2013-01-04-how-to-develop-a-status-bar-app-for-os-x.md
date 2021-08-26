@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OS Xステータスバーアプリケーションの作り方
-tags: [cocoa, development, os x]
+tags: [cocoa, development, macos]
 ---
 ## ステータスバーアプリケーションについて
 

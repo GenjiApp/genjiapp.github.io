@@ -1,7 +1,7 @@
 ---
 title: Mailto Interceptorをver. 1.2にヴァージョンアップしました
 layout: post
-tags: [mailto interceptor, os x, release]
+tags: [mailto interceptor, macos, release]
 ---
 ![](/blog/img/20140910/mailto_interceptor_icon.png)
 

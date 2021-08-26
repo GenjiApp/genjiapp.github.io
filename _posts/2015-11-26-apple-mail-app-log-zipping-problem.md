@@ -1,7 +1,7 @@
 ---
 title: OS X用Apple Mailアプリがメモリィを食い尽くす問題について
 layout: post
-tags: [os x, mail]
+tags: [macos, mail]
 ---
 　先日から、OS X用のApple Mailアプリケーションがメモリィを食い尽くし始めてMacの動作がめちゃ重くなるという現象に見舞われだした。原因を探った結果、以下のApple Support Communitiesの投稿を発見した。
 

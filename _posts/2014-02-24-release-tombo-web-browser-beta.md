@@ -1,7 +1,7 @@
 ---
 title: Tomboウェブブラウザのベータ版を公開しました
 layout: post
-tags: [os x, release, tombo]
+tags: [macos, release, tombo]
 ---
 　[Tombo](/mac/tombo/)というウェブブラウザアプリケーションのベータ版を公開しました。以下はTomboのデモ動画です。
 

@@ -1,7 +1,7 @@
 ---
 title: Mailto Interceptor Liteをリリースしました
 layout: post
-tags: [os x, mailto interceptor, release]
+tags: [macos, mailto interceptor, release]
 ---
 ![](/blog/img/20140918/mailto_interceptor_icon.png)
 

@@ -1,7 +1,7 @@
 ---
 title: OS XのEPUB用Spotlight/Quick Lookプラグインを作り直した
 layout: post
-tags: [os x, development, cocoa, ebook, release]
+tags: [macos, development, cocoa, ebook, release]
 ---
 
 　OS XのEPUB用Spotlight/Quick Lookプラグインを作り直した。

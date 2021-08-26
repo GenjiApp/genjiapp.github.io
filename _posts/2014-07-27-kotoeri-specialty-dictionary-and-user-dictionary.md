@@ -1,7 +1,7 @@
 ---
 title: ことえりの追加辞書とシステムのユーザ辞書
 layout: post
-tags: [os x, kotoeri]
+tags: [macos, kotoeri]
 ---
 　OS X 10.9 Mavericksのことえりで、ユーザ定義の単語を日本語変換できるようにする方法は2種類ある。
 

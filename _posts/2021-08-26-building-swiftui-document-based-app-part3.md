@@ -1,7 +1,7 @@
 ---
 title: SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その3　ツールバーの実装
 layout: post
-tags: [development, os x, ios, swiftui]
+tags: [development, macos, ios, swiftui]
 ---
 
 SwiftUIでDocument-Based Appな画像閲覧アプリ習作の覚書その3。PNG/JPEG画像を開いて閲覧、スクロール、ピンチジェスチャで拡大縮小、ツールバーにボタン配置等を実装した。

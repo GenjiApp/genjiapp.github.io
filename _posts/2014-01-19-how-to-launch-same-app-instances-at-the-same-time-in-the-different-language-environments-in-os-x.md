@@ -1,7 +1,7 @@
 ---
 title: OS Xで異なる言語環境で同じアプリケーションを同時に起動する方法
 layout: post
-tags: [cocoa, development, os x]
+tags: [cocoa, development, macos]
 ---
 ## はじめに
 

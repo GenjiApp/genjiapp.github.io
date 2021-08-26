@@ -1,7 +1,7 @@
 ---
 title: Silver Baton ver. 1.4をリリースしました
 layout: post
-tags: [os x, release, silver baton]
+tags: [macos, release, silver baton]
 ---
 
 ![](/blog/img/20210719/silver-baton-icon.png)

@@ -1,7 +1,7 @@
 ---
 title: iTunesで再生中の曲にレート付けするウィジェットを作った
 layout: post
-tags: [development, os x, cocoa]
+tags: [development, macos, cocoa]
 ---
 ![](/blog/img/20150213/itunes_rating_widget.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OS Xアプリケーションにおける環境設定ウィンドウの作り方
-tags: [cocoa, development, os x]
+tags: [cocoa, development, macos]
 ---
 　OS Xアプリケーションの振る舞い等を設定するときに用いる環境設定ウィンドウを作る。
 

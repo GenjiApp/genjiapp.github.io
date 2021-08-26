@@ -1,7 +1,7 @@
 ---
 title: Murasaki ver. 2.4をリリースしました
 layout: post
-tags: [os x, release, murasaki]
+tags: [macos, release, murasaki]
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: tccutilでmacOSアプリのプライバシー設定をリセットする
 layout: post
-tags: [development, os x]
+tags: [development, macos]
 ---
 
 macOSアプリのプライバシー設定をリセットしたい時は`tccutil`コマンドを使う。

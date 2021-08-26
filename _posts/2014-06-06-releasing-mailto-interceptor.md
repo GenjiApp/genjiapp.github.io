@@ -1,7 +1,7 @@
 ---
 title: Mailto Interceptorをリリースしました
 layout: post
-tags: [os x, release, mailto interceptor]
+tags: [macos, release, mailto interceptor]
 ---
 　Mailto InterceptorというOS Xアプリケーションをリリースしました。
 

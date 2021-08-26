@@ -1,7 +1,7 @@
 ---
 title: Silver Baton v1.3.1をリリース
 layout: post
-tags: [os x, release, silver baton]
+tags: [macos, release, silver baton]
 ---
 
 Silver Baton v1.3.1をリリースしました。手元のトラックパッド／マウス操作でMusic.appを操作できるパネルを表示するmacOS用アプリです。
