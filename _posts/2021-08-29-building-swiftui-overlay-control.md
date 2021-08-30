@@ -10,6 +10,10 @@ tags: macos dev swiftui
 
 動画プレイヤアプリの再生ボタン等がこんな感じで実装されていることがよくある。本項ではこれを「オーバレイ操作UI」と呼ぶことにする。
 
+成果物をGitHubに公開する。
+
+- [GenjiApp/OverlayControlSwiftUI](https://github.com/GenjiApp/OverlayControlSwiftUI)
+
 ## 操作UIの重ね合わせ表示
 
 一例として以下のようなビューがあるとする。
