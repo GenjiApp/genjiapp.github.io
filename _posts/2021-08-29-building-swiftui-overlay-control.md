@@ -6,7 +6,7 @@ tags: macos dev swiftui
 
 ウィンドウ下部にマウスを持っていくと、メインの領域の上に重なるように表示される操作UIを実装する。こんな感じ。
 
-![](/blog/img/20210829/03-onhover.gif)
+![](/blog/img/20210829/06-complete.gif)
 
 動画プレイヤアプリの再生ボタン等がこんな感じで実装されていることがよくある。本項ではこれを「オーバレイ操作UI」と呼ぶことにする。
 
@@ -30,7 +30,7 @@ struct ContentView: View {
 ```swift
 struct ContentView: View {
 
-  @State private var hue: Double = 0.5
+  @State private var hue = 0.5
 
   var body: some View {
     ZStack {
@@ -40,13 +40,14 @@ struct ContentView: View {
       VStack {
         Spacer()
         Slider(value: self.$hue, in: 0...1) {
-          Text("Slider:")
+          Text("Hue:")
         }
         .frame(width: 250)
         .padding()
         .background(
           Capsule()
             .fill(Color(.windowBackgroundColor))
+            .shadow(radius: 5)
         )
       }
       .padding(.bottom, 16)
@@ -55,9 +56,9 @@ struct ContentView: View {
 }
 ```
 
-全体を`ZStack`に入れ、元の`Image`と目的のUI部品を併置する。今回はオーバレイ操作UIをウィンドウ下部に配置したいので、`VStack`と`Spacer`を組み合わせた。また、UI部品の背景を描画するため、`background`と`Capsule`を使用した。
+全体を`ZStack`に入れ、元の`Image`と目的のUI部品を併置する。今回はオーバレイ操作UIをウィンドウ下部に配置したいので、`VStack`と`Spacer`を組み合わせた。また、UI部品の背景を描画するため、`background`と`Capsule`を使用した。メインの領域と境界をわかりやすくするため、`shadow`も加えた。
 
-![](/blog/img/20210829/02-overlay.png)
+![](/blog/img/20210829/02-overlay-control.gif)
 
 ## `onHover`で表示・非表示の切り替え
 
@@ -66,7 +67,7 @@ struct ContentView: View {
 ```swift
 struct ContentView: View {
 
-  @State private var hue: Double = 0.5
+  @State private var hue = 0.5
   @State private var isHover = false
 
   var body: some View {
@@ -77,13 +78,14 @@ struct ContentView: View {
       VStack {
         Spacer()
         Slider(value: self.$hue, in: 0...1) {
-          Text("Slider:")
+          Text("Hue:")
         }
         .frame(width: 250)
         .padding()
         .background(
           Capsule()
             .fill(Color(.windowBackgroundColor))
+            .shadow(radius: 5)
         )
         .onHover { hovering in
           withAnimation {
@@ -102,14 +104,16 @@ struct ContentView: View {
 
 ![](/blog/img/20210829/03-onhover.gif)
 
+これで、領域内へマウスが入ったときにだけオーバレイ操作UIが表示されるようになるが、スライダ操作中に領域外へ出てしまうと非表示なってしまう問題がある。
+
 ## 操作中の非表示を抑制
 
-これで、領域内へマウスが入ったときにだけオーバレイ操作UIが表示されるようになるが、スライダ操作中に領域外へ出てしまうと非表示なってしまう問題がある。そこで、スライダ操作中は非表示にならないよう工夫をする。
+スライダ操作中は非表示にならないよう工夫をする。
 
 ```swift
 struct ContentView: View {
 
-  @State private var hue: Double = 0.5
+  @State private var hue = 0.5
   @State private var isHover = false
   @State private var isEditing = false
 
@@ -125,13 +129,14 @@ struct ContentView: View {
             self.isEditing = editing
           }
         }, label: {
-          Text("Slider:")
+          Text("Hue:")
         })
         .frame(width: 250)
         .padding()
         .background(
           Capsule()
             .fill(Color(.windowBackgroundColor))
+            .shadow(radius: 5)
         )
         .onHover { hovering in
           withAnimation {
@@ -148,6 +153,8 @@ struct ContentView: View {
 
 `Slider`の作成を`init(value:in:onEditingChanged:label:)`を使うようにした。増えた`onEditingChanged`の部分は、スライダ操作開始でクロージャ引数に`true`が、操作終了で`false`が入る。これを`@State`なプロパティ`isEditing`に代入する。オーバレイ操作UI全体の`VStack`に付けた`opacity`の条件に`isEditing`も加えることで、スライダ操作中は非表示にならなくなる。
 
+![](/blog/img/20210829/04-onediting.gif)
+
 ## 最初の数秒間は表示させる
 
 さらに一工夫。初見ではオーバレイ操作UI自体の存在が認知されないので、最初の数秒間はオーバレイ操作UIが表示されるようにする。
@@ -155,7 +162,7 @@ struct ContentView: View {
 ```swift
 struct ContentView: View {
 
-  @State private var hue: Double = 0.5
+  @State private var hue = 0.5
   @State private var isHover = true
   @State private var isEditing = false
   @State private var timer: Timer? = nil
@@ -172,19 +179,18 @@ struct ContentView: View {
             self.isEditing = editing
           }
         }, label: {
-          Text("Slider:")
+          Text("Hue:")
         })
         .frame(width: 250)
         .padding()
         .background(
           Capsule()
             .fill(Color(.windowBackgroundColor))
+            .shadow(radius: 5)
         )
         .onHover { hovering in
-          if self.timer != nil {
-            self.timer?.invalidate()
-            self.timer = nil
-          }
+          self.timer?.invalidate()
+          self.timer = nil
           withAnimation {
             self.isHover = hovering
           }
@@ -210,7 +216,7 @@ struct ContentView: View {
 
 また、タイマ発火前にオーバレイ操作UIの領域に入り、領域にいるままにタイマが発火すると、領域内にマウスがあるのに非表示なってしまう。タイマ発火前に領域に入った場合は、タイマを破棄する処理を入れる。
 
-![](/blog/img/20210829/04-onappear.gif)
+![](/blog/img/20210829/05-onappear.gif)
 
 ## ビューの切り出し
 
@@ -219,24 +225,26 @@ struct ContentView: View {
 ```swift
 struct ContentView: View {
 
-  @State private var hue: Double = 0.5
+  @State private var hue = 0.5
   @State private var isEditing = false
 
   var body: some View {
-    OverlayControlContainer(isEditing: self.$isEditing, content: {
-      Image(systemName: "star")
-        .font(.system(size: 500))
-        .foregroundColor(Color(hue: self.hue, saturation: 1.0, brightness: 1.0))
-    }, overlayControl: {
-      Slider(value: self.$hue, in: 0...1, onEditingChanged: { editing in
-        withAnimation {
-          self.isEditing = editing
-        }
-      }, label: {
-        Text("Slider:")
+    VStack {
+      OverlayControlContainer(isEditing: self.$isEditing, content: {
+        Image(systemName: "star")
+          .font(.system(size: 500))
+          .foregroundColor(Color(hue: self.hue, saturation: 1.0, brightness: 1.0))
+      }, overlayControl: {
+        Slider(value: self.$hue, in: 0...1, onEditingChanged: { editing in
+          withAnimation {
+            self.isEditing = editing
+          }
+        }, label: {
+          Text("Hue:")
+        })
+        .frame(width: 250)
       })
-      .frame(width: 250)
-    })
+    }
   }
 }
 
@@ -258,12 +266,11 @@ struct OverlayControlContainer<Content: View, OverlayControl: View>: View {
           .background(
             Capsule()
               .fill(Color(.windowBackgroundColor))
+              .shadow(radius: 5)
           )
           .onHover { hovering in
-            if self.timer != nil {
-              self.timer?.invalidate()
-              self.timer = nil
-            }
+            self.timer?.invalidate()
+            self.timer = nil
             withAnimation {
               self.isHover = hovering
             }
@@ -286,5 +293,7 @@ struct OverlayControlContainer<Content: View, OverlayControl: View>: View {
 
 ```
 
+完成！
 
+![](/blog/img/20210829/06-complete.gif)
 
