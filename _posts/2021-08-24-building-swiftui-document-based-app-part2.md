@@ -186,23 +186,24 @@ class ImageDocument: ReferenceFileDocument {
   }
 
   func scaleViewSize(_ scale: CGFloat, animate: Bool) {
-    let newViewSize = CGSize(width: self.viewSize.width * scale, height: self.viewSize.height * scale)
-    // 元のサイズの0.2倍以下、および5倍以上の場合は補正
+    var newViewSize = CGSize(width: self.viewSize.width * scale, height: self.viewSize.height * scale)
+
     if newViewSize.width < self.image.size.width * 0.2 {
-      self.scaleViewSize(scale * 1.1)
+      newViewSize.width = self.image.size.width * 0.2
+      newViewSize.height = self.image.size.height * 0.2
     }
     else if newViewSize.width > self.image.size.width * 5 {
-      self.scaleViewSize(scale / 1.1)
+      newViewSize.width = self.image.size.width * 5
+      newViewSize.height = self.image.size.height * 5
     }
-    else {
-      if animate {
-        withAnimation {
-          self.viewSize = newViewSize
-        }
-      }
-      else {
+
+    if animate {
+      withAnimation {
         self.viewSize = newViewSize
       }
+    }
+    else {
+      self.viewSize = newViewSize
     }
   }
 
