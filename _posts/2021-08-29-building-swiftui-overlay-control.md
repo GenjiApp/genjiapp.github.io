@@ -14,6 +14,13 @@ tags: macos dev swiftui
 
 - [GenjiApp/OverlayControlSwiftUI](https://github.com/GenjiApp/OverlayControlSwiftUI)
 
+ビルド環境は、
+
+- macOS 11.5.2
+- Xcode 12.5.1
+
+である。
+
 ## 操作UIの重ね合わせ表示
 
 一例として以下のようなビューがあるとする。

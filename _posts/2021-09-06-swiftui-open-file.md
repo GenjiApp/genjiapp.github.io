@@ -14,6 +14,13 @@ SwiftUIの非Document AppなmacOSアプリにおいて、ファイルを開く�
 
 - [GenjiApp/OpenImageSwiftUI_macOS](https://github.com/GenjiApp/OpenImageSwiftUI_macOS)
 
+ビルド環境は、
+
+- macOS 11.5.2
+- Xcode 12.5.1
+
+である。
+
 ## `NSOpenPanel`
 
 まずは、これまで通り`NSOpenPanel`を使う方法から。以下のようなビューがあったとする。
