@@ -58,7 +58,7 @@ struct NSOpenPanelView: View {
 
 `Button`の`action`コールバック内で`NSOpenPanel`を生成し、`runModal()`してやればよい。その返り値が`.OK`の場合はファイル選択が成功し、`NSOpenPanel`の`url`プロパティに選択されたファイルのURLが入っている。
 
-対応形式にUTIが求められるときは`UTType`型を使うとよい。`UTType`は新しい方で、UTIを使うAPIによっては`UTType`型を求められたり、`String`型で求められたりが混在している。`String`型を求められているAPIなら`UTType`の`identifier`を使う。`UTType`型を使うときは`import UniformTypeIdentifiers`が必要である。後の項でも同様。
+対応形式にUTIが求められるときは`UTType`型を使うとよい。`UTType`は新しい型で、UTIを使うAPIによっては`UTType`型を求められたり、`String`型で求められたりが混在している。`String`型を求められているAPIなら`UTType`の`identifier`を使う。`UTType`型を使うときは`import UniformTypeIdentifiers`が必要である。後の項でも同様。
 
 ## `fileImporter()`
 
