@@ -10,6 +10,7 @@ SwiftUIでDocument-Based Appな画像閲覧アプリを習作した。PNG/JPEG�
 
 - [SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その2　ジェスチャによる拡大縮小]({% post_url 2021-08-24-building-swiftui-document-based-app-part2 %})
 - [SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その3　ツールバーの実装]({% post_url 2021-08-26-building-swiftui-document-based-app-part3 %})
+- [SwiftUIでDocument-Based Appな画像閲覧アプリを作る　その4　メニューコマンドの実装]({% post_url 2021-12-21-building-swiftui-document-based-app-part4 %})
 
 プロジェクトはGitHubで公開している。
 
