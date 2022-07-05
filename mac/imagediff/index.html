@@ -3,17 +3,31 @@ layout: app
 title: ImageDiff
 subtitle: 画像間差分を表示するアプリケーション
 language: ja
-description: ImageDiffはふたつの画像間の差異をいくつかの方法で表示するMac OS X用アプリケーションです。
+description: ImageDiffはふたつの画像間の差異をいくつかの方法で表示するmacOS用アプリケーションです。
 ---
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/eO4eefoDne8?rel=0" frameborder="0" allowfullscreen></iframe>
+<img id="animation" width="800" height="466" src="img/animation.gif" />
 
 <ul id="downloadList">
-  <li class="badge"><a href="https://itunes.apple.com/jp/app/imagediff/id458958614?mt=12"><span>Available on the </span>Mac App Store</a></li>
+  <li class="badge"><a href="https://apps.apple.com/jp/app/imagediff-2/id1602522152?mt=12"><span>Available on the </span>Mac App Store</a></li>
 </ul>
+
+<h2>システム要件</h2>
+<p>macOS 12以上</p>
 
 <h2>ヴァージョン履歴</h2>
 <dl>
+  <dt>ver. 2.0: 2022年7月5日</dt>
+  <dd>SwiftUIを用いて再構築
+    <ul>
+      <li>パフォーマンスの改善</li>
+      <li>マルチウィンドウとタブに対応</li>
+      <li>サイドバイサイド表示での縦並びを実装</li>
+      <li>背景の変更機能を実装</li>
+      <li>トラックパッドジェスチャによる任意の拡大縮小表示を実装</li>
+    </ul>
+  </dd>
+
   <dt>ver. 1.0.4: 2019年8月8日</dt>
   <dd>Wipe機能に関する問題を修正</dd>
 

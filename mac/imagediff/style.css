@@ -5,8 +5,13 @@ header div {
     background-image: url(img/icon.png);
 }
 
-iframe {
+#animation {
     display: block;
     margin: 0 auto;
-    max-width: 100%;;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+dd > ul {
+    margin: 0;
 }
