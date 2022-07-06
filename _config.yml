@@ -19,3 +19,6 @@ historyURL: https://github.com/GenjiApp/genjiapp.github.io/commits/master/
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
+
+timezone: Asia/Tokyo
+future: true
