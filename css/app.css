@@ -59,6 +59,7 @@ figure {
 
 figure img {
     max-width: 95%;
+    height: auto;
 }
 
 #downloadList {
@@ -79,6 +80,7 @@ dl {
 
 dl dt {
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 dl dt:first-child {
