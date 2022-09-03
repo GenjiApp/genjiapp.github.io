@@ -10,10 +10,6 @@ figure img {
     max-width: 30%;
     margin: 5px;
     border: 1px solid lightgray;
-    -webkit-box-shadow: 0 0 3px lightgray;
-    -moz-box-shadow: 0 0 3px lightgray;
-    -o-box-shadow: 0 0 3px lightgray;
-    -ms-box-shadow: 0 0 3px lightgray;
     box-shadow: 0 0 3px lightgray;
 }
 

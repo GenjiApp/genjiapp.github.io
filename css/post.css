@@ -48,10 +48,6 @@ article h1 {
 }
 
 article #postTags {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
     display: flex;
     font-size: 1rem;
 }
@@ -118,26 +114,14 @@ article p img {
     border: 1px solid gray;
     text-decoration: none;
     padding: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
-    -ms-border-radius: 3px;
     border-radius: 3px;
     font-weight: bold;
     font-size: 0.9em;
     color: gray;
-    -webkit-box-shadow: 0 0 2px silver;
-    -moz-box-shadow: 0 0 2px silver;
-    -o-box-shadow: 0 0 2px silver;
-    -ms-box-shadow: 0 0 2px silver;
     box-shadow: 0 0 2px silver;
 }
 
 .gumroadButton a:hover {
-    -webkit-box-shadow: 0 0 2px gray;
-    -moz-box-shadow: 0 0 2px gray;
-    -o-box-shadow: 0 0 2px gray;
-    -ms-box-shadow: 0 0 2px gray;
     box-shadow: 0 0 2px gray;
 }
 

@@ -50,10 +50,6 @@ pre {
     color: black;
     background-color: #eee;
     margin: 10px 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
     border-radius: 5px;
 }
 
@@ -72,10 +68,6 @@ code {
     white-space: nowrap;
     margin: 0 3px;
     padding: 2px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
     border-radius: 5px;
     border: none;
 }
@@ -84,10 +76,6 @@ code {
 /* styles for global_navigation.html */
 #globalNavigation {
     font-family: HelveticaNeue-Middle, sans-serif;
-    background: -webkit-linear-gradient(white, #f2f2f2);
-    background: -moz-linear-gradient(white, #f2f2f2);
-    background: -o-linear-gradient(white, #f2f2f2);
-    background: -ms-linear-gradient(white, #f2f2f2);
     background: linear-gradient(white, #f2f2f2);
 }
 
@@ -103,25 +91,13 @@ code {
     padding: 0;
     white-space: nowrap;
     border-width: 1px 0 1px 0;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
     display: flex;
-    -webkit-flex-wrap: nowrap;
-    -moz-flex-wrap: nowrap;
-    -o-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
 #globalNavigation ul li {
     list-style-type: none;
-    -webkit-flex: 0 0 auto;
-    -moz-flex: 0 0 auto;
-    -o-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 }
 
@@ -180,20 +156,8 @@ footer {
 footer > div {
     max-width: 900px;
     margin: 0 auto;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -o-justify-content: space-around;
-    -ms-justify-content: space-around;
     justify-content: space-around;
 }
 
@@ -204,10 +168,6 @@ footer > div h2 {
 }
 
 footer > div > div {
-    -webkit-flex: 1 1 150px;
-    -moz-flex: 1 1 150px;
-    -o-flex: 1 1 150px;
-    -ms-flex: 1 1 150px;
     flex: 1 1 150px;
 }
 

@@ -6,10 +6,6 @@ header {
     border: 1px solid transparent;
     border-bottom: 1px solid silver;
     margin-bottom: 50px;
-    background: -webkit-linear-gradient(white, #eee);
-    background: -moz-linear-gradient(white, #eee);
-    background: -o-linear-gradient(white, #eee);
-    background: -ms-linear-gradient(white, #eee);
     background: linear-gradient(white, #eee);
 }
 

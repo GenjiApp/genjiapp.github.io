@@ -1,5 +1,5 @@
 #globalNavigation {
-    background: -webkit-linear-gradient(#444, #333);
+    background: linear-gradient(#444, #333);
 }
 
 #globalNavigation ul,
@@ -22,10 +22,6 @@ header {
     background-position: left, top;
     background-repeat: repeat;
     border-bottom: none;
-    -webkit-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
-    -moz-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
-    -o-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
-    -ms-box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
     box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
 }
 
@@ -46,10 +42,6 @@ p {
 }
 
 figure img {
-    -webkit-box-shadow: 0 0 5px rgb(0, 0, 0);
-    -moz-box-shadow: 0 0 5px rgb(0, 0, 0);
-    -o-box-shadow: 0 0 5px rgb(0, 0, 0);
-    -ms-box-shadow: 0 0 5px rgb(0, 0, 0);
     box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 

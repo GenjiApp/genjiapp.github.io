@@ -31,14 +31,6 @@ body > article > div#sub_article {
     padding: 25px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    -webkit-box-shadow: 0 -3px 15px -12px black inset,
-                        0 4px 15px -12px black inset;
-    -moz-box-shadow: 0 -3px 15px -12px black inset,
-                     0 4px 15px -12px black inset;
-    -o-box-shadow: 0 -3px 15px -12px black inset,
-                   0 4px 15px -12px black inset;
-    -ms-box-shadow: 0 -3px 15px -12px black inset,
-                    0 4px 15px -12px black inset;
     box-shadow: 0 -3px 15px -12px black inset,
                 0 4px 15px -12px black inset;
 }
@@ -75,10 +67,6 @@ body > article > div#sub_article {
     height: 12px;
     background-color: #999;
     border: 1px solid white;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -o-border-radius: 12px;
-    -ms-border-radius: 12px;
     border-radius: 12px;
 }
 
@@ -104,15 +92,7 @@ article h2 {
 }
 
 div.features {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -124,10 +104,6 @@ div.features {
 
 div.features > div {
     padding: 0 10px;
-    -webkit-flex: 1 1 40%;
-    -moz-flex: 1 1 40%;
-    -o-flex: 1 1 40%;
-    -ms-flex: 1 1 40%;
     flex: 1 1 40%;
 }
 
@@ -139,10 +115,6 @@ div.features div h3 {
 
 @media screen and (max-width: 500px) {
     div.features > div {
-        -webkit-flex: 1 1 100%;
-        -moz-flex: 1 1 100%;
-        -o-flex: 1 1 100%;
-        -ms-flex: 1 1 100%;
         flex: 1 1 100%;
     }
 }
@@ -217,10 +189,6 @@ div.features div h3 {
     border: 1px solid gray;
     padding: 2px;
     background-color: #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
-    -ms-border-radius: 3px;
     border-radius: 3px;
 }
 
