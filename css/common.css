@@ -113,11 +113,11 @@ code {
     -o-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    justify-content: center;
 }
 
 #globalNavigation ul li {
     list-style-type: none;
-    border-width: 0 1px 0 0;
     -webkit-flex: 0 0 auto;
     -moz-flex: 0 0 auto;
     -o-flex: 0 0 auto;
@@ -127,14 +127,6 @@ code {
 
 #globalNavigation ul li:last-child {
     border-width: 0;
-}
-
-#globalNavigation #searchField {
-    -webkit-flex: 1 0 auto;
-    -moz-flex: 1 0 auto;
-    -o-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
 }
 
 #globalNavigation #searchField form,
@@ -147,7 +139,10 @@ code {
 }
 
 #globalNavigation #searchField form input {
-    height: 20px;
+    height: 1.6em;
+    border: 1px solid silver;
+    border-radius: 0.8em;
+    padding: 0 0.8em;
 }
 
 #globalNavigation a {
