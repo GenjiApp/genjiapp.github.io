@@ -73,6 +73,7 @@ article #postTags ul li {
     font-size: inherit;
     display: inline-block;
     line-height: 1;
+    margin-top: 6px;
 }
 
 article #postTags ul li a span {
