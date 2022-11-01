@@ -1,5 +1,5 @@
 ---
-title: SwiftUI macOSアプリで設定ウィンドウの項目を`LabeledContent`で整列する
+title: SwiftUI macOSアプリの設定ウィンドウ項目をLabeledContentで整列させる
 layout: post
 tags: dev macos swiftui
 ---
