@@ -18,7 +18,7 @@
 
     <article>
       <p class="postDate">{{ page.date | date: "%Y年%m月%d日" }}, <a href="{{ site.historyURL }}{{ page.path }}">編集履歴</a></p>
-      <h1>{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+      <h1>{{ page.title }}</h1>
       <aside id="postTags">
         <h2>tags</h2>
         {% assign sortedTagNames = page.tags | sort %}
