@@ -1,10 +1,10 @@
 ---
-title: SwiftUI macOSアプリの設定ウィンドウで項目を整列する
+title: SwiftUI macOSアプリで設定ウィンドウの項目を`LabeledContent`で整列する
 layout: post
 tags: dev macos swiftui
 ---
 
-以下のような設定ウィンドウを作りたいとする。
+SwiftUI macOSアプリで、以下のような設定ウィンドウを作りたいとする。
 
 ![](/blog/img/20221031/setting-window.png)
 
