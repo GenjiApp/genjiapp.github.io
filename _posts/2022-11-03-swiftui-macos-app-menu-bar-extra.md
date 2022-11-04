@@ -109,7 +109,7 @@ struct StatusBarSampleApp: App {
 
   var body: some Scene {
     MenuBarExtra("MenuBarExtra", systemImage: "star.fill", isInserted: $menuBarExtraShown) {
-      MenuBarExtraContents()
+      ...
     }
   }
 }
