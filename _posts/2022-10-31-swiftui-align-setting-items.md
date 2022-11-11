@@ -82,3 +82,37 @@ Form {
 ![](/blog/img/20221031/labeled-content-form.png)
 
 特に黒魔術は必要なく、素直に意図通りのレイアウトが実現できる。SwiftUIもだんだん良くなってきた！
+
+## 追記 `.formStyle(.grouped)`
+
+macOS 13.0 Venturaからは`Form`に対して`.formStyle()`で表示形式を変更できるようになった。
+
+```swift
+Form {
+  Picker("Pref 1", selection: .constant(1)) {
+    Text("Option 1").tag(1)
+    Text("Option 2").tag(2)
+  }
+
+  TextField("Preference 2", text: .constant(""))
+
+  Toggle("Long Long Preference 3", isOn: .constant(true))
+
+  HStack {
+    Text("Pref 4")
+    Spacer()
+    Button("Button") { }
+  }
+
+  LabeledContent("Pref 5") {
+    Button("Button") { }
+  }
+}
+.formStyle(.grouped)
+```
+
+このように`.formStyle(.grouped)`を指定することで、Venturaの新しいシステム設定のような表示形式にできる。
+
+![](/blog/img/20221031/form-style-grouped.png)
+
+この場合、`Toggle`は前述の`LabeledContent`を使わずとも自然に記述できる。`Button`に関しては`HStack`でラベル的要素を付けて整列できるが、`LabeledContent`を使った方が自然な記述ができる。
