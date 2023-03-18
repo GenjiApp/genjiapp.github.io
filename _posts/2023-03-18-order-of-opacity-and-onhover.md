@@ -1,16 +1,16 @@
 ---
-title: SwiftUIで .opacity() と .onHover() の順番が重要
+title: SwiftUIの .opacity() と .onHover() は順番が重要
 layout: post
 tags: swiftui dev macos
 ---
 
-いつの頃からかは解らないが、macOS 13.2.1のSwiftUIでは`.opacity()`と`.onHover()`の順番が重要になっている。
-
-以下のようなSwiftUIビューがあったとする。
+いつの頃からかは解らないが、少なくともmacOS 13.2.1のSwiftUIでは`.opacity()`と`.onHover()`の順番が重要になっている。
 
 環境：
 - macOS 13.2.1
 - Xcode 14.2 (14C18)
+
+以下のようなSwiftUIビューがあったとする。
 
 ![](/blog/img/20230318/onhover.png)
 

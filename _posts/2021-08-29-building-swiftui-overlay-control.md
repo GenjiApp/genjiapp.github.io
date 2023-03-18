@@ -115,11 +115,11 @@ struct ContentView: View {
 
 ![](/blog/img/20210829/03-onhover.gif)
 
-これで、領域内へマウスが入ったときにだけオーバレイ操作UIが表示されるようになるが、スライダ操作中に領域外へ出てしまうと非表示なってしまう問題がある。
+これで、領域内へマウスが入ったときにだけオーバレイ操作UIが表示されるようになるが、スライダ操作中に領域外へ出てしまうと非表示になってしまう問題がある。
 
 ### 2023年3月18日追記
 
-少なくともmacOS 13.2.1では、`.opacity()`と`.onHover()`の順番が重要で、`.opacity()`を先に記述しないと、`.onHover()`が反応しなかったり、反応する領域が狭く変化してしまうという問題がある（参照：[SwiftUIで .opacity() と .onHover() の順番が重要]({% post_url 2023-03-18-order-of-opacity-and-onhover %})）。
+少なくともmacOS 13.2.1では、`.opacity()`と`.onHover()`の順番が重要で、`.opacity()`を先に記述しないと、`.onHover()`が反応しなかったり、反応する領域が狭く変化してしまうという問題がある（参照：[SwiftUIの .opacity() と .onHover() は順番が重要]({% post_url 2023-03-18-order-of-opacity-and-onhover %})）。
 
 したがって、前記コードの`.opacity()`を`.onHover()`の前に移動させなければならない（後記コードも同様）。
 
