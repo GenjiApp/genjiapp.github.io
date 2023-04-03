@@ -190,6 +190,40 @@ Finderから画像ファイルをドロップした場合や、プレビュー�
 
 `onDrop(of:isTargeted:perform:)`の第2引数`isTargeted`に`@State`なプロパティを指定しておけば、ドロップ領域に入った場合に`true`、外に出たときに`false`が入るので、オーバレイ表示するビューの表示・非表示の条件に用いた。
 
+### 2023年4月3日追記
+
+（たぶん）macOS 13から`.onDrop()`と`loadItem()`の挙動が変わって、上記コードでは画像読み込みができなくなった。macOS 13に対応したコードを以下に示す。
+
+```swift
+//（省略）
+.onDrop(of: [.image], isTargeted: $isDropTargeted) { providers in
+  guard let provider = providers.first else { return false }
+  if provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
+    provider.loadItem(forTypeIdentifier: UTType.image.identifier) { item, error in
+      guard error == nil,
+            let url = item as? URL,
+            let loadedImage = NSImage(contentsOf: url)
+      else { return }
+      image = loadedImage
+    }
+  }
+  return true
+}
+```
+
+これで、
+
+- Finderに表示している画像ファイル
+- プレビュー.appのタイトルバーアイコン
+- Safariに表示された画像
+- ミュージック.appの「情報を見る」の「アートワーク」の画像
+
+等々からのドラッグ＆ドロップで画像を読み込み、表示することができる。
+
+ただし、Safariで画像そのもののURLを開いて、アドレス欄のURLをドラッグ＆ドロップした場合は読み込めない。この場合の読み込み方法は謎である。
+
+また、`loadItem()`の引数で`UTType.image.identifier`を指定しているのに、取得できるのが`URL`型になるのも変な感じがする。直感的には`Data`型になりそうなものだが……（`NSImage(data:)`で画像データを作れるイメージ）。
+
 ## 最後に
 
 今回は説明のためにそれぞれの読み込み方法を別々のビューに実装したが、実際に使用する場合は前二者の方法と`onDrop()`の方法を組み合わせたり、メニューからの読み込み処理の呼び出しを実装したりするとよい。
