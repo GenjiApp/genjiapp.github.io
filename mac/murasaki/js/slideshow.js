@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(window).on('load', function() {
     $('#slideShow ul li:not(:first-child)').hide();
     var $img = $('#slideShow ul li:first-child img');
 
