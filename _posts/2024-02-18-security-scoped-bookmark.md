@@ -1,5 +1,5 @@
 ---
-title: Security-scoped Bookmarkについて
+title: macOS App Sandbox下におけるSecurity-scoped Bookmarkについて
 layout: post
 tags: macos dev cocoa
 ---
@@ -27,23 +27,21 @@ let bookmarkData = try? url.bookmarkData(options: [.withSecurityScope, .security
 
 `URL`の`init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)`関数を使うことで、Security-scoped Bookmarkな`Data`から`URL`を生成できる。`resolvingBookmarkData`引数にはSecurity-scoped Bookmarkな`Data`を、`options`引数には`withSecurityScope`を指定する。
 
+生成されたURLに実際にアクセスするには、アクセス前に`startAccessingSecurityScopedResource()`を実行し、アクセス後には`stopAccessingSecurityScopedResource()`を実行する。
+
 ```swift
 var isStale = false
 let urlData = // 前項の手法で保存したURLのData
 if let url = try? URL(resolvingBookmarkData: urlData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale) {
-  // isStale = true のときはBookmarkDataを作り直す必要がある
+  if url.startAccessingSecurityScopedResource() {
+
+    // URL先への読み書き処理
+
+    url.stopAccessingSecurityScopedResource()
+  }
 }
 ```
 
-関数実行後に`isStale`が`true`になっている場合、Bookmark作成以降にURL先ファイルの名前が変更されたり、場所が変更されたことを意味する。その場合、生成されたURLは変更後のものになっており、それを用いて新しくSecurity-scoped Bookmarkを生成し直す。
+`URL`の`init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)`実行後に`isStale`が`true`になっている場合、Bookmark Data作成以降にURL先ファイルの名前が変更されたり、場所が変更されたことを意味する。その場合でも返却されたURLは変更後のものになっており、アクセスは可能だが、新しくSecurity-scoped Bookmarkを生成し直す必要がある。
 
-生成されたURLに実際にアクセスするには、アクセス前に`startAccessingSecurityScopedResource()`を実行し、アクセス後には`stopAccessingSecurityScopedResource()`を実行する。
-
-```swift
-if url.startAccessingSecurityScopedResource() {
-  // URL先への読み書き処理
-  url.stopAccessingSecurityScopedResource()
-}
-```
-
-`URL`の`init(resolvingBookmarkData:options:relativeTo:bookmarkDataIsStale:)`関数で`isStale`が`true`になってSecurity-scoped Bookmarkを再生成するときも、URL先へのアクセスに相当するので、`startAccessingSecurityScopedResource()`と`stopAccessingSecurityScopedResource()`が必要になる。
+Security-scoped Bookmarkを再生成するときも、URL先へのアクセスに相当するので、`startAccessingSecurityScopedResource()`と`stopAccessingSecurityScopedResource()`が必要になる。
