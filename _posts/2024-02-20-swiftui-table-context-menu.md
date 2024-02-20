@@ -10,7 +10,7 @@ macOSアプリにSwiftUIの`Table`を組み込み、副ボタンクリック（�
 
 このとき`TableColumn`配下の要素や`TableRow`に`.contextMenu(menuItems:)`モディファイアをつけてしまいがちだが、macOSアプリのテーブルに対するコンテキストメニューの自然な挙動を実現するには、`Table`自体に`.contextMenu(forSelectionType:menu:primaryAction:)`モディファイアをつけなければならない。
 
-## リストの選択状態と操作対象
+## テーブルの選択状態と操作対象
 
 テーブル行をふつうにクリックした場合、行選択の状態となり、行全体にハイライトがつく。行を右クリックした場合、行の縁だけハイライトがつき、コンテキストメニューの起点、操作対象の状態になる。このふたつは別の状態である。選択範囲とコンテキストメニューの操作対象は重なる場合もあれば、異なる場合もある。
 
@@ -100,7 +100,7 @@ struct ContentView: View {
 }
 ```
 
-`TableColumn`配下の要素`.contextMenu(menuItems:)`モディファイアをつける場合、複数列があるときはすべてにつけなければならないし、右クリックに反応するのが文字がある部分だけになる。
+`TableColumn`配下の要素に`.contextMenu(menuItems:)`モディファイアをつける場合、複数の列があるときはすべてにモディファイアをつけなければならないし、右クリックに反応するのは行の中の文字がある部分だけになる。
 
 `TableRow`に`.contextMenu(menuItems:)`モディファイアをつける場合、選択行とコンテキストメニューの操作対象両方を取得できるが、両者が別の型になるし、両者の重なり具合を調べて操作対象を自分で計算する必要がある。
 
@@ -108,4 +108,4 @@ struct ContentView: View {
 
 第1引数`forSelectionType`には、テーブル行を表現するオブジェクトを特定するための型を指定する。オブジェクトは`Identifiable`プロトコルに適合させているはずなので、`id`プロパティの型となる。第3引数`primaryAction`は、行をダブルクリックした時に実行される。
 
-また、`Table`自体に`.contextMenu(menuItems:)`をつけることで、余白部分を右クリックした場合をカバーできる。
+また、ドキュメントには`.contextMenu(forSelectionType:menu:primaryAction:)`の第2引数`menu`クロージャの引数が空の`Set`の場合はテーブルの余白部分を右クリックしたことになるとあるが、macOS 14.3.1とXcode Version 15.2 (15C500b)の環境ではコンテキストメニューが出ない。上のコード例では`Table`自体に`.contextMenu(menuItems:)`をつけることで、余白部分を右クリックした場合をカバーしている。
