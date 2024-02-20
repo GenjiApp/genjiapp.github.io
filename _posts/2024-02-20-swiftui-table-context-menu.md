@@ -29,11 +29,7 @@ macOSアプリにSwiftUIの`Table`を組み込み、副ボタンクリック（�
 
 ## 実装
 
-行の通常の選択範囲は`@State`なプロパティを使うことで取得できる。ではコンテキストメニューの操作対象はどうか。
-
-`TableColumn`配下の要素や`TableRow`に`.contextMenu(menuItems:)`モディファイアをつけた場合、どの行が右クリックされたのか、コンテキストメニューの操作対象が解らない。
-
-`Table`自体に`.contextMenu(forSelectionType:menu:primaryAction:)`モディファイアをつけることで、どの行が右クリックされたのかを取得できる。また、`Table`自体に`.contextMenu(menuItems:)`をつけることで、余白部分を右クリックした場合をカバーできる。
+以下のような実装が良いと思う。
 
 ```swift
 import SwiftUI
@@ -59,8 +55,11 @@ struct ContentView: View {
     Table(of: Bookmark.self, selection: $selectedIDs) {
       TableColumn("Title") { bookmark in
         Text(bookmark.title)
-//          .contextMenu {
-//            Button("ここじゃない") { /* ... */ }
+          .contextMenu {
+//            Button("ここじゃない") {
+//              print(bookmark)
+//              print(selectedIDs)
+//            }
 //          }
       }
       TableColumn("URL") { bookmark in
@@ -70,7 +69,10 @@ struct ContentView: View {
       ForEach(sampleData) { bookmark in
         TableRow(bookmark)
 //          .contextMenu {
-//            Button("ここでもない") { /* ... */ }
+//            Button("ここでもない") {
+//              print(bookmark)
+//              print(selectedIDs)
+//            }
 //          }
       }
     }
@@ -98,6 +100,12 @@ struct ContentView: View {
 }
 ```
 
-`.contextMenu(forSelectionType:menu:primaryAction:)`の第1引数`forSelectionType`には、テーブル行を表現するオブジェクトを特定するための型を指定する。オブジェクトは`Identifiable`プロトコルに適合させているはずなので、`id`プロパティの型となる。
+`TableColumn`配下の要素`.contextMenu(menuItems:)`モディファイアをつける場合、複数列があるときはすべてにつけなければならないし、右クリックに反応するのが文字がある部分だけになる。
 
-ちなみに第3引数`primaryAction`は、行をダブルクリックした時に実行される。
+`TableRow`に`.contextMenu(menuItems:)`モディファイアをつける場合、選択行とコンテキストメニューの操作対象両方を取得できるが、両者が別の型になるし、両者の重なり具合を調べて操作対象を自分で計算する必要がある。
+
+`Table`自体に`.contextMenu(forSelectionType:menu:primaryAction:)`モディファイアをつける場合、第2引数`menu`クロージャの引数として、標準的な操作対象となるオブジェクトの`id`が`Set`で取得できるので、その後の処理がストレートに記述できる。
+
+第1引数`forSelectionType`には、テーブル行を表現するオブジェクトを特定するための型を指定する。オブジェクトは`Identifiable`プロトコルに適合させているはずなので、`id`プロパティの型となる。第3引数`primaryAction`は、行をダブルクリックした時に実行される。
+
+また、`Table`自体に`.contextMenu(menuItems:)`をつけることで、余白部分を右クリックした場合をカバーできる。
