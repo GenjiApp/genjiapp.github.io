@@ -1,0 +1,71 @@
+#globalNavigation {
+    background: linear-gradient(#444, #333);
+}
+
+#globalNavigation ul,
+#globalNavigation ul li {
+    border-color: #222;
+}
+
+#globalNavigation ul li a:hover {
+    background-color: #333;
+}
+
+body {
+    color: #ddd;
+    background-color: #333;
+    font-family: serif;
+}
+
+header {
+    background-image: url(img/carbon_fiber.png);
+    background-position: left, top;
+    background-repeat: repeat;
+    border-bottom: none;
+    box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+}
+
+header div {
+    background-image: url(img/icon.png);
+}
+
+header div h1 {
+    text-shadow: 1px 1px 0 black;
+}
+
+p {
+    text-indent: 0 !important;
+}
+
+a {
+    color: orange;
+}
+
+p {
+    text-indent: 1em;
+}
+
+figure img {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+footer {
+    border-top-color: rgba(0, 2, 32, 0.1);
+}
+
+.badge a {
+    box-shadow: 0 0 3px darkgray;
+}
+
+dl.actions {
+    margin-bottom: 1em;
+}
+
+dl.actions dt {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dl.actions dd {
+    margin-left: 2em;
+}
