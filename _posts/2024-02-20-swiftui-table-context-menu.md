@@ -55,7 +55,7 @@ struct ContentView: View {
     Table(of: Bookmark.self, selection: $selectedIDs) {
       TableColumn("Title") { bookmark in
         Text(bookmark.title)
-          .contextMenu {
+//          .contextMenu {
 //            Button("ここじゃない") {
 //              print(bookmark)
 //              print(selectedIDs)
@@ -108,4 +108,4 @@ struct ContentView: View {
 
 第1引数`forSelectionType`には、テーブル行を表現するオブジェクトを特定するための型を指定する。オブジェクトは`Identifiable`プロトコルに適合させているはずなので、`id`プロパティの型となる。第3引数`primaryAction`は、行をダブルクリックした時に実行される。
 
-また、ドキュメントには`.contextMenu(forSelectionType:menu:primaryAction:)`の第2引数`menu`クロージャの引数が空の`Set`の場合はテーブルの余白部分を右クリックしたことになるとあるが、macOS 14.3.1とXcode Version 15.2 (15C500b)の環境ではコンテキストメニューが出ない。上のコード例では`Table`自体に`.contextMenu(menuItems:)`をつけることで、余白部分を右クリックした場合をカバーしている。
+また、ドキュメントには`.contextMenu(forSelectionType:menu:primaryAction:)`の第2引数`menu`クロージャの引数が空の`Set`の場合はテーブルの余白部分を右クリックしたことになるとあるが、macOS 14.3.1とXcode Version 15.2 (15C500b)の環境ではコンテキストメニューが出ない。上のコード例では`Table`自体にもうひとつ別の`.contextMenu(menuItems:)`をつけることで、余白部分を右クリックした場合をカバーしている。
